@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="x5UyeUTEV0iUWPiZb5fWVg" Reference="U0X3tk9DuUWal-aSohXRCQ/N5Nmq45-cEG1UT_cq6XJ4Q" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="app.spate.nyc/explore/trends/231bc1c7-f40b-4732-9605-cfb68f950ad0" CVScreenId="ed950db9-7b75-4406-bca8-6640dac4494a" CvElementArea="958, 425, 866, 58" CvType="InputBox" DesignTimeRectangle="961, 426, 861, 55" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='search' class='GraphButton__FilterSearch-sc-1k3ylfi-17 dEgfOp' placeholder='Type here a brand, industry or ingredient' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="ab2dc435-fd50-43a6-903d-ae1663dd116c" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SPATE - DATA SCIENCE TO PREDICT THE NEXT BIG TREND.' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="ed950db9-7b75-4406-bca8-6640dac4494a" CvElementArea="958, 425, 866, 58" CvTextArea="959, 378, 408, 30" CvTextArgument="Subcategories For Homecare" CvType="InputBox" DesignTimeRectangle="931, 351, 921, 155" ElementType="InputBox" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' tag='DIV' innertext='Subcategories for homecare' /&gt;" Guid="ea9e2dd4-ed73-4ecd-ac7b-7e0f1857b2b5" SearchSteps="Selector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="b7abe29c899f7cc2cf8c5fcdadb835ed.png" xmlns="">0vcTW5TrKAUiUxEd5bGBD6w</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

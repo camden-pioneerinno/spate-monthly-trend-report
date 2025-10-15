@@ -89,40 +89,30 @@
       <AssemblyReference>UiPath.Platform</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Open applications used in the process and do necessary initialization procedures (e.g., login)." DisplayName="Initialize All Applications" sap:VirtualizedContainerService.HintSize="1276,964" sap2010:WorkflowViewState.IdRef="Sequence_9">
+  <Sequence sap2010:Annotation.AnnotationText="Open applications used in the process and do necessary initialization procedures (e.g., login)." DisplayName="Initialize All Applications" sap:VirtualizedContainerService.HintSize="1934,949.3733333333332" sap2010:WorkflowViewState.IdRef="Sequence_9">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log message (Initialize applications)" sap:VirtualizedContainerService.HintSize="450,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Trace" Message="[&quot;Opening applications...&quot;]" />
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome New Tab - Google Chrome" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="450,569" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Simulate" ScopeGuid="35eb1d29-531d-4bd2-8e27-60ae930dacbc" Version="V2">
+    <ui:LogMessage DisplayName="Log message (Initialize applications)" sap:VirtualizedContainerService.HintSize="450,176.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Trace" Message="[&quot;Opening applications...&quot;]" />
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome New Tab - Google Chrome" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="450,498.6666666666667" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Simulate" ScopeGuid="35eb1d29-531d-4bd2-8e27-60ae930dacbc" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,280" sap2010:WorkflowViewState.IdRef="Sequence_10">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,247.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_10">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'LOGIN'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="382,218" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="35eb1d29-531d-4bd2-8e27-60ae930dacbc" Version="V5">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'LOGIN'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="382,184.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="35eb1d29-531d-4bd2-8e27-60ae930dacbc" Version="V5">
               <uix:NClick.Target>
-                <uix:TargetAnchorable BrowserURL="spate.nyc" CVScreenId="b1e72611-d33d-4cd3-b3fc-b58fb2ad1065" ContentHash="8OP5bpqfOUySPpMhv5_7PA" CvTextArea="1607, 225, 73, 21" CvTextArgument="LOGIN" CvType="Text" DesignTimeRectangle="1593, 200, 104, 72" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='comp-ivqoim944' tag='P' /&gt;" Guid="7d12f613-becc-4d58-9e0e-06c0fe27f27d" InformativeScreenshot="fef38a4db4ea6f1e86de789198c3403c.png" Reference="U0X3tk9DuUWal-aSohXRCQ/zBTquWCNHEWQLB1-0BM3iA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Best AI Market Research &amp;amp; Consumer Trend Forecasting Tool | Spate' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
+                <uix:TargetAnchorable BrowserURL="spate.nyc" CVScreenId="b1e72611-d33d-4cd3-b3fc-b58fb2ad1065" ContentHash="8OP5bpqfOUySPpMhv5_7PA" CvTextArea="1607, 225, 73, 21" CvTextArgument="LOGIN" CvType="Text" DesignTimeRectangle="1593, 200, 104, 72" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl parentid='comp-ivqoim944' tag='P' /&gt;" Guid="7d12f613-becc-4d58-9e0e-06c0fe27f27d" InformativeScreenshot="fef38a4db4ea6f1e86de789198c3403c.png" Reference="U0X3tk9DuUWal-aSohXRCQ/zBTquWCNHEWQLB1-0BM3iA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Best AI Market Research &amp;amp; Consumer Trend Forecasting Tool | Spate' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
               </uix:NClick.Target>
-              <uix:NClick.VerifyOptions>
-                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
-                  <uix:VerifyExecutionOptions.Retry>
-                    <InArgument x:TypeArguments="x:Boolean" />
-                  </uix:VerifyExecutionOptions.Retry>
-                  <uix:VerifyExecutionOptions.Timeout>
-                    <InArgument x:TypeArguments="x:Double" />
-                  </uix:VerifyExecutionOptions.Timeout>
-                </uix:VerifyExecutionOptions>
-              </uix:NClick.VerifyOptions>
             </uix:NClick>
           </Sequence>
         </ActivityAction>

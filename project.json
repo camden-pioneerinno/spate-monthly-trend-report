@@ -14,8 +14,9 @@
   "entitiesStores": [],
   "schemaVersion": "4.0",
   "studioVersion": "24.10.16.0",
-  "projectVersion": "1.0.0",
+  "projectVersion": "1.0.4",
   "runtimeOptions": {
+    "exceptionHandlerWorkflow": "GlobalHandler.xaml",
     "autoDispose": false,
     "netFrameworkLazyLoading": false,
     "isPausable": true,
@@ -44,7 +45,8 @@
       "ignoredFiles": []
     },
     "fileInfoCollection": [],
-    "saveToCloud": false
+    "saveToCloud": false,
+    "cloudProjectUrl": "https://cloud.uipath.com/pioneerinnovation/studio_/designer/2f566661-6132-4f64-9c97-459355575474"
   },
   "expressionLanguage": "VisualBasic",
   "entryPoints": [

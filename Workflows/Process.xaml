@@ -262,13 +262,109 @@
       <AssemblyReference>NPOI.Core</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Invoke major steps of the business process, which are usually implemented by multiple subworkflows.&#xA;&#xA;If a BusinessRuleException is thrown, the transaction is skipped. &#xA;If another kind of exception occurs, the current transaction can be retried. " DisplayName="Process" sap:VirtualizedContainerService.HintSize="1276,6656" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Invoke major steps of the business process, which are usually implemented by multiple subworkflows.&#xA;&#xA;If a BusinessRuleException is thrown, the transaction is skipped. &#xA;If another kind of exception occurs, the current transaction can be retried. " DisplayName="Process" sap:VirtualizedContainerService.HintSize="1916.6666666666667,8687.333333333334" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="Markets" />
       <Variable x:TypeArguments="sd:DataTable" Name="Categories" />
       <Variable x:TypeArguments="sd:DataTable" Name="Subcategories" />
       <Variable x:TypeArguments="x:String" Name="catTemp" />
       <Variable x:TypeArguments="x:String" Name="subTemp" />
+      <Variable x:TypeArguments="ui:UiElement" Name="outputElement">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:String x:Key="SourceIdRef">NClick_12</x:String>
+            <x:String x:Key="SourcePropertyName">OutUiElement</x:String>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </Variable>
+      <Variable x:TypeArguments="ui:UiElement" Name="outputElement_1">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:String x:Key="SourceIdRef">NClick_13</x:String>
+            <x:String x:Key="SourcePropertyName">OutUiElement</x:String>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </Variable>
+      <Variable x:TypeArguments="ui:UiElement" Name="outputElement_2">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:String x:Key="SourceIdRef">NClick_21</x:String>
+            <x:String x:Key="SourcePropertyName">OutUiElement</x:String>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </Variable>
+      <Variable x:TypeArguments="ui:UiElement" Name="outputElement_3">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:String x:Key="SourceIdRef">NClick_14</x:String>
+            <x:String x:Key="SourcePropertyName">OutUiElement</x:String>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </Variable>
+      <Variable x:TypeArguments="ui:UiElement" Name="outputElement_4">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:String x:Key="SourceIdRef">NClick_4</x:String>
+            <x:String x:Key="SourcePropertyName">OutUiElement</x:String>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </Variable>
+      <Variable x:TypeArguments="ui:UiElement" Name="outputElement_5">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:String x:Key="SourceIdRef">NClick_5</x:String>
+            <x:String x:Key="SourcePropertyName">OutUiElement</x:String>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </Variable>
+      <Variable x:TypeArguments="ui:UiElement" Name="outputElement_6">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:String x:Key="SourceIdRef">NClick_19</x:String>
+            <x:String x:Key="SourcePropertyName">OutUiElement</x:String>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </Variable>
+      <Variable x:TypeArguments="ui:UiElement" Name="outputElement_7">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:String x:Key="SourceIdRef">NClick_20</x:String>
+            <x:String x:Key="SourcePropertyName">OutUiElement</x:String>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </Variable>
+      <Variable x:TypeArguments="ui:UiElement" Name="outputElement_8">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:String x:Key="SourceIdRef">NMouseScroll_1</x:String>
+            <x:String x:Key="SourcePropertyName">OutUiElement</x:String>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </Variable>
+      <Variable x:TypeArguments="ui:UiElement" Name="outputElement_9">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:String x:Key="SourceIdRef">NClick_22</x:String>
+            <x:String x:Key="SourcePropertyName">OutUiElement</x:String>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </Variable>
+      <Variable x:TypeArguments="ui:UiElement" Name="outputElement_10">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:String x:Key="SourceIdRef">NClick_18</x:String>
+            <x:String x:Key="SourcePropertyName">OutUiElement</x:String>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </Variable>
+      <Variable x:TypeArguments="ui:UiElement" Name="outputElement_11">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:String x:Key="SourceIdRef">NClick_15</x:String>
+            <x:String x:Key="SourcePropertyName">OutUiElement</x:String>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </Variable>
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -276,11 +372,28 @@
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log Message Process Start" sap:VirtualizedContainerService.HintSize="722,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Started Process&quot;]" />
-    <ui:BuildDataTable DataTable="[in_Markets_DT]" DisplayName="** TESTING ONLY ** Build Markets Data Table" sap:VirtualizedContainerService.HintSize="722,92" sap2010:WorkflowViewState.IdRef="BuildDataTable_3" TableInfo="&lt;NewDataSet&gt;&#xD;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xD;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xD;&#xA;      &lt;xs:complexType&gt;&#xD;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xD;&#xA;            &lt;xs:complexType&gt;&#xD;&#xA;              &lt;xs:sequence&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Markets&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xD;&#xA;                  &lt;xs:simpleType&gt;&#xD;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xD;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xD;&#xA;                    &lt;/xs:restriction&gt;&#xD;&#xA;                  &lt;/xs:simpleType&gt;&#xD;&#xA;                &lt;/xs:element&gt;&#xD;&#xA;              &lt;/xs:sequence&gt;&#xD;&#xA;            &lt;/xs:complexType&gt;&#xD;&#xA;          &lt;/xs:element&gt;&#xD;&#xA;        &lt;/xs:choice&gt;&#xD;&#xA;      &lt;/xs:complexType&gt;&#xD;&#xA;    &lt;/xs:element&gt;&#xD;&#xA;  &lt;/xs:schema&gt;&#xD;&#xA;  &lt;TableName&gt;&#xD;&#xA;    &lt;Markets&gt;South Korea&lt;/Markets&gt;&#xD;&#xA;  &lt;/TableName&gt;&#xD;&#xA;  &lt;TableName&gt;&#xD;&#xA;    &lt;Markets&gt;Japan&lt;/Markets&gt;&#xD;&#xA;  &lt;/TableName&gt;&#xD;&#xA;  &lt;TableName&gt;&#xD;&#xA;    &lt;Markets&gt;France&lt;/Markets&gt;&#xD;&#xA;  &lt;/TableName&gt;&#xD;&#xA;  &lt;TableName&gt;&#xD;&#xA;    &lt;Markets&gt;United States&lt;/Markets&gt;&#xD;&#xA;  &lt;/TableName&gt;&#xD;&#xA;  &lt;TableName&gt;&#xD;&#xA;    &lt;Markets&gt;United Kingdom&lt;/Markets&gt;&#xD;&#xA;  &lt;/TableName&gt;&#xD;&#xA;&lt;/NewDataSet&gt;" />
-    <ui:BuildDataTable DataTable="[in_Categories_DT]" DisplayName="**TESTING ONLY** Build Categories Data Table" sap:VirtualizedContainerService.HintSize="722,92" sap2010:WorkflowViewState.IdRef="BuildDataTable_2" TableInfo="&lt;NewDataSet&gt;&#xD;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xD;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xD;&#xA;      &lt;xs:complexType&gt;&#xD;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xD;&#xA;            &lt;xs:complexType&gt;&#xD;&#xA;              &lt;xs:sequence&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Categories&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xD;&#xA;                  &lt;xs:simpleType&gt;&#xD;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xD;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xD;&#xA;                    &lt;/xs:restriction&gt;&#xD;&#xA;                  &lt;/xs:simpleType&gt;&#xD;&#xA;                &lt;/xs:element&gt;&#xD;&#xA;              &lt;/xs:sequence&gt;&#xD;&#xA;            &lt;/xs:complexType&gt;&#xD;&#xA;          &lt;/xs:element&gt;&#xD;&#xA;        &lt;/xs:choice&gt;&#xD;&#xA;      &lt;/xs:complexType&gt;&#xD;&#xA;    &lt;/xs:element&gt;&#xD;&#xA;  &lt;/xs:schema&gt;&#xD;&#xA;  &lt;TableName&gt;&#xD;&#xA;    &lt;Categories&gt;Beauty&lt;/Categories&gt;&#xD;&#xA;  &lt;/TableName&gt;&#xD;&#xA;  &lt;TableName&gt;&#xD;&#xA;    &lt;Categories&gt;Personal Care&lt;/Categories&gt;&#xD;&#xA;  &lt;/TableName&gt;&#xD;&#xA;  &lt;TableName&gt;&#xD;&#xA;    &lt;Categories&gt;Wellness&lt;/Categories&gt;&#xD;&#xA;  &lt;/TableName&gt;&#xD;&#xA;&lt;/NewDataSet&gt;" />
-    <ui:BuildDataTable DataTable="[in_Subcategories_DT]" DisplayName="**TESTING ONLY** Build Subcategories Data Table " sap:VirtualizedContainerService.HintSize="722,92" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xD;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xD;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xD;&#xA;      &lt;xs:complexType&gt;&#xD;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xD;&#xA;            &lt;xs:complexType&gt;&#xD;&#xA;              &lt;xs:sequence&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Beauty&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Personal_x0020_Care&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Wellness&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;              &lt;/xs:sequence&gt;&#xD;&#xA;            &lt;/xs:complexType&gt;&#xD;&#xA;          &lt;/xs:element&gt;&#xD;&#xA;        &lt;/xs:choice&gt;&#xD;&#xA;      &lt;/xs:complexType&gt;&#xD;&#xA;    &lt;/xs:element&gt;&#xD;&#xA;  &lt;/xs:schema&gt;&#xD;&#xA;  &lt;TableName&gt;&#xD;&#xA;    &lt;Beauty&gt;Hair&lt;/Beauty&gt;&#xD;&#xA;    &lt;Personal_x0020_Care&gt;Health Care&lt;/Personal_x0020_Care&gt;&#xD;&#xA;    &lt;Wellness&gt;Spiritual Health&lt;/Wellness&gt;&#xD;&#xA;  &lt;/TableName&gt;&#xD;&#xA;  &lt;TableName&gt;&#xD;&#xA;    &lt;Beauty&gt;Skincare&lt;/Beauty&gt;&#xD;&#xA;    &lt;Personal_x0020_Care&gt;Piercings &amp;amp; Tattoos&lt;/Personal_x0020_Care&gt;&#xD;&#xA;    &lt;Wellness&gt;Physical Health&lt;/Wellness&gt;&#xD;&#xA;  &lt;/TableName&gt;&#xD;&#xA;  &lt;TableName&gt;&#xD;&#xA;    &lt;Beauty&gt;Makeup&lt;/Beauty&gt;&#xD;&#xA;    &lt;Personal_x0020_Care&gt;Grooming&lt;/Personal_x0020_Care&gt;&#xD;&#xA;    &lt;Wellness&gt;Mental Health &amp;amp; Mind&lt;/Wellness&gt;&#xD;&#xA;  &lt;/TableName&gt;&#xD;&#xA;  &lt;TableName&gt;&#xD;&#xA;    &lt;Beauty&gt;Nails&lt;/Beauty&gt;&#xD;&#xA;    &lt;Personal_x0020_Care&gt;Bath &amp;amp; Body&lt;/Personal_x0020_Care&gt;&#xD;&#xA;    &lt;Wellness&gt;Sexual Health&lt;/Wellness&gt;&#xD;&#xA;  &lt;/TableName&gt;&#xD;&#xA;  &lt;TableName&gt;&#xD;&#xA;    &lt;Beauty&gt;Fragrance&lt;/Beauty&gt;&#xD;&#xA;    &lt;Personal_x0020_Care&gt;Oral Care&lt;/Personal_x0020_Care&gt;&#xD;&#xA;    &lt;Wellness&gt;Supplements &amp;amp; Ingestibles&lt;/Wellness&gt;&#xD;&#xA;  &lt;/TableName&gt;&#xD;&#xA;  &lt;TableName&gt;&#xD;&#xA;    &lt;Personal_x0020_Care&gt;Vision Care&lt;/Personal_x0020_Care&gt;&#xD;&#xA;  &lt;/TableName&gt;&#xD;&#xA;  &lt;TableName&gt;&#xD;&#xA;    &lt;Personal_x0020_Care&gt;Feminine Care&lt;/Personal_x0020_Care&gt;&#xD;&#xA;  &lt;/TableName&gt;&#xD;&#xA;  &lt;TableName&gt;&#xD;&#xA;    &lt;Personal_x0020_Care&gt;Masculine Care&lt;/Personal_x0020_Care&gt;&#xD;&#xA;  &lt;/TableName&gt;&#xD;&#xA;&lt;/NewDataSet&gt;" />
-    <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="722,210" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+    <ui:LogMessage DisplayName="Log Message Process Start" sap:VirtualizedContainerService.HintSize="722,176.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Started Process&quot;]" />
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="722,57.333333333333336" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+      <ui:CommentOut.Body>
+        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,326.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_40">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:BuildDataTable DataTable="[in_Subcategories_DT]" DisplayName="**TESTING ONLY** Build Subcategories Data Table " sap:VirtualizedContainerService.HintSize="382,92" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xD;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xD;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xD;&#xA;      &lt;xs:complexType&gt;&#xD;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xD;&#xA;            &lt;xs:complexType&gt;&#xD;&#xA;              &lt;xs:sequence&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Homecare&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Personal_x0020_Care&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Wellness&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;              &lt;/xs:sequence&gt;&#xD;&#xA;            &lt;/xs:complexType&gt;&#xD;&#xA;          &lt;/xs:element&gt;&#xD;&#xA;        &lt;/xs:choice&gt;&#xD;&#xA;      &lt;/xs:complexType&gt;&#xD;&#xA;    &lt;/xs:element&gt;&#xD;&#xA;  &lt;/xs:schema&gt;&#xD;&#xA;  &lt;TableName&gt;&#xD;&#xA;    &lt;Homecare&gt;General Cleaning&lt;/Homecare&gt;&#xD;&#xA;    &lt;Personal_x0020_Care&gt;Health Care&lt;/Personal_x0020_Care&gt;&#xD;&#xA;    &lt;Wellness&gt;Spiritual Health&lt;/Wellness&gt;&#xD;&#xA;  &lt;/TableName&gt;&#xD;&#xA;  &lt;TableName&gt;&#xD;&#xA;    &lt;Homecare&gt;Laundry&lt;/Homecare&gt;&#xD;&#xA;    &lt;Personal_x0020_Care&gt;Piercings &amp;amp; Tattoos&lt;/Personal_x0020_Care&gt;&#xD;&#xA;    &lt;Wellness&gt;Physical Health&lt;/Wellness&gt;&#xD;&#xA;  &lt;/TableName&gt;&#xD;&#xA;  &lt;TableName&gt;&#xD;&#xA;    &lt;Homecare&gt;Air Freshener Products&lt;/Homecare&gt;&#xD;&#xA;    &lt;Personal_x0020_Care&gt;Grooming&lt;/Personal_x0020_Care&gt;&#xD;&#xA;    &lt;Wellness&gt;Mental Health &amp;amp; Mind&lt;/Wellness&gt;&#xD;&#xA;  &lt;/TableName&gt;&#xD;&#xA;  &lt;TableName&gt;&#xD;&#xA;    &lt;Homecare&gt;Paper &amp;amp; Plastic&lt;/Homecare&gt;&#xD;&#xA;    &lt;Personal_x0020_Care&gt;Bath &amp;amp; Body&lt;/Personal_x0020_Care&gt;&#xD;&#xA;    &lt;Wellness&gt;Sexual Health&lt;/Wellness&gt;&#xD;&#xA;  &lt;/TableName&gt;&#xD;&#xA;  &lt;TableName&gt;&#xD;&#xA;    &lt;Homecare&gt;Pest Control&lt;/Homecare&gt;&#xD;&#xA;    &lt;Personal_x0020_Care&gt;Oral Care&lt;/Personal_x0020_Care&gt;&#xD;&#xA;    &lt;Wellness&gt;Supplements &amp;amp; Ingestibles&lt;/Wellness&gt;&#xD;&#xA;  &lt;/TableName&gt;&#xD;&#xA;  &lt;TableName&gt;&#xD;&#xA;    &lt;Homecare&gt;Dishwashing&lt;/Homecare&gt;&#xD;&#xA;    &lt;Personal_x0020_Care&gt;Vision Care&lt;/Personal_x0020_Care&gt;&#xD;&#xA;  &lt;/TableName&gt;&#xD;&#xA;  &lt;TableName&gt;&#xD;&#xA;    &lt;Personal_x0020_Care&gt;Feminine Care&lt;/Personal_x0020_Care&gt;&#xD;&#xA;  &lt;/TableName&gt;&#xD;&#xA;  &lt;TableName&gt;&#xD;&#xA;    &lt;Personal_x0020_Care&gt;Masculine Care&lt;/Personal_x0020_Care&gt;&#xD;&#xA;  &lt;/TableName&gt;&#xD;&#xA;&lt;/NewDataSet&gt;" />
+          <ui:BuildDataTable DataTable="[in_Markets_DT]" DisplayName="** TESTING ONLY ** Build Markets Data Table" sap:VirtualizedContainerService.HintSize="382,92" sap2010:WorkflowViewState.IdRef="BuildDataTable_3" TableInfo="&lt;NewDataSet&gt;&#xD;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xD;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xD;&#xA;      &lt;xs:complexType&gt;&#xD;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xD;&#xA;            &lt;xs:complexType&gt;&#xD;&#xA;              &lt;xs:sequence&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Markets&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xD;&#xA;                  &lt;xs:simpleType&gt;&#xD;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xD;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xD;&#xA;                    &lt;/xs:restriction&gt;&#xD;&#xA;                  &lt;/xs:simpleType&gt;&#xD;&#xA;                &lt;/xs:element&gt;&#xD;&#xA;              &lt;/xs:sequence&gt;&#xD;&#xA;            &lt;/xs:complexType&gt;&#xD;&#xA;          &lt;/xs:element&gt;&#xD;&#xA;        &lt;/xs:choice&gt;&#xD;&#xA;      &lt;/xs:complexType&gt;&#xD;&#xA;    &lt;/xs:element&gt;&#xD;&#xA;  &lt;/xs:schema&gt;&#xD;&#xA;  &lt;TableName&gt;&#xD;&#xA;    &lt;Markets&gt;United States&lt;/Markets&gt;&#xD;&#xA;  &lt;/TableName&gt;&#xD;&#xA;  &lt;TableName&gt;&#xD;&#xA;    &lt;Markets&gt;United Kingdom&lt;/Markets&gt;&#xD;&#xA;  &lt;/TableName&gt;&#xD;&#xA;&lt;/NewDataSet&gt;" />
+          <ui:BuildDataTable DataTable="[in_Categories_DT]" DisplayName="**TESTING ONLY** Build Categories Data Table" sap:VirtualizedContainerService.HintSize="382,82.66666666666667" sap2010:WorkflowViewState.IdRef="BuildDataTable_2" TableInfo="&lt;NewDataSet&gt;&#xD;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xD;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xD;&#xA;      &lt;xs:complexType&gt;&#xD;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xD;&#xA;            &lt;xs:complexType&gt;&#xD;&#xA;              &lt;xs:sequence&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Categories&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xD;&#xA;                  &lt;xs:simpleType&gt;&#xD;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xD;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xD;&#xA;                    &lt;/xs:restriction&gt;&#xD;&#xA;                  &lt;/xs:simpleType&gt;&#xD;&#xA;                &lt;/xs:element&gt;&#xD;&#xA;              &lt;/xs:sequence&gt;&#xD;&#xA;            &lt;/xs:complexType&gt;&#xD;&#xA;          &lt;/xs:element&gt;&#xD;&#xA;        &lt;/xs:choice&gt;&#xD;&#xA;      &lt;/xs:complexType&gt;&#xD;&#xA;    &lt;/xs:element&gt;&#xD;&#xA;  &lt;/xs:schema&gt;&#xD;&#xA;  &lt;TableName&gt;&#xD;&#xA;    &lt;Categories&gt;Homecare&lt;/Categories&gt;&#xD;&#xA;  &lt;/TableName&gt;&#xD;&#xA;&lt;/NewDataSet&gt;" />
+        </Sequence>
+      </ui:CommentOut.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:CommentOut>
+    <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="722,210.66666666666666" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
       <ui:MultipleAssign.AssignOperations>
         <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
           <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
@@ -310,35 +423,39 @@
         </scg:List>
       </ui:MultipleAssign.AssignOperations>
     </ui:MultipleAssign>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Chrome SPATE - DATA SCIENCE TO PREDICT THE NE" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="722,5902" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="75d019af-f337-439b-a34f-650b9a8160e2" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Chrome SPATE - DATA SCIENCE TO PREDICT THE NE" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="722,8141.333333333333" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="75d019af-f337-439b-a34f-650b9a8160e2" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="688,5662" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="688,7899.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[Markets]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="654,5600" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[Markets]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="654,7836.666666666667" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
               <ui:ForEachRow.Body>
                 <ActivityAction x:TypeArguments="sd:DataRow">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentMarket" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="620,5411" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="620,7643.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_17">
                     <Sequence.Variables>
-                      <Variable x:TypeArguments="x:Int32" Name="catIndex" />
+                      <Variable x:TypeArguments="x:Int32" Name="catIndex">
+                        <Variable.Default>
+                          <Literal x:TypeArguments="x:Int32" />
+                        </Variable.Default>
+                      </Variable>
                     </Sequence.Variables>
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click Markets Dropdown" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="586,225" sap2010:WorkflowViewState.IdRef="NClick_12" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="75d019af-f337-439b-a34f-650b9a8160e2" Version="V5">
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click Markets Dropdown" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="586,229.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_12" KeyModifiers="None" MouseButton="Left" OutUiElement="[outputElement]" ScopeIdentifier="75d019af-f337-439b-a34f-650b9a8160e2" Version="V5">
                       <uix:NClick.Target>
                         <uix:TargetAnchorable BrowserURL="app.spate.nyc/explore/trends" CVScreenId="538f1829-ce61-48cc-9351-3e449c8c9824" ContentHash="X_r6dCx0uUuXyBc1bwRWCw" CvElementArea="1874, 175, 30, 28" CvType="ArrowButton" DesignTimeRectangle="1878, 177, 24, 24" ElementType="Icon" FullSelectorArgument="&lt;webctrl parentid='headlessui-listbox-button-:rc:' tag='svg' /&gt;" Guid="7f3c62e6-1307-4998-9c2e-ce37a5b9d29d" InformativeScreenshot="18bdbf2b72da26ff09098f7df6c3f300.png" Reference="U0X3tk9DuUWal-aSohXRCQ/NmTZ9OO82E6aPCN4pq9gxA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SPATE - DATA SCIENCE TO PREDICT THE NEXT BIG TREND.' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None">
                           <uix:TargetAnchorable.Anchors>
@@ -370,7 +487,8 @@
                         </uix:VerifyExecutionOptions>
                       </uix:NClick.VerifyOptions>
                     </uix:NClick>
-                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click Market from CurrentMarket" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="586,189" sap2010:WorkflowViewState.IdRef="NClick_13" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="75d019af-f337-439b-a34f-650b9a8160e2" Version="V5">
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="586,179.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Trace" Message="[outputElement.Selector]" />
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click Market from CurrentMarket" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="586,191.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_13" KeyModifiers="None" MouseButton="Left" OutUiElement="[outputElement_1]" ScopeIdentifier="75d019af-f337-439b-a34f-650b9a8160e2" Version="V5">
                       <uix:NClick.Target>
                         <uix:TargetAnchorable BrowserURL="app.spate.nyc/explore/trends" CVScreenId="441b9222-69d9-411f-9a40-5f51de541035" ContentHash="n1ppQszAjkSQVtRCeMGNdg" CvTextArea="1689, 305, 145, 21" CvTextArgument="[CurrentMarket(0).ToString]" CvType="Text" DesignTimeRectangle="1691, 303, 144, 26" ElementType="Text" FuzzySelectorArgument="[&quot;&lt;webctrl parentid='headlessui-listbox-option-:rn:' tag='SPAN' type='' class='IconButton__TextWrapper-sc-1qjq4-0 jBUKLo' aaname='&quot;+CurrentMarket(0).ToString+&quot;' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='&quot;+CurrentMarket(0).ToString+&quot;' /&gt;&quot;]" Guid="ea1d27c5-0334-4491-992a-8ae6ee7ec56f" InformativeScreenshot="2c44c963d5f6809a28e7c48141d7bd26.png" Reference="U0X3tk9DuUWal-aSohXRCQ/8THgrlRE2UuzoPnTzbow8Q" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SPATE - DATA SCIENCE TO PREDICT THE NEXT BIG TREND.' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="None">
                           <uix:TargetAnchorable.Anchors>
@@ -381,7 +499,8 @@
                         </uix:TargetAnchorable>
                       </uix:NClick.Target>
                     </uix:NClick>
-                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Home'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="586,225" sap2010:WorkflowViewState.IdRef="NClick_21" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="75d019af-f337-439b-a34f-650b9a8160e2" Version="V5">
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="586,179.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Trace" Message="[outputElement_1.Selector]" />
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Home'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="586,229.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_21" KeyModifiers="None" MouseButton="Left" OutUiElement="[outputElement_2]" ScopeIdentifier="75d019af-f337-439b-a34f-650b9a8160e2" Version="V5">
                       <uix:NClick.Target>
                         <uix:TargetAnchorable BrowserURL="app.spate.nyc/explore/trends/6d408533-6979-43aa-80af-4d88bf0be860" CVScreenId="68fd5182-3df4-4e59-a36c-8c5ff53f53c8" ContentHash="Zd2xsiwPnkuwWQHG8eDCig" CvTextArea="84, 273, 76, 22" CvTextArgument="Home" CvType="Text" DesignTimeRectangle="35, 261, 319, 47" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl parentid='sidenav' tag='A' /&gt;" Guid="aae6dcff-74b5-449d-aa98-aefa245569d0" InformativeScreenshot="84e1e9daf8faa97d228485e0d93b74e7.png" Reference="U0X3tk9DuUWal-aSohXRCQ/VubN9IzAVEq45p_ZCUWYfg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SPATE - DATA SCIENCE TO PREDICT THE NEXT BIG TREND.' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
                       </uix:NClick.Target>
@@ -396,7 +515,8 @@
                         </uix:VerifyExecutionOptions>
                       </uix:NClick.VerifyOptions>
                     </uix:NClick>
-                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'by Category(1)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="586,225" sap2010:WorkflowViewState.IdRef="NClick_14" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="75d019af-f337-439b-a34f-650b9a8160e2" Version="V5">
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="586,179.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Trace" Message="[outputElement_2.Selector]" />
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'by Category(1)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="586,229.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_14" KeyModifiers="None" MouseButton="Left" OutUiElement="[outputElement_3]" ScopeIdentifier="75d019af-f337-439b-a34f-650b9a8160e2" Version="V5">
                       <uix:NClick.Target>
                         <uix:TargetAnchorable BrowserURL="app.spate.nyc" CVScreenId="c6b251c2-668f-4819-9699-d86cc861fa85" ContentHash="S9woqzJ3V0GdHtwA_wVhRw" CvTextArea="86, 393, 147, 27" CvTextArgument="By Category" CvType="Text" DesignTimeRectangle="86, 390, 217, 29" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='headlessui-disclosure-panel-:r3:' tag='SPAN' /&gt;" Guid="9d0f2112-9599-4334-96fe-d7b9cb1f02c0" InformativeScreenshot="e80e66715bcd618aca3799c35d30872d.png" Reference="U0X3tk9DuUWal-aSohXRCQ/U5mh4XZBwki7h230QX059Q" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SPATE - DATA SCIENCE TO PREDICT THE NEXT BIG TREND.' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
                           <uix:TargetAnchorable.Anchors>
@@ -417,7 +537,8 @@
                         </uix:VerifyExecutionOptions>
                       </uix:NClick.VerifyOptions>
                     </uix:NClick>
-                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '1. Choose Category'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="586,225" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="75d019af-f337-439b-a34f-650b9a8160e2" Version="V5">
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="586,179.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Trace" Message="[outputElement_3.Selector]" />
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '1. Choose Category'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="586,229.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" OutUiElement="[outputElement_4]" ScopeIdentifier="75d019af-f337-439b-a34f-650b9a8160e2" Version="V5">
                       <uix:NClick.Target>
                         <uix:TargetAnchorable BrowserURL="app.spate.nyc/explore/trends" CVScreenId="14c392e9-8de5-445c-924f-a5eec77e7f2b" ContentHash="UwhXG8evBE2rdIuKcZvT3w" CvElementArea="423, 361, 328, 64" CvType="InputBox" DesignTimeRectangle="425, 363, 326, 60" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='headlessui-listbox-button-:rn:' tag='BUTTON' type='button' class='fragments__UnstyledButton-sc-jp1ftw-0 jVbzSW Breadcrumbs__Breadcrumb-sc-yciviv-0 Breadcrumbs__UnselectedBreadcrumbWrapper-sc-yciviv-2 gVAyCa bexUvz' aaname='1. Choose Category' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='1. Choose Category' /&gt;" Guid="8a7bfb1a-1fb0-4d1f-8bad-ce1741c20f9c" InformativeScreenshot="6663b695277643f79a10776c73f164ad.png" Reference="U0X3tk9DuUWal-aSohXRCQ/ZrsWsqEmkkOVKH38JgWyxg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SPATE - DATA SCIENCE TO PREDICT THE NEXT BIG TREND.' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="None">
                           <uix:TargetAnchorable.Anchors>
@@ -444,16 +565,17 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </uix:NClick>
-                    <If Condition="[CurrentMarket(0).ToString.Trim.Contains(&quot;France&quot;) OR CurrentMarket(0).ToString.Trim.Contains(&quot;South Korea&quot;) OR CurrentMarket(0).ToString.Trim.Contains(&quot;Japan&quot;)]" sap:VirtualizedContainerService.HintSize="586,610" sap2010:WorkflowViewState.IdRef="If_4">
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="586,179.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Trace" Message="[outputElement_4.Selector]" />
+                    <If Condition="[CurrentMarket(0).ToString.Trim.Contains(&quot;France&quot;) OR CurrentMarket(0).ToString.Trim.Contains(&quot;South Korea&quot;) OR CurrentMarket(0).ToString.Trim.Contains(&quot;Japan&quot;)]" sap:VirtualizedContainerService.HintSize="586,617.3333333333334" sap2010:WorkflowViewState.IdRef="If_4">
                       <If.Then>
-                        <Sequence sap2010:Annotation.AnnotationText="" DisplayName="Then" sap:VirtualizedContainerService.HintSize="468,275" sap2010:WorkflowViewState.IdRef="Sequence_30">
+                        <Sequence sap2010:Annotation.AnnotationText="" DisplayName="Then" sap:VirtualizedContainerService.HintSize="468,277.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_30">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <ui:FilterDataTable DataTable="[Categories]" DisplayName="Filter Data Table" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="382,184" sap2010:WorkflowViewState.IdRef="FilterDataTable_1" OutputDataTable="[Categories]" SelectColumnsMode="Remove">
+                          <ui:FilterDataTable DataTable="[Categories]" DisplayName="Filter Data Table" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="382,186.66666666666666" sap2010:WorkflowViewState.IdRef="FilterDataTable_1" OutputDataTable="[Categories]" SelectColumnsMode="Remove">
                             <ui:FilterDataTable.Filters>
                               <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
                                 <ui:FilterOperationArgument BooleanOperator="And" Operator="CONTAINS">
@@ -475,13 +597,13 @@
                         </Sequence>
                       </If.Then>
                       <If.Else>
-                        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="468,165" sap2010:WorkflowViewState.IdRef="Sequence_31">
+                        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="468,168" sap2010:WorkflowViewState.IdRef="Sequence_31">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <Assign sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_5">
+                          <Assign sap:VirtualizedContainerService.HintSize="434,108" sap2010:WorkflowViewState.IdRef="Assign_5">
                             <Assign.To>
                               <OutArgument x:TypeArguments="sd:DataTable">[Categories]</OutArgument>
                             </Assign.To>
@@ -492,16 +614,19 @@
                         </Sequence>
                       </If.Else>
                     </If>
-                    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="[catIndex]" DataTable="[Categories]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="586,3652" sap2010:WorkflowViewState.IdRef="ForEachRow_3">
+                    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="[catIndex]" DataTable="[Categories]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="586,4960.666666666667" sap2010:WorkflowViewState.IdRef="ForEachRow_3">
                       <ui:ForEachRow.Body>
                         <ActivityAction x:TypeArguments="sd:DataRow">
                           <ActivityAction.Argument>
                             <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentCategory" />
                           </ActivityAction.Argument>
-                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="552,3465" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="552,4770" sap2010:WorkflowViewState.IdRef="Sequence_20">
                             <Sequence.Variables>
-                              <Variable x:TypeArguments="x:String" Name="variable1" />
-                              <Variable x:TypeArguments="x:Int32" Name="subCatIndex" />
+                              <Variable x:TypeArguments="x:Int32" Name="subCatIndex">
+                                <Variable.Default>
+                                  <Literal x:TypeArguments="x:Int32" />
+                                </Variable.Default>
+                              </Variable>
                               <Variable x:TypeArguments="sd:DataTable" Name="FilteredSubcategories" />
                             </Sequence.Variables>
                             <sap:WorkflowViewStateService.ViewState>
@@ -509,7 +634,7 @@
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <Assign sap:VirtualizedContainerService.HintSize="518,114" sap2010:WorkflowViewState.IdRef="Assign_3">
+                            <Assign sap:VirtualizedContainerService.HintSize="518,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_3">
                               <Assign.To>
                                 <OutArgument x:TypeArguments="x:String">[catTemp]</OutArgument>
                               </Assign.To>
@@ -523,7 +648,7 @@
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                             </Assign>
-                            <ui:FilterDataTable DataTable="[Subcategories]" DisplayName="Filter Data Table" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="518,193" sap2010:WorkflowViewState.IdRef="FilterDataTable_2" OutputDataTable="[FilteredSubcategories]" SelectColumnsMode="Remove">
+                            <ui:FilterDataTable DataTable="[Subcategories]" DisplayName="Filter Data Table" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="518,196" sap2010:WorkflowViewState.IdRef="FilterDataTable_2" OutputDataTable="[FilteredSubcategories]" SelectColumnsMode="Remove">
                               <ui:FilterDataTable.Filters>
                                 <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
                                   <ui:FilterOperationArgument Operand="{x:Null}" BooleanOperator="And" Operator="NOTEMPTY">
@@ -539,7 +664,7 @@
                                 </scg:List>
                               </ui:FilterDataTable.SelectColumns>
                             </ui:FilterDataTable>
-                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click Category from CurrentCategory" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="518,225" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="75d019af-f337-439b-a34f-650b9a8160e2" Version="V5">
+                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click Category from CurrentCategory" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="518,229.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" OutUiElement="[outputElement_5]" ScopeIdentifier="75d019af-f337-439b-a34f-650b9a8160e2" Version="V5">
                               <uix:NClick.Target>
                                 <uix:TargetAnchorable BrowserURL="app.spate.nyc/explore/trends" CVScreenId="e6e5463d-20f3-4b8e-a129-e44d0e76268c" ContentHash="EAdo6-1bFkiTkwpfvWONfQ" CvElementArea="1001, 397, 34, 39" CvTextArea="581, 405, 88, 27" CvTextArgument="[catTemp]" CvType="ArrowButton" DesignTimeRectangle="558, 376, 502, 80" FullSelectorArgument="[&quot;&lt;webctrl parentname='&quot;+catTemp.ToLower+&quot;' tag='SPAN' /&gt;&quot;]" Guid="9d262302-279e-4677-aa13-bc92bc2fadc7" InformativeScreenshot="4fc8541b561742426cc31d4053d5b67f.png" Reference="U0X3tk9DuUWal-aSohXRCQ/9ZNpiXXD50y1mWUODFjLXg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SPATE - DATA SCIENCE TO PREDICT THE NEXT BIG TREND.' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None">
                                   <uix:TargetAnchorable.Anchors>
@@ -566,15 +691,16 @@
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                             </uix:NClick>
-                            <If Condition="[catTemp = &quot;Homecare&quot;]" sap:VirtualizedContainerService.HintSize="518,722" sap2010:WorkflowViewState.IdRef="If_3">
+                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="518,179.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Trace" Message="[outputElement_5.Selector]" />
+                            <If Condition="[catTemp = &quot;Homecare&quot;]" sap:VirtualizedContainerService.HintSize="518,1090.6666666666667" sap2010:WorkflowViewState.IdRef="If_3">
                               <If.Then>
-                                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,276" sap2010:WorkflowViewState.IdRef="Sequence_28">
+                                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,459.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_28">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
-                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '2. Choose Category'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="382,216" sap2010:WorkflowViewState.IdRef="NClick_19" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="75d019af-f337-439b-a34f-650b9a8160e2" Version="V5">
+                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '2. Choose Category'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="382,229.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_19" KeyModifiers="None" MouseButton="Left" OutUiElement="[outputElement_6]" ScopeIdentifier="75d019af-f337-439b-a34f-650b9a8160e2" Version="V5">
                                     <uix:NClick.Target>
                                       <uix:TargetAnchorable BrowserURL="app.spate.nyc/explore/trends/231bc1c7-f40b-4732-9605-cfb68f950ad0" CVScreenId="0d56095f-a34b-4820-a00c-e53e944c773b" ContentHash="AxkAI82fa0OH5UkSz9MW1A" CvElementArea="926, 282, 452, 64" CvType="InputBox" DesignTimeRectangle="1321, 299, 32, 32" ElementType="Icon" FuzzySelectorArgument="&lt;webctrl type='' tag='svg' class='Breadcrumbs__UnselectedBreadcrumbRightIcon-sc-yciviv-3 gbrYTY' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="f6398264-c839-4c2c-8c72-131b89770f15" InformativeScreenshot="696638d3870a4f751b3fbdb7ed175fd9.png" Reference="U0X3tk9DuUWal-aSohXRCQ/mSPYG7VeIEGEcX2Lx_82lA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SPATE - DATA SCIENCE TO PREDICT THE NEXT BIG TREND.' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="None">
                                         <uix:TargetAnchorable.Anchors>
@@ -585,10 +711,19 @@
                                       </uix:TargetAnchorable>
                                     </uix:NClick.Target>
                                     <uix:NClick.VerifyOptions>
-                                      <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                      <uix:VerifyExecutionOptions DisplayName="Subcategories Popup Menu" Mode="Appears">
                                         <uix:VerifyExecutionOptions.Retry>
                                           <InArgument x:TypeArguments="x:Boolean" />
                                         </uix:VerifyExecutionOptions.Retry>
+                                        <uix:VerifyExecutionOptions.Target>
+                                          <uix:TargetAnchorable BrowserURL="app.spate.nyc/explore/trends/231bc1c7-f40b-4732-9605-cfb68f950ad0" CVScreenId="ed950db9-7b75-4406-bca8-6640dac4494a" ContentHash="x5UyeUTEV0iUWPiZb5fWVg" CvElementArea="958, 425, 866, 58" CvType="InputBox" DesignTimeRectangle="961, 426, 861, 55" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='search' class='GraphButton__FilterSearch-sc-1k3ylfi-17 dEgfOp' placeholder='Type here a brand, industry or ingredient' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="ab2dc435-fd50-43a6-903d-ae1663dd116c" InformativeScreenshot="b7abe29c899f7cc2cf8c5fcdadb835ed.png" Reference="U0X3tk9DuUWal-aSohXRCQ/N5Nmq45-cEG1UT_cq6XJ4Q" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SPATE - DATA SCIENCE TO PREDICT THE NEXT BIG TREND.' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                                            <uix:TargetAnchorable.Anchors>
+                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                <uix:Target CVScreenId="ed950db9-7b75-4406-bca8-6640dac4494a" CvElementArea="958, 425, 866, 58" CvTextArea="959, 378, 408, 30" CvTextArgument="Subcategories For Homecare" CvType="InputBox" DesignTimeRectangle="931, 351, 921, 155" ElementType="InputBox" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' tag='DIV' innertext='Subcategories for homecare' /&gt;" Guid="ea9e2dd4-ed73-4ecd-ac7b-7e0f1857b2b5" SearchSteps="Selector, CV" />
+                                              </scg:List>
+                                            </uix:TargetAnchorable.Anchors>
+                                          </uix:TargetAnchorable>
+                                        </uix:VerifyExecutionOptions.Target>
                                         <uix:VerifyExecutionOptions.Timeout>
                                           <InArgument x:TypeArguments="x:Double" />
                                         </uix:VerifyExecutionOptions.Timeout>
@@ -601,16 +736,17 @@
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
                                   </uix:NClick>
+                                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="382,170" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Trace" Message="[outputElement_6.Selector]" />
                                 </Sequence>
                               </If.Then>
                               <If.Else>
-                                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,276" sap2010:WorkflowViewState.IdRef="Sequence_29">
+                                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,459.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_29">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
-                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '2. Choose Category'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="382,216" sap2010:WorkflowViewState.IdRef="NClick_20" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="75d019af-f337-439b-a34f-650b9a8160e2" Version="V5">
+                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '2. Choose Category'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="382,229.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_20" KeyModifiers="None" MouseButton="Left" OutUiElement="[outputElement_7]" ScopeIdentifier="75d019af-f337-439b-a34f-650b9a8160e2" Version="V5">
                                     <uix:NClick.Target>
                                       <uix:TargetAnchorable BrowserURL="app.spate.nyc/explore/trends/6d408533-6979-43aa-80af-4d88bf0be860" CVScreenId="7ccaf856-19e6-4d01-8a20-715e36d124d1" ContentHash="ZZIH5F9VQESdgRFmyANxDw" CvElementArea="802, 283, 324, 64" CvType="InputBox" DesignTimeRectangle="805, 285, 320, 60" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl parentid='cat-two-select' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' tag='BUTTON' type='button' aaname='2. Choose Category' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' innertext='2. Choose Category' check:innerText='2. Choose Category' /&gt;" FuzzyAccuracy="1" Guid="e4a89efc-1eb7-408a-b711-cc8189f00d8b" InformativeScreenshot="e3824c11079f41053179cb3aa018e6d8.png" Reference="U0X3tk9DuUWal-aSohXRCQ/G72P-i91MEaPcW7_OQs98g" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SPATE - DATA SCIENCE TO PREDICT THE NEXT BIG TREND.' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
                                         <uix:TargetAnchorable.Anchors>
@@ -631,22 +767,23 @@
                                       </uix:VerifyExecutionOptions>
                                     </uix:NClick.VerifyOptions>
                                   </uix:NClick>
+                                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="382,170" sap2010:WorkflowViewState.IdRef="LogMessage_9" Level="Trace" Message="[outputElement_7.Selector]" />
                                 </Sequence>
                               </If.Else>
                             </If>
-                            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="[subCatIndex]" DataTable="[FilteredSubcategories]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="518,1689" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+                            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="[subCatIndex]" DataTable="[FilteredSubcategories]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="518,2250" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
                               <ui:ForEachRow.Body>
                                 <ActivityAction x:TypeArguments="sd:DataRow">
                                   <ActivityAction.Argument>
                                     <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentSubcategory" />
                                   </ActivityAction.Argument>
-                                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="484,1493" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="484,2050" sap2010:WorkflowViewState.IdRef="Sequence_19">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
-                                    <Assign sap:VirtualizedContainerService.HintSize="450,114" sap2010:WorkflowViewState.IdRef="Assign_4">
+                                    <Assign sap:VirtualizedContainerService.HintSize="450,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_4">
                                       <Assign.To>
                                         <OutArgument x:TypeArguments="x:String">[subTemp]</OutArgument>
                                       </Assign.To>
@@ -660,16 +797,16 @@
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
                                     </Assign>
-                                    <If Condition="[Not String.IsNullOrEmpty(subTemp)]" sap:VirtualizedContainerService.HintSize="450,893" sap2010:WorkflowViewState.IdRef="If_2">
+                                    <If Condition="[Not String.IsNullOrEmpty(subTemp)]" sap:VirtualizedContainerService.HintSize="450,1263.3333333333333" sap2010:WorkflowViewState.IdRef="If_2">
                                       <If.Then>
-                                        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,698" sap2010:WorkflowViewState.IdRef="Sequence_25">
+                                        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,1066" sap2010:WorkflowViewState.IdRef="Sequence_25">
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                               <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                             </scg:Dictionary>
                                           </sap:WorkflowViewStateService.ViewState>
-                                          <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Down" DisplayName="Mouse Scroll" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="382,245" sap2010:WorkflowViewState.IdRef="NMouseScroll_1" InteractionMode="SameAsCard" MovementUnits="10" ScopeIdentifier="75d019af-f337-439b-a34f-650b9a8160e2" Version="V5">
+                                          <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Down" DisplayName="Mouse Scroll" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="382,250" sap2010:WorkflowViewState.IdRef="NMouseScroll_1" InteractionMode="SameAsCard" MovementUnits="10" OutUiElement="[outputElement_8]" ScopeIdentifier="75d019af-f337-439b-a34f-650b9a8160e2" Version="V5">
                                             <uix:NMouseScroll.SearchedElement>
                                               <uix:SearchedElement>
                                                 <uix:SearchedElement.OutUiElement>
@@ -684,7 +821,8 @@
                                               </uix:SearchedElement>
                                             </uix:NMouseScroll.SearchedElement>
                                           </uix:NMouseScroll>
-                                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click Subcategory from CurrentSubcategory" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="382,225" sap2010:WorkflowViewState.IdRef="NClick_22" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="75d019af-f337-439b-a34f-650b9a8160e2" Version="V5">
+                                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="382,179.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_10" Level="Trace" Message="[outputElement_8.Selector]" />
+                                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click Subcategory from CurrentSubcategory" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="382,229.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_22" KeyModifiers="None" MouseButton="Left" OutUiElement="[outputElement_9]" ScopeIdentifier="75d019af-f337-439b-a34f-650b9a8160e2" Version="V5">
                                             <uix:NClick.Target>
                                               <uix:TargetAnchorable BrowserURL="app.spate.nyc/explore/trends/84ba06f7-7d24-404d-8985-6cd72375d9fe" CVScreenId="9c1afce8-43a4-4d2c-adb1-6cc1d03f0013" ContentHash="ETnD7V04nUKrFbpY-UrZjg" CvTextArea="1002, 405, 147, 22" CvTextArgument="[subTemp]" CvType="Text" DesignTimeRectangle="1004, 402, 145, 29" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="[&quot;&lt;webctrl aaname='&quot; + System.Security.SecurityElement.Escape(subTemp.ToLower) + &quot;' parentname='&quot; + System.Security.SecurityElement.Escape(subTemp.ToLower) + &quot;' tag='SPAN' /&gt;&quot;]" Guid="e205ceec-e645-4987-bb83-7c78dd1f8796" InformativeScreenshot="d0628586cb77fc418d4ccf4fb10372e5.png" Reference="U0X3tk9DuUWal-aSohXRCQ/PdJ23A7ec02ed4LmOtFjEg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SPATE - DATA SCIENCE TO PREDICT THE NEXT BIG TREND.' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
                                             </uix:NClick.Target>
@@ -708,6 +846,7 @@
                                               </scg:Dictionary>
                                             </sap:WorkflowViewStateService.ViewState>
                                           </uix:NClick>
+                                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="382,179.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_11" Level="Trace" Message="[outputElement_9.Selector]" />
                                           <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="SpateRisingStarExport - Invoke Workflow File (SpateRisingStarExport.xaml)" sap:VirtualizedContainerService.HintSize="382,168" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Workflows\SpateRisingStarExport.xaml">
                                             <ui:InvokeWorkflowFile.Arguments>
                                               <InArgument x:TypeArguments="x:String" x:Key="in_CurrentMarket">[CurrentMarket(0).ToString]</InArgument>
@@ -724,7 +863,7 @@
                                         </Sequence>
                                       </If.Then>
                                       <If.Else>
-                                        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,25" sap2010:WorkflowViewState.IdRef="Sequence_26">
+                                        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,25.333333333333332" sap2010:WorkflowViewState.IdRef="Sequence_26">
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -734,15 +873,15 @@
                                         </Sequence>
                                       </If.Else>
                                     </If>
-                                    <If Condition="[subCatIndex &lt; FilteredSubcategories.RowCount - 1]" sap:VirtualizedContainerService.HintSize="450,426" sap2010:WorkflowViewState.IdRef="If_7">
+                                    <If Condition="[subCatIndex &lt; FilteredSubcategories.RowCount - 1]" sap:VirtualizedContainerService.HintSize="450,609.3333333333334" sap2010:WorkflowViewState.IdRef="If_7">
                                       <If.Then>
-                                        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,240" sap2010:WorkflowViewState.IdRef="Sequence_34">
+                                        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,421.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_34">
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                             </scg:Dictionary>
                                           </sap:WorkflowViewStateService.ViewState>
-                                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'BUTTON headlessui-listb…(1)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="382,180" sap2010:WorkflowViewState.IdRef="NClick_18" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="75d019af-f337-439b-a34f-650b9a8160e2" Version="V5">
+                                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'BUTTON headlessui-listb…(1)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="382,191.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_18" KeyModifiers="None" MouseButton="Left" OutUiElement="[outputElement_10]" ScopeIdentifier="75d019af-f337-439b-a34f-650b9a8160e2" Version="V5">
                                             <uix:NClick.Target>
                                               <uix:TargetAnchorable BrowserURL="app.spate.nyc/explore/trends/a1d01543-3b04-426e-a194-29d9bd8f9b0c" CVScreenId="1d8cf7b1-cfdf-4434-b28a-b93ff2eeadad" ContentHash="DR2IY2lTj06Z46wKR4KUow" CvElementArea="801, 283, 327, 66" CvType="InputBox" DesignTimeRectangle="1061, 285, 64, 60" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aria-label='Change Category' parentid='cat-two-select' tag='BUTTON' type='button' class='fragments__UnstyledButton-sc-jp1ftw-0 jVbzSW Breadcrumbs__SelectedBreadcrumbPopOverTriggerWrapper-sc-yciviv-6 iKFlqO' aaname='' matching:aria-label='fuzzy' fuzzylevel:aria-label='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="2cd35654-fe94-4376-a57a-f44bb3908e68" InformativeScreenshot="6de30351309b9bb474b1ebb7256661de.png" Reference="U0X3tk9DuUWal-aSohXRCQ/WFDVk_uD7UeDgbrxt6GBfA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SPATE - DATA SCIENCE TO PREDICT THE NEXT BIG TREND.' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
                                                 <uix:TargetAnchorable.Anchors>
@@ -759,10 +898,11 @@
                                               </scg:Dictionary>
                                             </sap:WorkflowViewStateService.ViewState>
                                           </uix:NClick>
+                                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="382,170" sap2010:WorkflowViewState.IdRef="LogMessage_12" Level="Trace" Message="[outputElement_10.Selector]" />
                                         </Sequence>
                                       </If.Then>
                                       <If.Else>
-                                        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,25" sap2010:WorkflowViewState.IdRef="Sequence_35">
+                                        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,25.333333333333332" sap2010:WorkflowViewState.IdRef="Sequence_35">
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -782,15 +922,15 @@
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                             </ui:ForEachRow>
-                            <If Condition="[catIndex &lt; Categories.RowCount - 1]" sap:VirtualizedContainerService.HintSize="518,462" sap2010:WorkflowViewState.IdRef="If_8">
+                            <If Condition="[catIndex &lt; Categories.RowCount - 1]" sap:VirtualizedContainerService.HintSize="518,647.3333333333334" sap2010:WorkflowViewState.IdRef="If_8">
                               <If.Then>
-                                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,276" sap2010:WorkflowViewState.IdRef="Sequence_36">
+                                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,459.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_36">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
-                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'BUTTON headlessui-listb…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="382,216" sap2010:WorkflowViewState.IdRef="NClick_15" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="75d019af-f337-439b-a34f-650b9a8160e2" Version="V5">
+                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'BUTTON headlessui-listb…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="382,229.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_15" KeyModifiers="None" MouseButton="Left" OutUiElement="[outputElement_11]" ScopeIdentifier="75d019af-f337-439b-a34f-650b9a8160e2" Version="V5">
                                     <uix:NClick.Target>
                                       <uix:TargetAnchorable BrowserURL="app.spate.nyc/explore/trends/cb1700c7-f195-484f-acd6-3d0d803e0f84" CVScreenId="fc531775-35c7-48a9-9682-e01dfce642d0" ContentHash="PJsXPHECn0Kc9rPjVmjshQ" CvElementArea="420, 282, 329, 68" CvType="InputBox" DesignTimeRectangle="681, 285, 64, 60" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aria-label='Change Category' tag='BUTTON' type='button' class='fragments__UnstyledButton-sc-jp1ftw-0 jVbzSW Breadcrumbs__SelectedBreadcrumbPopOverTriggerWrapper-sc-yciviv-6 iKFlqO' aaname='' matching:aria-label='fuzzy' fuzzylevel:aria-label='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="02b3301d-2bc4-4c54-827f-5e0b906cc921" InformativeScreenshot="b29dff17a91aae5d5b46a8191d90e801.png" Reference="U0X3tk9DuUWal-aSohXRCQ/D9xNiLe5VkaD086xOWWMCw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SPATE - DATA SCIENCE TO PREDICT THE NEXT BIG TREND.' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
                                         <uix:TargetAnchorable.Anchors>
@@ -821,10 +961,11 @@
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
                                   </uix:NClick>
+                                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="382,170" sap2010:WorkflowViewState.IdRef="LogMessage_13" Level="Trace" Message="[outputElement_11.Selector]" />
                                 </Sequence>
                               </If.Then>
                               <If.Else>
-                                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,25" sap2010:WorkflowViewState.IdRef="Sequence_37">
+                                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,25.333333333333332" sap2010:WorkflowViewState.IdRef="Sequence_37">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">False</x:Boolean>
