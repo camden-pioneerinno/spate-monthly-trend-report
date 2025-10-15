@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="HcDEErCjO06fFzuQsUR3MQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="app.spate.nyc" CVScreenId="38fad3e2-1008-4e87-8f48-41f21bb0842d" CvElementArea="316, 466, 30, 32" CvTextArea="86, 471, 147, 27" CvTextArgument="By Category" CvType="ArrowButton" DesignTimeRectangle="35, 459, 319, 47" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='headlessui-disclosure-panel-:r3:' tag='A' /&gt;" Guid="fbfc66e6-83b6-4438-912c-82adde166c0c" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SPATE - DATA SCIENCE TO PREDICT THE NEXT BIG TREND.' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="3faec5c7196dc1700e0540b0f817703e.png" xmlns="">0Ag25pqTgjUWWaKN7y-P6fw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

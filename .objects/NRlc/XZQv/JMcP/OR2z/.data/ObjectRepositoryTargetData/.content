@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="HAjfVlci_E6IChmcfnZkoA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="app.spate.nyc/explore/trends/b14e64af-9ecb-41e8-9a19-4da96f68cf30" CVScreenId="cf63ee5b-3e61-4e9c-a083-142501320689" CvTextArea="1602, 605, 175, 19" CvTextArgument="Time Series CSV" CvType="Text" DesignTimeRectangle="1554, 588, 330, 54" ElementType="Button" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl aaname='Time Series CSV' aria-role='menuitem' tag='BUTTON' type='' class='fragments__UnstyledButton-sc-jp1ftw-0 jVbzSW IconButton__ButtonWrapper-sc-1qjq4-1 gZaNkv MenuButton__MenuItem-sc-1a2q17s-3 iapqNI' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:aria-role='fuzzy' fuzzylevel:aria-role='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Time Series CSV' /&gt;" Guid="4b8753e9-6880-41c3-b55d-84213222608d" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SPATE - DATA SCIENCE TO PREDICT THE NEXT BIG TREND.' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="cf63ee5b-3e61-4e9c-a083-142501320689" CvTextArea="1602, 605, 175, 19" CvTextArgument="Time Series CSV" CvType="Text" DesignTimeRectangle="1605, 602, 171, 25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Time Series CSV' tag='SPAN' type='' class='IconButton__TextWrapper-sc-1qjq4-0 jBUKLo' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Time Series CSV' /&gt;" Guid="499b6580-eba4-431b-a97f-101f393dc42c" SearchSteps="FuzzySelector, CV" />
+          <Target CVScreenId="cf63ee5b-3e61-4e9c-a083-142501320689" CvTextArea="1602, 551, 159, 19" CvTextArgument="Card Data CSV" CvType="Text" DesignTimeRectangle="1605, 548, 155, 25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Card Data CSV' tag='SPAN' type='' class='IconButton__TextWrapper-sc-1qjq4-0 jBUKLo' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Card Data CSV' /&gt;" Guid="ce8e1a63-d0a8-403a-864b-fca20ea56b94" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="21adc0387ca5d5929be281eb4a81dcdd.png" xmlns="">06KpitlfXbkevKLy9E6jKmQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

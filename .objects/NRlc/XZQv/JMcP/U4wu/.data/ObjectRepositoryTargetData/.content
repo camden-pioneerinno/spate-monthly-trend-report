@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="A2xLTEIKuEGILqzgk4kzhw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="app.spate.nyc" DesignTimeRectangle="35, 1041, 319, 74" ElementType="Text" FullSelectorArgument="&lt;webctrl aria-label='Log out. Currently logged in  with e-mail shari@pioneerinno.com.' tag='A' /&gt;" Guid="dea3733e-8014-44f6-8515-e2dcf538394b" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SPATE - DATA SCIENCE TO PREDICT THE NEXT BIG TREND.' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="b1d8cf0d4690ed5cb3327674153a9ca7.png" xmlns="">0HtEVhdTiJk6Nn0HxOv8uJQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

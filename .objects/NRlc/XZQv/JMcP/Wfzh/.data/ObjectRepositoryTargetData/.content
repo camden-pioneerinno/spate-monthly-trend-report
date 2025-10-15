@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="DRpKcPnTUEO-dX2P9Vvp5w" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="app.spate.nyc/explore/google/trends/cb1700c7-f195-484f-acd6-3d0d803e0f84" CVScreenId="fbd50d87-7235-4a81-97b3-889652a63708" CvTextArea="530, 833, 118, 24" CvTextArgument="Rising Star" CvType="Text" DesignTimeRectangle="473, 820, 468, 48" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='rising star ' aria-role='switch' tag='BUTTON' /&gt;" Guid="50caccfd-33d5-418d-b2b4-9ce6daeedd86" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SPATE - DATA SCIENCE TO PREDICT THE NEXT BIG TREND.' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="fbd50d87-7235-4a81-97b3-889652a63708" CvElementArea="910, 661, 30, 27" CvTextArea="471, 660, 162, 23" CvTextArgument="Cluster filters" CvType="ArrowButton" DesignTimeRectangle="455, 639, 504, 67" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aaname='cluster filters' tag='BUTTON' type='button' class='Accordion__AccordionButton-sc-ua1mmh-10 hqpZcQ FilterSelect__MenuFilterAccordionButton-sc-1uuhf36-14 eONnTn' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Cluster filters' /&gt;" Guid="2d5722c9-bc03-4d34-a428-6c6f0adf33a9" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="60450cadf2cbc4afc3bb09b20fe9110e.png" xmlns="">0TIb3IdUNEkylzw6kgwzdqA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

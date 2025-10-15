@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="aPHk3bc3s0CZ_bhyebMYmQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="app.spate.nyc/explore/trends/ff93f372-b1eb-49de-8706-3fb0424268f9" CVScreenId="5e52edf1-59bc-45e7-83c4-2c6dd179b4df" CvElementArea="1651, 478, 234, 55" CvType="InputBox" DesignTimeRectangle="1706, 492, 129, 26" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Export Data' tag='SPAN' type='' class='IconButton__TextWrapper-sc-1qjq4-0 jBUKLp' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Export Data' /&gt;" Guid="9530d12a-6a48-41dd-86bf-8393a9a3b302" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SPATE - DATA SCIENCE TO PREDICT THE NEXT BIG TREND.' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="5e52edf1-59bc-45e7-83c4-2c6dd179b4df" CvTextArea="1704, 495, 130, 22" CvTextArgument="Export Data" CvType="Text" DesignTimeRectangle="1654, 480, 230, 51" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aaname='Export Data' parentid='app' tag='BUTTON' type='button' class='fragments__UnstyledButton-sc-jp1ftw-0 jVbzSW IconButton__ButtonWrapper-sc-1qjq4-1 exhma-D' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Export Data' /&gt;" Guid="c31c07e1-682a-4ed8-af33-e6765f50b536" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="a31a5d8008e1332339c2852bb38af3f8.png" xmlns="">05o7JIErSHEaz3SeJwFzrXg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

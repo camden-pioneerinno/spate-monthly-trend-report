@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="JGW56h7X_06Rnha_Sd1uIQ" Reference="U0X3tk9DuUWal-aSohXRCQ/ZDKt6iidFUKJZWPt_38J3A" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="app.spate.nyc/explore/trends/a1d01543-3b04-426e-a194-29d9bd8f9b0c" CVScreenId="ce1d00c0-1d6f-40df-8943-e5b5fb7f25de" CvTextArea="489, 875, 102, 22" CvTextArgument="Clusters" CvType="Text" DesignTimeRectangle="425, 696, 431, 73" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aaname='Clusters' parentid='app' tag='BUTTON' type='button' class='Accordion__AccordionButton-sc-ua1mmh-10 bWBJqu' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Clusters' /&gt;" Guid="f75b002c-94bc-44bb-9789-a71bd764de20" ImageBase64="" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SPATE - DATA SCIENCE TO PREDICT THE NEXT BIG TREND.' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="ce1d00c0-1d6f-40df-8943-e5b5fb7f25de" CvTextArea="489, 875, 102, 22" CvTextArgument="Clusters" CvType="Text" DesignTimeRectangle="491, 718, 100, 29" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Clusters' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' parentid='app' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' tag='SPAN' type='' class='' matching:class='fuzzy' fuzzylevel:class='0.0' innertext='Clusters' check:innerText='Clusters' /&gt;" Guid="d78ae219-b019-40d3-b482-e97ee4568765" ImageBase64="" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="427a1f5ef106a809f320206f8fa8e828.png" xmlns="">0qncbgBkICkKY1IxJPtDW0w</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

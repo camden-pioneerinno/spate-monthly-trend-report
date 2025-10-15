@@ -1,0 +1,14 @@
+﻿{
+  "Name": "rising star",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "p3l0Qyg59kqdkzy5hTH4iw",
+  "Reference": "U0X3tk9DuUWal-aSohXRCQ/p3l0Qyg59kqdkzy5hTH4iw",
+  "ParentRef": "U0X3tk9DuUWal-aSohXRCQ/JMcPbvyxxEWVzJ4oV8Xueg",
+  "Created": "2025-10-08T18:27:53.3553618Z",
+  "Updated": "2025-10-08T18:27:53.3553618Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.10.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.6.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

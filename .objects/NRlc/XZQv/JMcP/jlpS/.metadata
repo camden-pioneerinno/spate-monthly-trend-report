@@ -1,0 +1,14 @@
+﻿{
+  "Name": "HomeTrendsby CategoryIn…",
+  "Type": "Element",
+  "TaxonomyType": "Container",
+  "Id": "jlpSeXf3i0-ZxtEkrf1CVA",
+  "Reference": "U0X3tk9DuUWal-aSohXRCQ/jlpSeXf3i0-ZxtEkrf1CVA",
+  "ParentRef": "U0X3tk9DuUWal-aSohXRCQ/JMcPbvyxxEWVzJ4oV8Xueg",
+  "Created": "2025-10-10T22:22:53.0509214Z",
+  "Updated": "2025-10-10T22:22:53.0509214Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.16.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

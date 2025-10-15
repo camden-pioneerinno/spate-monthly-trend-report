@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="cc-nMI47B0usoPvBG-mPQQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="spate.auth0.com/u/login" CVScreenId="97ff7f6d-a628-469c-a0db-55f40e49b29b" CvElementArea="718, 696, 485, 84" CvType="InputBox" DesignTimeRectangle="721, 699, 412, 78" ElementType="InputBoxPassword" FuzzySelectorArgument="&lt;webctrl id='password' tag='INPUT' type='password' class='input c060a2389 c838dd66d' aaname='                             Password                                                        *                           ' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' fuzzylevel:aaname='0.0' /&gt;" Guid="96fb0d31-1a65-4e2a-9e4e-3d77c1b314a0" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Log in | Spate' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="97ff7f6d-a628-469c-a0db-55f40e49b29b" CvElementArea="718, 696, 485, 84" CvType="InputBox" DesignTimeRectangle="745, 725, 134, 27" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='password-label' tag='LABEL' type='' class='c0b67cd40 c0679888e c65c794de' aaname='                             Password                                                                                   ' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Password *' /&gt;" Guid="99c3e789-8b27-4af1-a916-3d110160dd5a" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="e85d7da4ad2850c4b1f790052079600d.png" xmlns="">0NLxHUlTwjU-qlXWzNNpwzg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

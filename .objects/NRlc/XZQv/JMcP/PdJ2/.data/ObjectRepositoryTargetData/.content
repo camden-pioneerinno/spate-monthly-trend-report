@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="ETnD7V04nUKrFbpY-UrZjg" Reference="U0X3tk9DuUWal-aSohXRCQ/PdJ23A7ec02ed4LmOtFjEg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="app.spate.nyc/explore/trends/84ba06f7-7d24-404d-8985-6cd72375d9fe" CVScreenId="9c1afce8-43a4-4d2c-adb1-6cc1d03f0013" CvTextArea="1002, 405, 147, 22" CvTextArgument="[subTemp]" CvType="Text" DesignTimeRectangle="1004, 402, 145, 29" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="[&quot;&lt;webctrl aaname='&quot; + System.Security.SecurityElement.Escape(subTemp.ToLower) + &quot;' parentname='&quot; + System.Security.SecurityElement.Escape(subTemp.ToLower) + &quot;' tag='SPAN' /&gt;&quot;]" Guid="e205ceec-e645-4987-bb83-7c78dd1f8796" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SPATE - DATA SCIENCE TO PREDICT THE NEXT BIG TREND.' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="d0628586cb77fc418d4ccf4fb10372e5.png" xmlns="">0l3c3mKao-kuB1GDJj_T96Q</imageRef>
+    </TargetAnchorable>
+    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="1">
+      <ObjectRepositoryVariableData Name="subTemp" />
+    </scg:List>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

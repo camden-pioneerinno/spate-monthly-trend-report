@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="M9yQPWYKPkKXE-XX-q7mkg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="app.spate.nyc/explore/trends/b3f60f83-9b67-452c-9757-af14501e6733" DesignTimeRectangle="805, 351, 660, 1155" ElementType="List" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aria-role='listbox' tag='UL' /&gt;" Guid="ff4b9e93-f315-4523-9e00-ca110f570d16" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SPATE - DATA SCIENCE TO PREDICT THE NEXT BIG TREND.' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="98925f401862720c8cc5db86031f5095.png" xmlns="">0GKP-9Wpbwk2Q5knTF47PUA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

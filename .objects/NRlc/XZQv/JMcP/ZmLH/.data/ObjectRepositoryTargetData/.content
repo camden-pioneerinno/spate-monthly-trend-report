@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="paxjCEVrR0izthcw5CStlQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="app.spate.nyc/explore/trends" CVScreenId="af74f535-0fa5-424e-a721-2c01acea4559" CvElementArea="423, 283, 328, 64" CvType="InputBox" DesignTimeRectangle="425, 285, 326, 60" ElementType="Button" FuzzySelectorArgument="&lt;webctrl parentid='app' tag='BUTTON' type='button' class='fragments__UnstyledButton-sc-jp1ftw-0 jVbzSW Breadcrumbs__Breadcrumb-sc-yciviv-0 Breadcrumbs__UnselectedBreadcrumbWrapper-sc-yciviv-2 gVAyCa bexUvz' aaname='1. Choose Category' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='1. Choose Category' /&gt;" Guid="c6f2c1a7-c583-4ace-8839-27f714c84b38" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SPATE - DATA SCIENCE TO PREDICT THE NEXT BIG TREND.' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="af74f535-0fa5-424e-a721-2c01acea4559" CvElementArea="423, 283, 328, 64" CvType="InputBox" DesignTimeRectangle="450, 301, 228, 28" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='1. Choose Category' tag='SPAN' type='' class='Breadcrumbs__TruncateOverflow-sc-yciviv-1 gzwPxE' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='1. Choose Category' /&gt;" Guid="9997aee5-1833-44a9-83e4-70c04c6bbd79" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="1fd68607e578f9efc6b1f38d962fce9b.png" xmlns="">0gcl3vV-v9kq__ACl5a_bNQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

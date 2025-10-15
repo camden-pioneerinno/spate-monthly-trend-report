@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="fn0ofoU6PkaoQ-KvwXIcqw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="spate.nyc" DesignTimeRectangle="358, 304, 600, 750" ElementType="Icon" FullSelectorArgument="&lt;webctrl parentid='draggable' tabindex='603' tag='IMG' /&gt;" Guid="c7bb6d3f-bc10-4ccd-918d-b2883f0f1eac" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Best AI Market Research &amp;amp; Consumer Trend Forecasting Tool | Spate' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="3c8a8b1b93eda6048acde11d3448d02d.png" xmlns="">0tJw4k7fVYUy4uHrY9hAAOw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

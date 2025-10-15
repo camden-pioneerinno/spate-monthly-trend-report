@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Element 'UL headlessui-listbox-o…'",
+  "Type": "Element",
+  "TaxonomyType": "Listbox",
+  "Id": "LYSz3TO72UWv10XMy0tgSg",
+  "Reference": "U0X3tk9DuUWal-aSohXRCQ/LYSz3TO72UWv10XMy0tgSg",
+  "ParentRef": "U0X3tk9DuUWal-aSohXRCQ/JMcPbvyxxEWVzJ4oV8Xueg",
+  "Created": "2025-10-10T14:06:13.0023214Z",
+  "Updated": "2025-10-10T14:06:13.0023214Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.10.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.6.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

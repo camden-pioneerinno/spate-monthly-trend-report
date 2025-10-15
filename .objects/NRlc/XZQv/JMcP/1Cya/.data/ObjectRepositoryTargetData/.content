@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Ohkib2zHt0a6iu5825Ay0Q" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="app.spate.nyc/explore/trends/6d408533-6979-43aa-80af-4d88bf0be860" CVScreenId="07740e6a-2e22-44a1-9093-5d559f4057b2" CvElementArea="802, 283, 324, 64" CvType="InputBox" DesignTimeRectangle="805, 285, 320, 60" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='headlessui-listbox-button-:r36:' tag='BUTTON' type='button' class='fragments__UnstyledButton-sc-jp1ftw-0 jVbzSW Breadcrumbs__Breadcrumb-sc-yciviv-0 Breadcrumbs__UnselectedBreadcrumbWrapper-sc-yciviv-2 gVAyCa bexUvz' aaname='2. Choose Category' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='2. Choose Category' /&gt;" Guid="562afe0d-4729-4ae7-85df-271ba98647a1" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SPATE - DATA SCIENCE TO PREDICT THE NEXT BIG TREND.' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="07740e6a-2e22-44a1-9093-5d559f4057b2" CvElementArea="802, 283, 324, 64" CvType="InputBox" DesignTimeRectangle="830, 301, 233, 28" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='headlessui-listbox-button-:r36:' tag='SPAN' type='' class='Breadcrumbs__TruncateOverflow-sc-yciviv-1 gzwPxE' aaname='2. Choose Category' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='2. Choose Category' /&gt;" Guid="0cf62e99-5523-4298-a81d-1c4de8f672cc" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="6871ab7a78279c856970564f0f5ea188.png" xmlns="">02TvC9mWRjEiZOXSQPbLLAA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

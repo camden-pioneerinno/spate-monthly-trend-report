@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="KYFa9xaqI0ONezp7qbilGw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="app.spate.nyc/explore/google/trends/cb1700c7-f195-484f-acd6-3d0d803e0f84" CVScreenId="e82fbb30-8803-4033-b6d3-36e2613e6bbf" CvElementArea="453, 583, 206, 55" CvType="InputBox" DesignTimeRectangle="583, 597, 26, 26" ElementType="Text" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl aaname='4' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' parentid='filter-select-button' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' tag='SPAN' type='' class='FilterSelect__TotalActiveFiltersBadge-sc-1uuhf36-21 eQXwym' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='*' /&gt;" Guid="4e71c7f5-9ec8-4a57-b0a3-f85840a1d8d9" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SPATE - DATA SCIENCE TO PREDICT THE NEXT BIG TREND.' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="455, 585, 203, 51" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='filter-select-button' matching:id='fuzzy' fuzzylevel:id='0.0' tag='BUTTON' type='button' class='fragments__UnstyledButton-sc-jp1ftw-0 jVbzSW IconButton__ButtonWrapper-sc-1qjq4-1 gZaNkv' matching:class='fuzzy' fuzzylevel:class='0.0' aaname='Filters4' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Filters&amp;#xA;*' /&gt;" Guid="9b8b21a1-2183-47aa-b14e-53b51edd74bc" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="968d71859fac7b02037e51885a0aeefd.png" xmlns="">0liEl_I5OZUuf9zP_s1VUaQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

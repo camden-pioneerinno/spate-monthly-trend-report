@@ -1,0 +1,14 @@
+﻿{
+  "Name": "2. Choose Category(2)",
+  "Type": "Element",
+  "TaxonomyType": "Icon",
+  "Id": "G72P-i91MEaPcW7_OQs98g",
+  "Reference": "U0X3tk9DuUWal-aSohXRCQ/G72P-i91MEaPcW7_OQs98g",
+  "ParentRef": "U0X3tk9DuUWal-aSohXRCQ/JMcPbvyxxEWVzJ4oV8Xueg",
+  "Created": "2025-10-09T20:22:05.6989384Z",
+  "Updated": "2025-10-09T20:22:05.6989384Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.10.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.6.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

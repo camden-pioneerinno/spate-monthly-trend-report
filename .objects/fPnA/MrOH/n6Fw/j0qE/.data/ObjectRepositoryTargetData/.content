@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="jCFhLjucsUCGNW299r_uXw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="spate.auth0.com/u/login" CVScreenId="cbef3635-0c36-4d58-9b5f-7645bd042f67" CvElementArea="718, 867, 483, 82" CvTextArea="909, 897, 99, 22" CvTextArgument="Continue" CvType="Button" DesignTimeRectangle="720, 870, 480, 78" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='BUTTON' type='submit' /&gt;" Guid="36fe4e04-a7c6-4c28-b16f-7f12fbcc2f4b" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Log in | Spate' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="726048e0f875f3d1c7e986e3cb66a4d1.png" xmlns="">0utgwWXHbt0OyYwI4yhXNag</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

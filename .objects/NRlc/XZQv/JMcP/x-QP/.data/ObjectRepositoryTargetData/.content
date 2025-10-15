@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="tiLWCLrSqkilcUwRxeEAfQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="app.spate.nyc/explore/trends/1e58d913-5cf6-4873-a27f-b9e020d9d5f1" CVScreenId="b773ddb1-c025-4404-9db7-c704f157b916" CvTextArea="483, 768, 102, 22" CvTextArgument="Rising Star" CvType="Text" DesignTimeRectangle="446, 763, 181, 32" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname='rising star' tag='BUTTON' /&gt;" Guid="c8b43cb5-b656-4623-8507-c917a24e7f49" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SPATE - DATA SCIENCE TO PREDICT THE NEXT BIG TREND.' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="b773ddb1-c025-4404-9db7-c704f157b916" CvTextArea="489, 722, 103, 22" CvTextArgument="Clusters" CvType="Text" DesignTimeRectangle="491, 718, 100, 29" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Clusters' parentid='app' tag='SPAN' type='' class='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Clusters' /&gt;" Guid="85667a2f-6c25-49c8-bf57-3683a7f36b95" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="ac43853707f6ef23e0b8ac7ab80aee2c.png" xmlns="">0YWbewhkJe06hTxDQCvYoHA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

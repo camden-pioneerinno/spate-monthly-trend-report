@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="PJsXPHECn0Kc9rPjVmjshQ" Reference="U0X3tk9DuUWal-aSohXRCQ/D9xNiLe5VkaD086xOWWMCw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="app.spate.nyc/explore/trends/cb1700c7-f195-484f-acd6-3d0d803e0f84" CVScreenId="fc531775-35c7-48a9-9682-e01dfce642d0" CvElementArea="420, 282, 329, 68" CvType="InputBox" DesignTimeRectangle="681, 285, 64, 60" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aria-label='Change Category' tag='BUTTON' type='button' class='fragments__UnstyledButton-sc-jp1ftw-0 jVbzSW Breadcrumbs__SelectedBreadcrumbPopOverTriggerWrapper-sc-yciviv-6 iKFlqO' aaname='' matching:aria-label='fuzzy' fuzzylevel:aria-label='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="02b3301d-2bc4-4c54-827f-5e0b906cc921" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SPATE - DATA SCIENCE TO PREDICT THE NEXT BIG TREND.' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="2">
+          <Target CVScreenId="fc531775-35c7-48a9-9682-e01dfce642d0" CvElementArea="420, 282, 329, 68" CvType="InputBox" DesignTimeRectangle="420, 282, 328, 67" ElementType="InputBox" Guid="ab145134-2047-4b08-9344-dcd13a010c2c" SearchSteps="CV" TargetType="ComputerVisionBased" />
+          <Target CVScreenId="fc531775-35c7-48a9-9682-e01dfce642d0" CvElementArea="532, 494, 120, 38" CvTextArea="444, 501, 165, 22" CvTextArgument="Filters 1 Filter" CvType="Button" DesignTimeRectangle="425, 480, 431, 66" ElementType="ListItem" FuzzySelectorArgument="&lt;webctrl parentid='app' tag='LI' type='' class='Accordion__AccordionTitleItem-sc-ua1mmh-5 fEqPmI' aaname='' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Filters&amp;#xA;1 Filter' /&gt;" Guid="cedcac6f-d546-4fcc-b3fc-1f895900c4b3" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="b29dff17a91aae5d5b46a8191d90e801.png" xmlns="">0tDpD3uDOkEafZn_G8vZCQw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,14 @@
+﻿{
+  "Name": "BUTTON headlessui-listb…(1)",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "WFDVk_uD7UeDgbrxt6GBfA",
+  "Reference": "U0X3tk9DuUWal-aSohXRCQ/WFDVk_uD7UeDgbrxt6GBfA",
+  "ParentRef": "U0X3tk9DuUWal-aSohXRCQ/JMcPbvyxxEWVzJ4oV8Xueg",
+  "Created": "2025-10-09T16:52:04.3820352Z",
+  "Updated": "2025-10-09T16:52:04.3820352Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.10.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.6.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

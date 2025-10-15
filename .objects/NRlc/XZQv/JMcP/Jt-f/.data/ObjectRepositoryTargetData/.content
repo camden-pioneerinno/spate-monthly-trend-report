@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="AvYYSU_So0CSDeAB6fIXGA" Reference="U0X3tk9DuUWal-aSohXRCQ/Jt-f_ilmvUut6zRV9oH9KQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="app.spate.nyc/explore/google/trends/cb1700c7-f195-484f-acd6-3d0d803e0f84" CVScreenId="8904740e-e308-467e-9875-dfb226984f2f" CvElementArea="869, 653, 70, 37" CvTextArea="905, 663, 16, 16" CvTextArgument="X" CvType="Button" DesignTimeRectangle="904, 661, 21, 21" ElementType="Icon" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;ul&amp;gt;li&amp;gt;button&amp;gt;svg' tag='svg' class='FilterButton___Styled*' /&gt;" Guid="5385b6af-9a94-4fe8-9551-001f8f69de9a" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SPATE - DATA SCIENCE TO PREDICT THE NEXT BIG TREND.' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="8904740e-e308-467e-9875-dfb226984f2f" CvElementArea="673, 583, 185, 56" CvTextArea="698, 597, 136, 27" CvTextArgument="Early Stage" CvType="Button" DesignTimeRectangle="676, 585, 180, 51" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aria-role='switch' parentid='app' tag='BUTTON' type='button' class='FilterCheckbox__FilterCheckboxLabel-sc-1rzwz94-0 kBfEZe FilterCheckboxChip-sc-8w3o66-1 fkdhNH' aaname='Early Stage' matching:aria-role='fuzzy' fuzzylevel:aria-role='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Early Stage' /&gt;" Guid="5393df36-d51d-4406-be06-78441f6a3c3b" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="c6461ac228d6b78610ed51576c6774d9.png" xmlns="">0jNnf27fcW0eSim6a5r3UVA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

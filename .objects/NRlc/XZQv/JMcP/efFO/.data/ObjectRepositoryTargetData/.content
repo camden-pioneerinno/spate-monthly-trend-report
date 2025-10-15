@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="aLL2U4bgxkSgZx1llaYEGA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="app.spate.nyc/explore/trends/a1d01543-3b04-426e-a194-29d9bd8f9b0c" CVScreenId="102cc9fc-a5ac-49ba-b9b6-92804c058540" CvElementArea="1851, 252, 30, 28" CvTextArea="1658, 257, 189, 19" CvTextArgument="Show: US Market" CvType="ArrowButton" DesignTimeRectangle="1653, 248, 233, 38" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='headlessui-listbox-button-:rd:' tag='BUTTON' type='button' class='fragments__UnstyledButton-sc-jp1ftw-0 jVbzSW IconButton__ButtonWrapper-sc-1qjq4-1 gZaNkv SoftButton-sc-13jp6j3-0 elKwdi' placeholder='US Market' aaname='ShowUS Market' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Show&amp;#xA;US Market' /&gt;" Guid="a66acc5b-314e-4ebb-926f-bbe214b1a508" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SPATE - DATA SCIENCE TO PREDICT THE NEXT BIG TREND.' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="102cc9fc-a5ac-49ba-b9b6-92804c058540" CvTextArea="1658, 257, 67, 19" CvTextArgument="Show:" CvType="Text" DesignTimeRectangle="1660, 259, 65, 16" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Show' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' parentid='headlessui-listbox-button-:rd:' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' tag='SPAN' type='' class='Select__SelectLabel-sc-1x0lxuh-0 gGSvZY' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Show' /&gt;" Guid="0acd8f11-44ac-4b6d-81d6-540594b15f91" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="7c8d3fdafb12f8a5306bacd156852460.png" xmlns="">07CY8_rjwlUK2TR0XYkMTLw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="EAdo6-1bFkiTkwpfvWONfQ" Reference="U0X3tk9DuUWal-aSohXRCQ/9ZNpiXXD50y1mWUODFjLXg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="app.spate.nyc/explore/trends" CVScreenId="e6e5463d-20f3-4b8e-a129-e44d0e76268c" CvElementArea="1001, 397, 34, 39" CvTextArea="581, 405, 88, 27" CvTextArgument="[catTemp]" CvType="ArrowButton" DesignTimeRectangle="558, 376, 502, 80" FullSelectorArgument="[&quot;&lt;webctrl parentname='&quot;+catTemp.ToLower+&quot;' tag='SPAN' /&gt;&quot;]" Guid="9d262302-279e-4677-aa13-bc92bc2fadc7" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SPATE - DATA SCIENCE TO PREDICT THE NEXT BIG TREND.' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target CVScreenId="e6e5463d-20f3-4b8e-a129-e44d0e76268c" CvTextArea="581, 405, 88, 27" CvTextArgument="[catTemp]" CvType="Text" DesignTimeRectangle="582, 402, 87, 29" ElementType="Text" FuzzySelectorArgument="[&quot;&lt;webctrl aaname='&quot;+catTemp.ToLower+&quot;' parentname='&quot;+catTemp.ToLower+&quot;' tag='SPAN' type='' class='GraphButton__Name-sc-1k3ylfi-4 kATfYT' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:parentname='fuzzy' fuzzylevel:parentname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='&quot;+catTemp+&quot;' /&gt;&quot;]" Guid="90c14d0e-c39b-4602-aff1-a06290b93e13" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="4fc8541b561742426cc31d4053d5b67f.png" xmlns="">0wAwgz3xXpUiphSHUXqU_Cg</imageRef>
+    </TargetAnchorable>
+    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="1">
+      <ObjectRepositoryVariableData Name="catTemp" />
+    </scg:List>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

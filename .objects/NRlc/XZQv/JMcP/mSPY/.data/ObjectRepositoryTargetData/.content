@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="AxkAI82fa0OH5UkSz9MW1A" Reference="U0X3tk9DuUWal-aSohXRCQ/mSPYG7VeIEGEcX2Lx_82lA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="app.spate.nyc/explore/trends/231bc1c7-f40b-4732-9605-cfb68f950ad0" CVScreenId="0d56095f-a34b-4820-a00c-e53e944c773b" CvElementArea="926, 282, 452, 64" CvType="InputBox" DesignTimeRectangle="1321, 299, 32, 32" ElementType="Icon" FuzzySelectorArgument="&lt;webctrl type='' tag='svg' class='Breadcrumbs__UnselectedBreadcrumbRightIcon-sc-yciviv-3 gbrYTY' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="f6398264-c839-4c2c-8c72-131b89770f15" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SPATE - DATA SCIENCE TO PREDICT THE NEXT BIG TREND.' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target CVScreenId="0d56095f-a34b-4820-a00c-e53e944c773b" CvElementArea="926, 282, 452, 64" CvType="InputBox" DesignTimeRectangle="956, 301, 181, 28" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='2. Subcategory' tag='SPAN' type='' class='Breadcrumbs__TruncateOverflow-sc-yciviv-1 gzwPxE' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='2. Subcategory' /&gt;" Guid="f7240b2e-468d-46e2-af4a-e066798561a5" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="696638d3870a4f751b3fbdb7ed175fd9.png" xmlns="">06lztc0PRhUuEBz6lop7t4A</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

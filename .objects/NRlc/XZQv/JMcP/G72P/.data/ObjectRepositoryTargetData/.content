@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="ZZIH5F9VQESdgRFmyANxDw" Reference="U0X3tk9DuUWal-aSohXRCQ/G72P-i91MEaPcW7_OQs98g" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="app.spate.nyc/explore/trends/6d408533-6979-43aa-80af-4d88bf0be860" CVScreenId="7ccaf856-19e6-4d01-8a20-715e36d124d1" CvElementArea="802, 283, 324, 64" CvType="InputBox" DesignTimeRectangle="805, 285, 320, 60" ElementType="Button" FullSelectorArgument="&lt;webctrl parentid='cat-two-select' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' tag='BUTTON' type='button' aaname='2. Choose Category' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' innertext='2. Choose Category' check:innerText='2. Choose Category' /&gt;" FuzzyAccuracy="1" Guid="e4a89efc-1eb7-408a-b711-cc8189f00d8b" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SPATE - DATA SCIENCE TO PREDICT THE NEXT BIG TREND.' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target CVScreenId="7ccaf856-19e6-4d01-8a20-715e36d124d1" CvElementArea="802, 283, 324, 64" CvType="InputBox" DesignTimeRectangle="830, 301, 233, 28" ElementType="Text" FuzzyAccuracy="1" FuzzySelectorArgument="&lt;webctrl aaname='2. Choose Category' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' tag='SPAN' type='' innertext='2. Choose Category' check:innerText='2. Choose Category' /&gt;" Guid="3ad4abca-9517-455e-ade1-d9b0d15f2b33" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="e3824c11079f41053179cb3aa018e6d8.png" xmlns="">06UoKEnvjPEqPqTQI6ddIkA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

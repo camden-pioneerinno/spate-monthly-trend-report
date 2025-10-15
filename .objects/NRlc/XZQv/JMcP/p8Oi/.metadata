@@ -1,0 +1,14 @@
+﻿{
+  "Name": "United States",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "p8OiQiKQQU60jXlw81dOoA",
+  "Reference": "U0X3tk9DuUWal-aSohXRCQ/p8OiQiKQQU60jXlw81dOoA",
+  "ParentRef": "U0X3tk9DuUWal-aSohXRCQ/JMcPbvyxxEWVzJ4oV8Xueg",
+  "Created": "2025-10-08T18:27:07.0048372Z",
+  "Updated": "2025-10-08T18:27:07.0048372Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.10.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.6.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

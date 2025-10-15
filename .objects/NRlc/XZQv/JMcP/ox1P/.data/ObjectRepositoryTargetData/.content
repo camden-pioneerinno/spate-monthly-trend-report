@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="-e79Y9-xqkCWw4iwQixZiw" Reference="U0X3tk9DuUWal-aSohXRCQ/ox1PvClmIE2PvcNRNrfCeQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="app.spate.nyc/explore/trends/b14e64af-9ecb-41e8-9a19-4da96f68cf30" CVScreenId="01dfc56a-10c7-467e-80d3-9e73701f5517" CvTextArea="1602, 551, 159, 19" CvTextArgument="Card Data CSV" CvType="Text" DesignTimeRectangle="1554, 534, 330, 54" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aria-role='menuitem' tag='BUTTON' type='' class='fragments__UnstyledButton-sc-jp1ftw-0 jVbzSW IconButton__ButtonWrapper-sc-1qjq4-1 gZaNkv MenuButton__MenuItem-sc-1a2q17s-3 iapqNI' aaname='Card Data CSV' matching:aria-role='fuzzy' fuzzylevel:aria-role='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Card Data CSV' /&gt;" Guid="1d49b221-932b-4f53-a30f-2a7b78aad259" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SPATE - DATA SCIENCE TO PREDICT THE NEXT BIG TREND.' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="01dfc56a-10c7-467e-80d3-9e73701f5517" CvTextArea="1602, 551, 159, 19" CvTextArgument="Card Data CSV" CvType="Text" DesignTimeRectangle="1605, 548, 155, 25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Card Data CSV' tag='SPAN' type='' class='IconButton__TextWrapper-sc-1qjq4-0 jBUKLo' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Card Data CSV' /&gt;" Guid="76f07506-06b1-4a86-8ccb-3a429a5f6f81" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="b86a97fce96ce237e593b1a7c18c4c05.png" xmlns="">0k10Xkxjg-EmQbdLwicyO2g</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

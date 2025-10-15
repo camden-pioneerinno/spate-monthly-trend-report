@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Button 'Time Series CSV'",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "OR2zTX42fEiSmJecU4Xblg",
+  "Reference": "U0X3tk9DuUWal-aSohXRCQ/OR2zTX42fEiSmJecU4Xblg",
+  "ParentRef": "U0X3tk9DuUWal-aSohXRCQ/JMcPbvyxxEWVzJ4oV8Xueg",
+  "Created": "2025-10-10T19:17:57.2561852Z",
+  "Updated": "2025-10-10T19:17:57.2561852Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.16.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

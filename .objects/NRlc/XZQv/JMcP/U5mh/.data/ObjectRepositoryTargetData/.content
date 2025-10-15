@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="S9woqzJ3V0GdHtwA_wVhRw" Reference="U0X3tk9DuUWal-aSohXRCQ/U5mh4XZBwki7h230QX059Q" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="app.spate.nyc" CVScreenId="c6b251c2-668f-4819-9699-d86cc861fa85" CvTextArea="86, 393, 147, 27" CvTextArgument="By Category" CvType="Text" DesignTimeRectangle="86, 390, 217, 29" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='headlessui-disclosure-panel-:r3:' tag='SPAN' /&gt;" Guid="9d0f2112-9599-4334-96fe-d7b9cb1f02c0" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SPATE - DATA SCIENCE TO PREDICT THE NEXT BIG TREND.' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="c6b251c2-668f-4819-9699-d86cc861fa85" CvTextArea="83, 333, 88, 24" CvTextArgument="Trends" CvType="Text" DesignTimeRectangle="86, 332, 217, 28" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Trends' parentid='headlessui-disclosure-button-:r2:' tag='SPAN' type='' class='MenuItem__Content-sc-1lf8jr-1 eHpYUw' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Trends' /&gt;" Guid="12ba42d4-f869-4634-89f8-2133bf95722d" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="e80e66715bcd618aca3799c35d30872d.png" xmlns="">09_jGzP_k1k2IVsRpSplbYQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

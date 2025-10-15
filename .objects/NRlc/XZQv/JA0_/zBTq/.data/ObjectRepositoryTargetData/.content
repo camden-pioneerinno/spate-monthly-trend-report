@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="8OP5bpqfOUySPpMhv5_7PA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="spate.nyc" CVScreenId="b1e72611-d33d-4cd3-b3fc-b58fb2ad1065" CvTextArea="1607, 225, 73, 21" CvTextArgument="LOGIN" CvType="Text" DesignTimeRectangle="1593, 200, 104, 72" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='comp-ivqoim944' tag='P' /&gt;" Guid="7d12f613-becc-4d58-9e0e-06c0fe27f27d" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Best AI Market Research &amp;amp; Consumer Trend Forecasting Tool | Spate' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="fef38a4db4ea6f1e86de789198c3403c.png" xmlns="">0g157u4LQ_UCLj-Ye_gq75w</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
