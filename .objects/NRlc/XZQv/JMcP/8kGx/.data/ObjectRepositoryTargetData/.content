@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="OB8bbYTjfEqSFDWBGPw6TQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="app.spate.nyc/categoryFive/34831ca4-778f-4b97-841b-b2b404016ffb/43e1df22-4afe-4b92-8091-762f7f4e54e9/google" CVScreenId="c3ad449c-9c6e-475d-a0e8-8f6323233c35" CvTextArea="1178, 522, 72, 19" CvTextArgument="TikTok" CvType="Text" DesignTimeRectangle="1156, 507, 118, 51" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='TikTok' parentid='app' tag='A' innertext='TikTok' /&gt;" Guid="e74a721b-5465-47e0-9534-2485cec4f4c8" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SPATE: half wig : us : beauty : hair : hair styling products : hair extension products' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="c3ad449c-9c6e-475d-a0e8-8f6323233c35" CvTextArea="1178, 522, 72, 19" CvTextArgument="TikTok" CvType="Text" DesignTimeRectangle="1181, 520, 68, 25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='TikTok' tag='SPAN' type='' innertext='TikTok' check:innerText='TikTok' /&gt;" Guid="faa71069-0a9b-478f-85e2-82e8ff21c41a" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="1ff3ac1ffb37c839395ba98e3046f51a.png" xmlns="">0z4poC6JqyEeSN5-CgkMXsw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

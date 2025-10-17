@@ -1,0 +1,6 @@
+{
+  "ProjectType": "Process",
+  "Name": "Spate Monthly Trend Report",
+  "Description": "Spate Monthly Trend Report",
+  "MainFile": "Main.xaml"
+}

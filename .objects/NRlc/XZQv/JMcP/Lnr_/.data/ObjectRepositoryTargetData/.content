@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="mm82NgTdfkWUbEwz36wYaw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="app.spate.nyc/categoryFive/34831ca4-778f-4b97-841b-b2b404016ffb/43e1df22-4afe-4b92-8091-762f7f4e54e9/instagram" CVScreenId="90636ff4-1d00-47fe-b239-a01b94f2a220" DesignTimeRectangle="497, 894, 132, 48" ElementType="Text" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='DIV' type='' css-selector='body&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' /&gt;" Guid="097f5d6d-32e4-4f80-8a09-3100bedbc754" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SPATE: half wig : us : beauty : hair : hair styling products : hair extension products' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="90636ff4-1d00-47fe-b239-a01b94f2a220" DesignTimeRectangle="497, 937, 34, 25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='YoY' tag='SPAN' type='' innertext='YoY' check:innerText='YoY' /&gt;" Guid="0d1f1330-3067-4236-ae7c-71fcba4ad49f" SearchSteps="FuzzySelector" />
+          <Target CVScreenId="90636ff4-1d00-47fe-b239-a01b94f2a220" DesignTimeRectangle="479, 822, 68, 36" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Posts' tag='SPAN' type='' innertext='Posts' check:innerText='Posts' /&gt;" Guid="32b24531-1116-4555-9fe7-99ba66f3ef00" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="ed2739f7a80f54541dd71040eadb934a.png" xmlns="">0Ltq7q-XCPk6glc9CfoDVWA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

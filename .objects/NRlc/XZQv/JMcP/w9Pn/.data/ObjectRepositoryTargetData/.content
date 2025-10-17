@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="JnOXgbDF9keEBjzOK5eGfA" Reference="U0X3tk9DuUWal-aSohXRCQ/w9PnwkNsBUqUtjqpwgyg7w" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="app.spate.nyc/categoryFive/34831ca4-778f-4b97-841b-b2b404016ffb/f80805cd-d309-415b-8b11-8fdea5806116/tiktok" CVScreenId="a9b9ee87-46e8-4e78-a1e6-e3f1a13ee15e" CvType="AnyWordGroup" DesignTimeRectangle="693, 1013, 43, 21" ElementType="Text" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl parentid='app' tag='SPAN' type='' class='sc-bbSZdi lddpvf' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' /&gt;" Guid="b4c9a192-c2e3-4e23-9701-ffeb54857475" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SPATE: *' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="a9b9ee87-46e8-4e78-a1e6-e3f1a13ee15e" DesignTimeRectangle="479, 998, 358, 51" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aaname='avg. weekly views317.9kMedium' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' parentid='app' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' tag='BUTTON' type='' class='fragments__UnstyledButton-sc-jp1ftw-0 jVbzSW sc-fXSgeo bAgivA' matching:class='fuzzy' fuzzylevel:class='0.0' innertext='avg. weekly views*' check:innerText='Avg. Weekly Views&amp;#xA;*&amp;#xA;*' /&gt;" Guid="b7663d5d-5ae4-4396-9b6e-fa465828e384" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="1ad0dd5d47eade09388ecf9ef6f92c45.png" xmlns="">03WZb0BFkQkq2QH5rHf_oXg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

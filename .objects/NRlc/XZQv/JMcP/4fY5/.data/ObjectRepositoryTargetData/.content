@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="xFYlZwFzskS0ULJ7HSC0qQ" Reference="U0X3tk9DuUWal-aSohXRCQ/4fY5h779EU-ZXbykaaOktw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="app.spate.nyc/categoryFive/aadbc60d-162f-421f-a5f2-aaf2ca8dc9db/fa29580a-b61b-4dcf-b782-4501306c176c/google" CVScreenId="d4671fc4-af84-46de-8518-d1c39fde1594" DesignTimeRectangle="729, 655, 54, 21" ElementType="Text" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl parentid='app' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' tag='SPAN' type='' aaname='\d.*' matching:aaname='regex' innertext='\d.*' matching:innertext='regex' visibleinnertext='\d.*' matching:visibleinnertext='regex' /&gt;" Guid="360f46da-2a05-48ab-b815-50bc027ceaa4" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Spate' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="d4671fc4-af84-46de-8518-d1c39fde1594" DesignTimeRectangle="479, 640, 438, 51" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aaname='avg. monthly searches*' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' parentid='app' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' tag='BUTTON' type='' class='fragments__UnstyledButton-*' matching:class='fuzzy' fuzzylevel:class='0.0' innertext='avg. monthly searches*' visibleinnertext='Avg. Monthly Searches&amp;#xA;*&amp;#xA;*' check:innerText='Avg. Monthly Searches&amp;#xA;*&amp;#xA;*' /&gt;" Guid="de63d475-ec0e-427e-989b-b968fd26b664" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="fdcb6964cfc872feb4d24eb25de8a56a.png" xmlns="">08LksLPugv0qBgPl_4IRvyA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

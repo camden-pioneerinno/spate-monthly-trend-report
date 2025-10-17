@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="AUoLlM2OAESf8KYoolKJzQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="app.spate.nyc/explore/trends/a1d01543-3b04-426e-a194-29d9bd8f9b0c" CVScreenId="b9d1dbd8-0fba-475e-ab0a-a92d959f81e7" DesignTimeRectangle="512, 583, 540, 51" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='See more data' tag='A' /&gt;" Guid="ed3b4043-1e7d-4448-a0ea-e2ee8ef2deb3" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SPATE - DATA SCIENCE TO PREDICT THE NEXT BIG TREND.' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="b9d1dbd8-0fba-475e-ab0a-a92d959f81e7" DesignTimeRectangle="687, 596, 157, 25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='See more data' tag='SPAN' type='' innertext='See more data' check:innerText='See More Data' /&gt;" Guid="1c041cd8-9619-4f2a-a7b7-8c61a4d2068b" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="652a462bf02c8e1abdcefc89d0371170.png" xmlns="">0CuVdhWQsY0meDpNtlVvZaQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetAttributeGeneric</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

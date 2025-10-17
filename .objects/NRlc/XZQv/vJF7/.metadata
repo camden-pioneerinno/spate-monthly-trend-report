@@ -1,0 +1,16 @@
+﻿{
+  "Name": "Chrome card new tab",
+  "Type": "Screen",
+  "Id": "vJF76FH8mECW9OScAZM_Tg",
+  "Reference": "U0X3tk9DuUWal-aSohXRCQ/vJF76FH8mECW9OScAZM_Tg",
+  "ParentRef": "U0X3tk9DuUWal-aSohXRCQ/XZQvpChP_02lK43u8v-VVg",
+  "Created": "2025-10-15T20:00:42.0165483Z",
+  "Updated": "2025-10-16T14:48:28.3546856Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.16.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

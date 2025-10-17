@@ -52,7 +52,6 @@
       <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
       <AssemblyReference>mscorlib</AssemblyReference>
       <AssemblyReference>PresentationCore</AssemblyReference>
-      <AssemblyReference>PresentationFramework</AssemblyReference>
       <AssemblyReference>System</AssemblyReference>
       <AssemblyReference>System.Activities</AssemblyReference>
       <AssemblyReference>System.Collections</AssemblyReference>
@@ -174,23 +173,24 @@
       <AssemblyReference>UiPath.CodedWorkflows</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="1916.6666666666667,1980" sap2010:WorkflowViewState.IdRef="Sequence_16">
+  <Sequence sap:VirtualizedContainerService.HintSize="1326.6666666666667,2414" sap2010:WorkflowViewState.IdRef="Sequence_16">
     <Sequence.Variables>
       <Variable x:TypeArguments="si:FileInfo" Name="DownloadedReport" />
-      <Variable x:TypeArguments="upr:ILocalResource" Name="GoogleDriveFolder" />
+      <Variable x:TypeArguments="x:String" Name="path_GoogleDriveFolder" />
+      <Variable x:TypeArguments="upr:ILocalResource" Name="GoogleDriveFolderTop20" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome SPATE - DATA SCIENCE TO PREDICT THE NE" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="518,1957.3333333333333" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="0cf7f35e-2115-43e8-aaaf-2205d0a0f1e5" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="{x:Null}" ConnectionId="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Chrome SPATE - DATA SCIENCE TO PREDICT THE NE" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="518,2391.3333333333335" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InUiElement="{x:Null}" InteractionMode="DebuggerApi" IsIncognito="{x:Null}" OpenMode="{x:Null}" OutUiElement="{x:Null}" ScopeGuid="0cf7f35e-2115-43e8-aaaf-2205d0a0f1e5" Timeout="{x:Null}" UserDataFolderMode="{x:Null}" UserDataFolderPath="{x:Null}" Version="V2" WebDriverMode="{x:Null}">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="484,1715.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_17">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="484,2149.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_17">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -204,7 +204,7 @@
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Filters1'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="382,229.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_12" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0cf7f35e-2115-43e8-aaaf-2205d0a0f1e5" Version="V5">
+                  <uix:NClick ActivateBefore="True" AlterIfDisabled="{x:Null}" ClickType="Single" ContinueOnError="{x:Null}" CursorMotionType="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Click 'Filters1'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="382,229.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_12" InScope="{x:Null}" InUiElement="{x:Null}" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" OutUiElement="{x:Null}" ScopeIdentifier="0cf7f35e-2115-43e8-aaaf-2205d0a0f1e5" Timeout="{x:Null}" UnblockInput="{x:Null}" Version="V5">
                     <uix:NClick.Target>
                       <uix:TargetAnchorable BrowserURL="app.spate.nyc/explore/google/trends/cb1700c7-f195-484f-acd6-3d0d803e0f84" ContentHash="E2HRC-HaBkq7O-M05tvilw" DesignTimeRectangle="455, 585, 168, 51" ElementType="Button" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='filter-select-button' matching:id='fuzzy' fuzzylevel:id='0.0' tag='BUTTON' type='button' class='fragments__UnstyledButton-sc-jp1ftw-0 jVbzSW IconButton__ButtonWrapper-sc-1qjq4-1 gZaNkv' matching:class='fuzzy' fuzzylevel:class='0.0' aaname='Filters1' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Filters*' /&gt;" Guid="5e826010-bdb2-40f0-a252-18732e20b9b9" InformativeScreenshot="d84c501fde023390894fdb005109bff0.png" Reference="U0X3tk9DuUWal-aSohXRCQ/p1vQ8ubwYEu-06OVcJpQmw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SPATE - DATA SCIENCE TO PREDICT THE NEXT BIG TREND.' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
                         <uix:TargetAnchorable.Anchors>
@@ -225,7 +225,7 @@
                       </uix:VerifyExecutionOptions>
                     </uix:NClick.VerifyOptions>
                   </uix:NClick>
-                  <uix:NCheckState DisplayName="Check App State 'Label'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="382,57.333333333333336" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="0cf7f35e-2115-43e8-aaaf-2205d0a0f1e5" Version="V5">
+                  <uix:NCheckState ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Check App State 'Label'" Exists="{x:Null}" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="382,57.333333333333336" sap2010:WorkflowViewState.IdRef="NCheckState_2" InUiElement="{x:Null}" OutUiElement="{x:Null}" Result="{x:Null}" ScopeIdentifier="0cf7f35e-2115-43e8-aaaf-2205d0a0f1e5" Timeout="{x:Null}" Version="V5">
                     <uix:NCheckState.IfExists>
                       <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,276" sap2010:WorkflowViewState.IdRef="Sequence_24">
                         <sap:WorkflowViewStateService.ViewState>
@@ -234,7 +234,7 @@
                             <x:Boolean x:Key="IsPinned">False</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Button'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,216" sap2010:WorkflowViewState.IdRef="NClick_13" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0cf7f35e-2115-43e8-aaaf-2205d0a0f1e5" Version="V5">
+                        <uix:NClick ActivateBefore="True" AlterIfDisabled="{x:Null}" ClickType="Single" ContinueOnError="{x:Null}" CursorMotionType="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Click 'Button'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,216" sap2010:WorkflowViewState.IdRef="NClick_13" InScope="{x:Null}" InUiElement="{x:Null}" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" OutUiElement="{x:Null}" ScopeIdentifier="0cf7f35e-2115-43e8-aaaf-2205d0a0f1e5" Timeout="{x:Null}" UnblockInput="{x:Null}" Version="V5">
                           <uix:NClick.Target>
                             <uix:TargetAnchorable BrowserURL="app.spate.nyc/explore/google/trends/cb1700c7-f195-484f-acd6-3d0d803e0f84" CVScreenId="8904740e-e308-467e-9875-dfb226984f2f" ContentHash="AvYYSU_So0CSDeAB6fIXGA" CvElementArea="869, 653, 70, 37" CvTextArea="905, 663, 16, 16" CvTextArgument="X" CvType="Button" DesignTimeRectangle="904, 661, 21, 21" ElementType="Icon" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;ul&amp;gt;li&amp;gt;button&amp;gt;svg' tag='svg' class='FilterButton___Styled*' /&gt;" Guid="5385b6af-9a94-4fe8-9551-001f8f69de9a" InformativeScreenshot="c6461ac228d6b78610ed51576c6774d9.png" Reference="U0X3tk9DuUWal-aSohXRCQ/Jt-f_ilmvUut6zRV9oH9KQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SPATE - DATA SCIENCE TO PREDICT THE NEXT BIG TREND.' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None">
                               <uix:TargetAnchorable.Anchors>
@@ -283,7 +283,7 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </uix:NCheckState>
-                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'rising star(2)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="382,48" sap2010:WorkflowViewState.IdRef="NClick_14" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0cf7f35e-2115-43e8-aaaf-2205d0a0f1e5" Version="V5">
+                  <uix:NClick ActivateBefore="True" AlterIfDisabled="{x:Null}" ClickType="Single" ContinueOnError="{x:Null}" CursorMotionType="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Click 'rising star(2)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="382,48" sap2010:WorkflowViewState.IdRef="NClick_14" InScope="{x:Null}" InUiElement="{x:Null}" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" OutUiElement="{x:Null}" ScopeIdentifier="0cf7f35e-2115-43e8-aaaf-2205d0a0f1e5" Timeout="{x:Null}" UnblockInput="{x:Null}" Version="V5">
                     <uix:NClick.Target>
                       <uix:TargetAnchorable BrowserURL="app.spate.nyc/explore/google/trends/cb1700c7-f195-484f-acd6-3d0d803e0f84" CVScreenId="fbd50d87-7235-4a81-97b3-889652a63708" ContentHash="DRpKcPnTUEO-dX2P9Vvp5w" CvTextArea="530, 833, 118, 24" CvTextArgument="Rising Star" CvType="Text" DesignTimeRectangle="473, 820, 468, 48" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='rising star ' aria-role='switch' tag='BUTTON' /&gt;" Guid="50caccfd-33d5-418d-b2b4-9ce6daeedd86" InformativeScreenshot="60450cadf2cbc4afc3bb09b20fe9110e.png" Reference="U0X3tk9DuUWal-aSohXRCQ/WfzhrNR9z0qC7wNrXajMyw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SPATE - DATA SCIENCE TO PREDICT THE NEXT BIG TREND.' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
                         <uix:TargetAnchorable.Anchors>
@@ -319,7 +319,7 @@
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <uix:NCheckState DisplayName="Check App State 'rising star(1)'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="382,48" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="0cf7f35e-2115-43e8-aaaf-2205d0a0f1e5" Version="V5">
+                  <uix:NCheckState ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Check App State 'rising star(1)'" Exists="{x:Null}" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="382,48" sap2010:WorkflowViewState.IdRef="NCheckState_1" InUiElement="{x:Null}" OutUiElement="{x:Null}" Result="{x:Null}" ScopeIdentifier="0cf7f35e-2115-43e8-aaaf-2205d0a0f1e5" Timeout="{x:Null}" Version="V5">
                     <uix:NCheckState.IfExists>
                       <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,89" sap2010:WorkflowViewState.IdRef="Sequence_20">
                         <sap:WorkflowViewStateService.ViewState>
@@ -336,7 +336,7 @@
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Clusters'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0cf7f35e-2115-43e8-aaaf-2205d0a0f1e5" Version="V5">
+                        <uix:NClick ActivateBefore="True" AlterIfDisabled="{x:Null}" ClickType="Single" ContinueOnError="{x:Null}" CursorMotionType="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Click 'Clusters'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="NClick_8" InScope="{x:Null}" InUiElement="{x:Null}" InteractionMode="{x:Null}" KeyModifiers="None" MouseButton="Left" OutUiElement="{x:Null}" ScopeIdentifier="0cf7f35e-2115-43e8-aaaf-2205d0a0f1e5" Timeout="{x:Null}" UnblockInput="{x:Null}" Version="V5">
                           <uix:NClick.Target>
                             <uix:TargetAnchorable BrowserURL="app.spate.nyc/explore/trends/a1d01543-3b04-426e-a194-29d9bd8f9b0c" CVScreenId="ce1d00c0-1d6f-40df-8943-e5b5fb7f25de" ContentHash="JGW56h7X_06Rnha_Sd1uIQ" CvTextArea="489, 875, 102, 22" CvTextArgument="Clusters" CvType="Text" DesignTimeRectangle="425, 696, 431, 73" ElementType="Button" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl aaname='Clusters' parentid='app' tag='BUTTON' type='button' class='Accordion__AccordionButton-sc-ua1mmh-10 bWBJqu' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Clusters' /&gt;" Guid="f75b002c-94bc-44bb-9789-a71bd764de20" ImageBase64="" InformativeScreenshot="427a1f5ef106a809f320206f8fa8e828.png" Reference="U0X3tk9DuUWal-aSohXRCQ/ZDKt6iidFUKJZWPt_38J3A" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SPATE - DATA SCIENCE TO PREDICT THE NEXT BIG TREND.' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
                               <uix:TargetAnchorable.Anchors>
@@ -366,7 +366,7 @@
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                         </uix:NClick>
-                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'rising star'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,48" sap2010:WorkflowViewState.IdRef="NClick_9" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0cf7f35e-2115-43e8-aaaf-2205d0a0f1e5" Version="V5">
+                        <uix:NClick ActivateBefore="True" AlterIfDisabled="{x:Null}" ClickType="Single" ContinueOnError="{x:Null}" CursorMotionType="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Click 'rising star'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,48" sap2010:WorkflowViewState.IdRef="NClick_9" InScope="{x:Null}" InUiElement="{x:Null}" InteractionMode="{x:Null}" KeyModifiers="None" MouseButton="Left" OutUiElement="{x:Null}" ScopeIdentifier="0cf7f35e-2115-43e8-aaaf-2205d0a0f1e5" Timeout="{x:Null}" UnblockInput="{x:Null}" Version="V5">
                           <uix:NClick.Target>
                             <uix:TargetAnchorable BrowserURL="app.spate.nyc/explore/trends/a1d01543-3b04-426e-a194-29d9bd8f9b0c" CVScreenId="692095a1-e6e4-47e8-9554-2bfe7121eed3" ContentHash="WFZwSzxqPkOEUYlVm_fe6A" CvElementArea="446, 912, 388, 60" CvTextArea="503, 932, 115, 24" CvTextArgument="Rising Star" CvType="Button" DesignTimeRectangle="449, 614, 383, 56" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='rising star ' aria-role='switch' tag='BUTTON' /&gt;" Guid="2cd09175-4fb1-45be-9140-6cd165777422" InformativeScreenshot="9dda9c5df7fb270f78d1cf3aca50b7aa.png" Reference="U0X3tk9DuUWal-aSohXRCQ/p3l0Qyg59kqdkzy5hTH4iw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SPATE - DATA SCIENCE TO PREDICT THE NEXT BIG TREND.' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
                               <uix:TargetAnchorable.Anchors>
@@ -414,7 +414,7 @@
                 </Sequence>
               </If.Else>
             </If>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Export Data'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450,229.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_10" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0cf7f35e-2115-43e8-aaaf-2205d0a0f1e5" Version="V5">
+            <uix:NClick ActivateBefore="True" AlterIfDisabled="{x:Null}" ClickType="Single" ContinueOnError="{x:Null}" CursorMotionType="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Click 'Export Data'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450,229.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_10" InScope="{x:Null}" InUiElement="{x:Null}" InteractionMode="{x:Null}" KeyModifiers="None" MouseButton="Left" OutUiElement="{x:Null}" ScopeIdentifier="0cf7f35e-2115-43e8-aaaf-2205d0a0f1e5" Timeout="{x:Null}" UnblockInput="{x:Null}" Version="V5">
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="app.spate.nyc/explore/trends/ff93f372-b1eb-49de-8706-3fb0424268f9" CVScreenId="5e52edf1-59bc-45e7-83c4-2c6dd179b4df" ContentHash="aPHk3bc3s0CZ_bhyebMYmQ" CvElementArea="1651, 478, 234, 55" CvType="InputBox" DesignTimeRectangle="1706, 492, 129, 26" ElementType="Text" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl aaname='Export Data' tag='SPAN' type='' class='IconButton__TextWrapper-sc-1qjq4-0 jBUKLp' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Export Data' /&gt;" Guid="9530d12a-6a48-41dd-86bf-8393a9a3b302" InformativeScreenshot="a31a5d8008e1332339c2852bb38af3f8.png" Reference="U0X3tk9DuUWal-aSohXRCQ/S0O2paiNlk-nGkJrfkn_cA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SPATE - DATA SCIENCE TO PREDICT THE NEXT BIG TREND.' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
                   <uix:TargetAnchorable.Anchors>
@@ -451,7 +451,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NClick>
-            <ui:GetLastDownloadedFile FileResource="{x:Null}" IgnoreFiles="{x:Null}" Timeout="{x:Null}" DisplayName="Wait for Download" DownloadFolder="[System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), &quot;Downloads&quot;)]" File="[DownloadedReport]" sap:VirtualizedContainerService.HintSize="450,574" sap2010:WorkflowViewState.IdRef="GetLastDownloadedFile_1">
+            <ui:GetLastDownloadedFile DisplayName="Wait for Download" DownloadFolder="[System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), &quot;Downloads&quot;)]" File="[DownloadedReport]" FileResource="{x:Null}" sap:VirtualizedContainerService.HintSize="450,574" sap2010:WorkflowViewState.IdRef="GetLastDownloadedFile_1" IgnoreFiles="{x:Null}" Timeout="{x:Null}">
               <ui:GetLastDownloadedFile.Body>
                 <ActivityAction>
                   <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,280" sap2010:WorkflowViewState.IdRef="Sequence_19">
@@ -460,7 +460,7 @@
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Card Data CSV'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="382,220" sap2010:WorkflowViewState.IdRef="NClick_11" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0cf7f35e-2115-43e8-aaaf-2205d0a0f1e5" Version="V5">
+                    <uix:NClick ActivateBefore="True" AlterIfDisabled="{x:Null}" ClickType="Single" ContinueOnError="{x:Null}" CursorMotionType="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Click 'Card Data CSV'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="382,220" sap2010:WorkflowViewState.IdRef="NClick_11" InScope="{x:Null}" InUiElement="{x:Null}" InteractionMode="{x:Null}" KeyModifiers="None" MouseButton="Left" OutUiElement="{x:Null}" ScopeIdentifier="0cf7f35e-2115-43e8-aaaf-2205d0a0f1e5" Timeout="{x:Null}" UnblockInput="{x:Null}" Version="V5">
                       <uix:NClick.Target>
                         <uix:TargetAnchorable BrowserURL="app.spate.nyc/explore/trends/a1d01543-3b04-426e-a194-29d9bd8f9b0c" CVScreenId="e1bcf72e-8e92-4c4c-b9ba-823dc18b801c" ContentHash="jwX292w2PUKs_D034hEZrg" CvTextArea="1602, 629, 159, 19" CvTextArgument="Card Data CSV" CvType="Text" DesignTimeRectangle="1554, 612, 330, 54" ElementType="Button" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='headlessui-menu-item-:r31:' tag='BUTTON' type='' class='fragments__UnstyledButton-sc-jp1ftw-0 jVbzSW IconButton__ButtonWrapper-sc-1qjq4-1 gZaNkv MenuButton__MenuItem-sc-1a2q17s-3 iapqNI' aaname='Card Data CSV' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Card Data CSV' /&gt;" Guid="5347e52b-79d7-44b9-b618-9a8172fb8213" InformativeScreenshot="8e0959748ca63d6ffce6f796a4f763a3.png" Reference="U0X3tk9DuUWal-aSohXRCQ/BwjJ_1bwDU65P8kaP5B_eA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SPATE - DATA SCIENCE TO PREDICT THE NEXT BIG TREND.' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
                           <uix:TargetAnchorable.Anchors>
@@ -497,7 +497,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:GetLastDownloadedFile>
-            <ui:CreateDirectory ContinueOnError="{x:Null}" DisplayName="Create Folder" sap:VirtualizedContainerService.HintSize="450,124" sap2010:WorkflowViewState.IdRef="CreateDirectory_1" Output="[GoogleDriveFolder]" Path="[&quot;G:\My Drive\Spate Monthly Trend Reports\&quot; + Now.ToString(&quot;yyyy&quot;)+ &quot;\&quot; + Now.ToString(&quot;MMMM&quot;)+ &quot;\&quot; + in_CurrentCategory+ &quot;\&quot; + in_CurrentMarket + &quot;\&quot;]">
+            <ui:CreateDirectory ContinueOnError="{x:Null}" DisplayName="Create Folder" sap:VirtualizedContainerService.HintSize="450,124" sap2010:WorkflowViewState.IdRef="CreateDirectory_1" Output="[GoogleDriveFolderTop20]" Path="[&quot;G:\My Drive\Spate Monthly Trend Reports\&quot; +&#xA;Now.ToString(&quot;yyyy&quot;) + &quot;\&quot; +&#xA;Now.ToString(&quot;MMMM&quot;) + &quot;\&quot; +&#xA;in_CurrentCategory + &quot;\&quot; +&#xA;in_CurrentMarket + &quot;\Top 20\&quot;]">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -505,10 +505,24 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:CreateDirectory>
-            <ui:MoveFile ContinueOnError="{x:Null}" DestinationResource="{x:Null}" PathResource="{x:Null}" Destination="[GoogleDriveFolder.ID + System.IO.Path.GetFileNameWithoutExtension(DownloadedReport.Name) + &quot;_&quot; + Now.ToString(&quot;yyyy-MMM-dd&quot;) + DownloadedReport.Extension]" DisplayName="Move File" sap:VirtualizedContainerService.HintSize="450,50.666666666666664" sap2010:WorkflowViewState.IdRef="MoveFile_1" Overwrite="True" Path="[DownloadedReport.FullName]">
+            <Assign sap:VirtualizedContainerService.HintSize="450,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_1">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[path_GoogleDriveFolder]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[System.IO.Directory.GetParent(GoogleDriveFolderTop20.ID).FullName]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="ProcessTop20 - Invoke Workflow File (Workflows\ProcessTop20.xaml)" sap:VirtualizedContainerService.HintSize="450,177.33333333333334" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" Level="{x:Null}" LogEntry="{x:Null}" LogExit="{x:Null}" Timeout="{x:Null}" UnSafe="False" WorkflowFileName="Workflows\ProcessTop20.xaml">
+              <ui:InvokeWorkflowFile.Arguments>
+                <InArgument x:TypeArguments="si:FileInfo" x:Key="in_DownloadedReport">[DownloadedReport]</InArgument>
+                <InArgument x:TypeArguments="upr:ILocalResource" x:Key="in_GoogleDriveFolderTop20">[GoogleDriveFolderTop20]</InArgument>
+              </ui:InvokeWorkflowFile.Arguments>
+            </ui:InvokeWorkflowFile>
+            <ui:MoveFile ContinueOnError="{x:Null}" Destination="[path_GoogleDriveFolder + System.IO.Path.GetFileNameWithoutExtension(DownloadedReport.Name) + &quot;_&quot; + Now.ToString(&quot;yyyy-MMM-dd&quot;) + DownloadedReport.Extension]" DestinationResource="{x:Null}" DisplayName="Move File" sap:VirtualizedContainerService.HintSize="450,190" sap2010:WorkflowViewState.IdRef="MoveFile_1" Overwrite="True" Path="[DownloadedReport.FullName]" PathResource="{x:Null}">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>

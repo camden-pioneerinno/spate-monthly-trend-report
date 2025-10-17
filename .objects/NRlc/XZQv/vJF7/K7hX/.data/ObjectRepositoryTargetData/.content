@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="-CS-kW48vU2Pg6u2_I_JhQ" Reference="U0X3tk9DuUWal-aSohXRCQ/K7hX-CDDtUmvk_TR_V26sA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="app.spate.nyc/categoryFive/ffae5b3a-09b9-43c6-8ba6-27b1afa6773e/80a0317c-00ec-420b-ae86-e2b2c337758b/tiktok" CVScreenId="545909ff-e759-4623-9435-31194221f7e5" CvTextArea="722, 1035, 156, 18" CvTextArgument="Insufficient Data" CvType="Text" DesignTimeRectangle="724, 1035, 154, 21" ElementType="Text" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl aaname='Insufficient Data' parentid='app' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' tag='DIV' type='' check:innerText='Insufficient Data' /&gt;" Guid="451b25a1-1b01-47a7-9178-bf1f2a9d1114" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SPATE: ruddy skin : us : beauty : skincare : face concerns : skin condition' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="545909ff-e759-4623-9435-31194221f7e5" DesignTimeRectangle="479, 1020, 424, 51" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aaname='avg. monthly searchesInsufficient Data' parentid='app' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' tag='BUTTON' type='' class='fragments__UnstyledButton-sc-jp1ftw-0 jVbzSW sc-fXSgeo bAgivA' matching:class='fuzzy' fuzzylevel:class='0.0' innertext='avg. monthly searchesInsufficient Data' visibleinnertext='Avg. Monthly Searches&amp;#xA;Insufficient Data' check:innerText='Avg. Weekly Views&amp;#xA;Insufficient Data' /&gt;" Guid="0796d7bf-e825-422d-aee9-a3a1ba998ba1" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="242bd793ef853a338e81e42afd485c79.png" xmlns="">0B5LEnvrtckaXCmWG1ECDWQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

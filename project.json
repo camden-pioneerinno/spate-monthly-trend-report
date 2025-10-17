@@ -1,6 +1,7 @@
 {
   "name": "Spate Monthly Trend Report",
-  "projectId": "32b4b2f2-3cda-45e8-abbf-dd0b6898e492",
+  "projectId": "2f566661-6132-4f64-9c97-459355575474",
+  "previousProjectId": "32b4b2f2-3cda-45e8-abbf-dd0b6898e492",
   "description": "Spate Monthly Trend Report",
   "main": "Main.xaml",
   "dependencies": {

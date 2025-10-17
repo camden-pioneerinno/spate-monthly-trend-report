@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="-7afNSns20W3_jBcVaUepQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="app.spate.nyc/explore/trends/a1d01543-3b04-426e-a194-29d9bd8f9b0c" CVScreenId="0c47b91e-1b3f-4b12-8e85-6303d2c6eb4b" CvElementArea="1342, 581, 545, 54" CvType="Button" DesignTimeRectangle="1344, 583, 540, 51" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl parentid='headlessui-dialog-panel-:ra5:' tag='A' aaname='See more data' /&gt;" Guid="a6b832e4-b538-4af2-b1d6-efcfcc4c3d4e" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SPATE - DATA SCIENCE TO PREDICT THE NEXT BIG TREND.' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="0c47b91e-1b3f-4b12-8e85-6303d2c6eb4b" CvElementArea="1342, 581, 545, 54" CvTextArea="1515, 599, 160, 19" CvTextArgument="See More Data" CvType="Button" DesignTimeRectangle="1519, 596, 157, 25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='See more data' tag='SPAN' type='' innertext='See more data' check:innerText='See More Data' /&gt;" Guid="d8ef013a-09b7-4e9a-8b69-80791bf8bdb2" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="e7797fef497344d8615388462266367d.png" xmlns="">06zOVN-uyaUGlDKMVWNCLRA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
