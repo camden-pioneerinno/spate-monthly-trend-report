@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="utf-16"?>
-<ObjectRepositoryTargetData ContentHash="rs4abHE6fkugdUXAoHkxSA" Reference="U0X3tk9DuUWal-aSohXRCQ/cDyzXbOt0EyRviTNvu3B0A" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<ObjectRepositoryTargetData ContentHash="NrcVherSikG5kQ_kdlGeQA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <ObjectRepositoryTargetData.Data>
-    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="app.spate.nyc/categoryFive/34831ca4-778f-4b97-841b-b2b404016ffb/43e1df22-4afe-4b92-8091-762f7f4e54e9" CVScreenId="0f255253-ce8a-4cd2-b7e7-3da7500e56d2" DesignTimeRectangle="1037, 438, 126, 51" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Google' parentid='app' tag='A' /&gt;" Guid="e2bdcb75-94ca-4dbd-89d4-0398c1762259" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SPATE: *' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None">
-      <imageRef attrName="InformativeScreenshot" originalValue="a7f32c7f8077ce73bffd2bb72b1f5aeb.png" xmlns="">06pbMxGSed0-sbg-0Yxjbww</imageRef>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="app.spate.nyc/categoryFive/34831ca4-778f-4b97-841b-b2b404016ffb/43e1df22-4afe-4b92-8091-762f7f4e54e9" CVScreenId="50aa8fc3-4e65-4202-993d-3eb050b12229" DesignTimeRectangle="1051, 520, 76, 25" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Google' parentid='app' tag='SPAN' innertext='Google' visibleinnertext='Google' /&gt;" Guid="04be1103-b776-49bc-baf8-892bbf6773a2" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SPATE: half wig : us : beauty : hair : hair styling products : hair extension products' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="50aa8fc3-4e65-4202-993d-3eb050b12229" DesignTimeRectangle="1026, 507, 126, 51" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Google' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' parentid='app' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' tag='A' type='' innertext='Google' visibleinnertext='Google' check:innerText='Google' /&gt;" Guid="6107662a-22aa-4ec8-946c-bfa753341780" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="6b623e656816b7bbb0574e0afd97786d.png" xmlns="">0PIXPYUbVSUazKiuNRWg8CQ</imageRef>
     </TargetAnchorable>
     <x:String x:Key="ActivityType">Click</x:String>
   </ObjectRepositoryTargetData.Data>

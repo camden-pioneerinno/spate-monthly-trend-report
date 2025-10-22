@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="waKYdaDti0OqAsaMNbcisQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="app.spate.nyc/categoryFive/34831ca4-778f-4b97-841b-b2b404016ffb/43e1df22-4afe-4b92-8091-762f7f4e54e9" CVScreenId="ecfac0e6-f726-4617-bf01-e084d91f805f" DesignTimeRectangle="896, 520, 100, 25" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Overview' parentid='app' tag='SPAN' innertext='Overview' visibleinnertext='Overview' /&gt;" Guid="8690a2a9-554a-4baa-9129-9ef27a8baffa" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SPATE: half wig : us : beauty : hair : hair styling products : hair extension products' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="ecfac0e6-f726-4617-bf01-e084d91f805f" DesignTimeRectangle="871, 507, 150, 51" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Overview' tag='A' type='' innertext='Overview' intent='primary' /&gt;" Guid="b779273f-9d69-4f20-9de8-c9029ae7bcdf" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="9af7b16f423cdc85bf046dc68a9e16ff.png" xmlns="">09aEm4AyUB0Swgb7a2UMwbw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

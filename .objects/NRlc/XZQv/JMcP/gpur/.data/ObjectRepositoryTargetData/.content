@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="mbSfghGWF0-prgEgq-0Bvg" Reference="U0X3tk9DuUWal-aSohXRCQ/gpurxBRTSEGeH27ZRhQhDA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="app.spate.nyc/explore/google/trends/16235dff-c4cc-401c-a774-f9304c5ad061" CVScreenId="23f10746-b3a7-42ac-a40e-fd0107bcda60" DesignTimeRectangle="474, 892, 180, 36" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="[string.Format(&quot;&lt;webctrl aaname='{0}' parentid='app' tag='SPAN' /&gt;&quot;, str_CardName)]" Guid="dfdfac53-2ea4-400d-90e4-3f656ca15a14" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SPATE - DATA SCIENCE TO PREDICT THE NEXT BIG TREND.' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="23f10746-b3a7-42ac-a40e-fd0107bcda60" DesignTimeRectangle="456, 862, 451, 97" FullSelectorArgument="[string.Format(&quot;&lt;webctrl parentid='app' tag='DIV' innertext='{0}' /&gt;&quot;, str_CardName)]" Guid="d56f938a-5778-4098-8c20-ae989dbaf440" SearchSteps="Selector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="5e53eb89a920ada964f065f97ee3b1f6.png" xmlns="">0nDDtVG0wt0e-b_fk7IuDLA</imageRef>
+    </TargetAnchorable>
+    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="1">
+      <ObjectRepositoryVariableData DefaultValue="shoulder filler" Name="str_CardName" />
+    </scg:List>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

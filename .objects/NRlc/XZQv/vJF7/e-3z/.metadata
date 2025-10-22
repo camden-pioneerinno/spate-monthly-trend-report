@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Instagram",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "e-3zRSoTG02zqhlna8f4HQ",
+  "Reference": "U0X3tk9DuUWal-aSohXRCQ/e-3zRSoTG02zqhlna8f4HQ",
+  "ParentRef": "U0X3tk9DuUWal-aSohXRCQ/vJF76FH8mECW9OScAZM_Tg",
+  "Created": "2025-10-17T19:42:16.6234231Z",
+  "Updated": "2025-10-17T19:42:16.6234231Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.16.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

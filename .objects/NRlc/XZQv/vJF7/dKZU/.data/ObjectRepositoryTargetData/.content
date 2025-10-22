@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="sWjcFn8Onk2ByPlbHZfPdg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="app.spate.nyc/categoryFive/4346f09c-a131-4897-a7c5-d2ac9355d686/9910ca70-22db-426f-8ce2-73938292a6df/google" DesignTimeRectangle="401, 288, 1507, 2316" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='MAIN' /&gt;" Guid="bfcd5f2f-f869-43bb-a033-45a26f55d1e7" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SPATE: shoulder filler : kr : beauty : skincare : body services : body filler services' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="db6b2a0d2f35474e7ba70cecdab2c7d8.png" xmlns="">01Ekeu7qTDkOWhmiIJHrcmA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">SetFocus</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -6,6 +6,7 @@
     <x:Property Name="out_str_GoogleSearches" Type="OutArgument(x:String)" />
     <x:Property Name="out_str_TikTokViews" Type="OutArgument(x:String)" />
     <x:Property Name="out_str_InstaYoY" Type="OutArgument(x:String)" />
+    <x:Property Name="in_str_Market" Type="InArgument(x:String)" />
   </x:Members>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
@@ -170,67 +171,37 @@
       <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
       <AssemblyReference>System.ServiceModel</AssemblyReference>
       <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="1326.6666666666667,3576" sap2010:WorkflowViewState.IdRef="Sequence_8">
+  <Sequence sap:VirtualizedContainerService.HintSize="1072,2772.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_8">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="str_PredictedYoY" />
       <Variable x:TypeArguments="x:String" Name="str_TikTokViews" />
       <Variable x:TypeArguments="x:String" Name="str_GoogleSearches" />
       <Variable x:TypeArguments="x:String" Name="str_InstaYoY" />
+      <Variable x:TypeArguments="ui:UiElement" Name="app_NewTab" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" ConnectionId="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Chrome card new tab" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="570,3553.3333333333335" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InUiElement="{x:Null}" InteractionMode="DebuggerApi" IsIncognito="{x:Null}" OpenMode="Never" OutUiElement="{x:Null}" ScopeGuid="a73a1953-76c0-4c51-a34b-b060aa75c09f" Timeout="{x:Null}" UserDataFolderMode="{x:Null}" UserDataFolderPath="{x:Null}" Version="V2" WebDriverMode="{x:Null}">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Chrome card new tab" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="638,2750" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Never" OutUiElement="[app_NewTab]" ScopeGuid="a73a1953-76c0-4c51-a34b-b060aa75c09f" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="536,3311.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_9">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="604,2508" sap2010:WorkflowViewState.IdRef="Sequence_9">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NGetText ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Get Text 'Predicted YoY'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="502,139.33333333333334" sap2010:WorkflowViewState.IdRef="NGetText_1" InUiElement="{x:Null}" OutUiElement="{x:Null}" ScopeIdentifier="a73a1953-76c0-4c51-a34b-b060aa75c09f" ScrapingOptions="{x:Null}" TextString="[str_PredictedYoY]" Timeout="{x:Null}" Version="V5" WordsInfo="{x:Null}">
-              <uix:NGetText.Target>
-                <uix:TargetAnchorable BrowserURL="app.spate.nyc/categoryFive/34831ca4-778f-4b97-841b-b2b404016ffb/43e1df22-4afe-4b92-8091-762f7f4e54e9" CVScreenId="d60cf64f-d005-49cc-9d4c-03ce522824af" ContentHash="6y8q30202Eme_Nf108GCqA" DesignTimeRectangle="1682, 516, 148, 48" ElementType="Text" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='DIV' type='' parentclass='SelectableCombinedMetric__Wrapper-sc-dp2i64-0 SelectableCombinedMetric___StyledWrapper-sc-dp2i64-1 hxWeRJ' /&gt;" Guid="96f0dad3-2508-47cb-ae55-40bea1c496f2" InformativeScreenshot="352eabe06cb96c236e1dc12d9e6c245f.png" Reference="U0X3tk9DuUWal-aSohXRCQ/p_QMKJbik0WpL72cAhg2Ug" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SPATE: half wig : us : beauty : hair : hair styling products : hair extension products' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="None">
-                  <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                      <uix:Target CVScreenId="d60cf64f-d005-49cc-9d4c-03ce522824af" DesignTimeRectangle="1682, 559, 148, 36" FuzzySelectorArgument="&lt;webctrl tag='SPAN' type='' innertext='Predicted YoY' visibleinnertext='PREDICTED YoY' check:innerText='PREDICTED YoY' /&gt;" Guid="3e11618f-d3a2-4835-8afa-3170d220124e" SearchSteps="FuzzySelector" />
-                    </scg:List>
-                  </uix:TargetAnchorable.Anchors>
-                </uix:TargetAnchorable>
-              </uix:NGetText.Target>
-              <sap:WorkflowViewStateService.ViewState>
-                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                </scg:Dictionary>
-              </sap:WorkflowViewStateService.ViewState>
-            </uix:NGetText>
-            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="ProcessExtractedNumberStrings - Invoke Workflow File (Workflows\ProcessExtractedNumberStrings.xaml)" sap:VirtualizedContainerService.HintSize="502,176.66666666666666" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" Level="{x:Null}" LogEntry="{x:Null}" LogExit="{x:Null}" Timeout="{x:Null}" UnSafe="False" WorkflowFileName="Workflows\ProcessExtractedNumberStrings.xaml">
-              <ui:InvokeWorkflowFile.Arguments>
-                <OutArgument x:TypeArguments="x:String" x:Key="out_string">[out_str_PredictedYoY]</OutArgument>
-                <InArgument x:TypeArguments="x:String" x:Key="in_string">[str_PredictedYoY]</InArgument>
-              </ui:InvokeWorkflowFile.Arguments>
-              <sap:WorkflowViewStateService.ViewState>
-                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                </scg:Dictionary>
-              </sap:WorkflowViewStateService.ViewState>
-            </ui:InvokeWorkflowFile>
-            <uix:NClick ActivateBefore="True" AlterIfDisabled="{x:Null}" ClickType="Single" ContinueOnError="{x:Null}" CursorMotionType="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Click 'Google'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="502,229.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_3" InScope="{x:Null}" InUiElement="{x:Null}" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" OutUiElement="{x:Null}" ScopeIdentifier="a73a1953-76c0-4c51-a34b-b060aa75c09f" Timeout="{x:Null}" UnblockInput="{x:Null}" Version="V5">
-              <uix:NClick.Target>
-                <uix:TargetAnchorable BrowserURL="app.spate.nyc/categoryFive/34831ca4-778f-4b97-841b-b2b404016ffb/43e1df22-4afe-4b92-8091-762f7f4e54e9" CVScreenId="0f255253-ce8a-4cd2-b7e7-3da7500e56d2" ContentHash="rs4abHE6fkugdUXAoHkxSA" DesignTimeRectangle="1037, 438, 126, 51" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Google' parentid='app' tag='A' /&gt;" Guid="e2bdcb75-94ca-4dbd-89d4-0398c1762259" InformativeScreenshot="a7f32c7f8077ce73bffd2bb72b1f5aeb.png" Reference="U0X3tk9DuUWal-aSohXRCQ/cDyzXbOt0EyRviTNvu3B0A" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SPATE: *' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None" />
-              </uix:NClick.Target>
-              <uix:NClick.VerifyOptions>
+            <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="570,255.33333333333334" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_2" InteractionMode="HardwareEvents" Shortcuts="[d(hk)][d(ctrl)][k(tab)][u(ctrl)][u(hk)]" Version="V5">
+              <uix:NKeyboardShortcuts.VerifyOptions>
                 <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
                   <uix:VerifyExecutionOptions.Retry>
                     <InArgument x:TypeArguments="x:Boolean" />
@@ -239,219 +210,511 @@
                     <InArgument x:TypeArguments="x:Double" />
                   </uix:VerifyExecutionOptions.Timeout>
                 </uix:VerifyExecutionOptions>
-              </uix:NClick.VerifyOptions>
-              <sap:WorkflowViewStateService.ViewState>
-                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                </scg:Dictionary>
-              </sap:WorkflowViewStateService.ViewState>
-            </uix:NClick>
-            <uix:NCheckState DisplayName="Check App State 'Insufficient Data'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="502,653.3333333333334" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="a73a1953-76c0-4c51-a34b-b060aa75c09f" Timeout="2" Version="V5">
-              <uix:NCheckState.IfExists>
-                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="468,168" sap2010:WorkflowViewState.IdRef="Sequence_12">
+              </uix:NKeyboardShortcuts.VerifyOptions>
+            </uix:NKeyboardShortcuts>
+            <If Condition="[Not (in_str_Market = &quot;Japan&quot; Or in_str_Market = &quot;South Korea&quot;)]" sap:VirtualizedContainerService.HintSize="570,1078.6666666666667" sap2010:WorkflowViewState.IdRef="If_1">
+              <If.Then>
+                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="536,881.3333333333334" sap2010:WorkflowViewState.IdRef="Sequence_22">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <Assign sap:VirtualizedContainerService.HintSize="434,108" sap2010:WorkflowViewState.IdRef="Assign_2">
-                    <Assign.To>
-                      <OutArgument x:TypeArguments="x:String">[str_GoogleSearches]</OutArgument>
-                    </Assign.To>
-                    <Assign.Value>
-                      <InArgument x:TypeArguments="x:String">N/A</InArgument>
-                    </Assign.Value>
-                  </Assign>
-                </Sequence>
-              </uix:NCheckState.IfExists>
-              <uix:NCheckState.IfNotExists>
-                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="468,190" sap2010:WorkflowViewState.IdRef="Sequence_13">
-                  <sap:WorkflowViewStateService.ViewState>
-                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                    </scg:Dictionary>
-                  </sap:WorkflowViewStateService.ViewState>
-                  <uix:NGetText ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Get Text 'Avg. Monthly Views'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,130" sap2010:WorkflowViewState.IdRef="NGetText_2" InUiElement="{x:Null}" OutUiElement="{x:Null}" ScopeIdentifier="a73a1953-76c0-4c51-a34b-b060aa75c09f" ScrapingOptions="{x:Null}" TextString="[str_GoogleSearches]" Timeout="{x:Null}" Version="V5" WordsInfo="{x:Null}">
-                    <uix:NGetText.Target>
-                      <uix:TargetAnchorable BrowserURL="app.spate.nyc/categoryFive/aadbc60d-162f-421f-a5f2-aaf2ca8dc9db/fa29580a-b61b-4dcf-b782-4501306c176c/google" CVScreenId="d4671fc4-af84-46de-8518-d1c39fde1594" ContentHash="xFYlZwFzskS0ULJ7HSC0qQ" DesignTimeRectangle="729, 655, 54, 21" ElementType="Text" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl parentid='app' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' tag='SPAN' type='' aaname='\d.*' matching:aaname='regex' innertext='\d.*' matching:innertext='regex' visibleinnertext='\d.*' matching:visibleinnertext='regex' /&gt;" Guid="360f46da-2a05-48ab-b815-50bc027ceaa4" InformativeScreenshot="fdcb6964cfc872feb4d24eb25de8a56a.png" Reference="U0X3tk9DuUWal-aSohXRCQ/4fY5h779EU-ZXbykaaOktw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Spate' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="None">
+                  <uix:NCheckState DisplayName="Check App State 'Overview'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="502,821.3333333333334" sap2010:WorkflowViewState.IdRef="NCheckState_3" ScopeIdentifier="a73a1953-76c0-4c51-a34b-b060aa75c09f" Timeout="1" Version="V5">
+                    <uix:NCheckState.IfExists>
+                      <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="468,367.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <uix:NGetText DisplayName="Get Text 'Predicted YoY'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,139.33333333333334" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="a73a1953-76c0-4c51-a34b-b060aa75c09f" TextString="[str_PredictedYoY]" Version="V5">
+                          <uix:NGetText.Target>
+                            <uix:TargetAnchorable BrowserURL="app.spate.nyc/categoryFive/34831ca4-778f-4b97-841b-b2b404016ffb/43e1df22-4afe-4b92-8091-762f7f4e54e9" CVScreenId="d60cf64f-d005-49cc-9d4c-03ce522824af" ContentHash="6y8q30202Eme_Nf108GCqA" DesignTimeRectangle="1682, 516, 148, 48" ElementType="Text" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='DIV' type='' parentclass='SelectableCombinedMetric__Wrapper-sc-dp2i64-0 SelectableCombinedMetric___StyledWrapper-sc-dp2i64-1 hxWeRJ' /&gt;" Guid="96f0dad3-2508-47cb-ae55-40bea1c496f2" InformativeScreenshot="352eabe06cb96c236e1dc12d9e6c245f.png" Reference="U0X3tk9DuUWal-aSohXRCQ/p_QMKJbik0WpL72cAhg2Ug" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SPATE: half wig : us : beauty : hair : hair styling products : hair extension products' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="None">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                  <uix:Target CVScreenId="d60cf64f-d005-49cc-9d4c-03ce522824af" DesignTimeRectangle="1682, 559, 148, 36" FuzzySelectorArgument="&lt;webctrl tag='SPAN' type='' innertext='Predicted YoY' visibleinnertext='PREDICTED YoY' check:innerText='PREDICTED YoY' /&gt;" Guid="3e11618f-d3a2-4835-8afa-3170d220124e" SearchSteps="FuzzySelector" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NGetText.Target>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </uix:NGetText>
+                        <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="ProcessExtractedNumberStrings - Invoke Workflow File (Workflows\ProcessExtractedNumberStrings.xaml)" sap:VirtualizedContainerService.HintSize="416,168" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Workflows\ProcessExtractedNumberStrings.xaml">
+                          <ui:InvokeWorkflowFile.Arguments>
+                            <OutArgument x:TypeArguments="x:String" x:Key="out_string">[out_str_PredictedYoY]</OutArgument>
+                            <InArgument x:TypeArguments="x:String" x:Key="in_string">[str_PredictedYoY]</InArgument>
+                          </ui:InvokeWorkflowFile.Arguments>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </ui:InvokeWorkflowFile>
+                      </Sequence>
+                    </uix:NCheckState.IfExists>
+                    <uix:NCheckState.IfNotExists>
+                      <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="468,168" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <Assign sap:VirtualizedContainerService.HintSize="434,108" sap2010:WorkflowViewState.IdRef="Assign_3">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:String">[out_str_PredictedYoY]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:String">N/A</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                      </Sequence>
+                    </uix:NCheckState.IfNotExists>
+                    <uix:NCheckState.Target>
+                      <uix:TargetAnchorable BrowserURL="app.spate.nyc/categoryFive/34831ca4-778f-4b97-841b-b2b404016ffb/43e1df22-4afe-4b92-8091-762f7f4e54e9" CVScreenId="ecfac0e6-f726-4617-bf01-e084d91f805f" ContentHash="waKYdaDti0OqAsaMNbcisQ" DesignTimeRectangle="896, 520, 100, 25" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Overview' parentid='app' tag='SPAN' innertext='Overview' visibleinnertext='Overview' /&gt;" Guid="8690a2a9-554a-4baa-9129-9ef27a8baffa" InformativeScreenshot="9af7b16f423cdc85bf046dc68a9e16ff.png" Reference="U0X3tk9DuUWal-aSohXRCQ/mJI8XjhOSEWRLIDbHykoMw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SPATE: half wig : us : beauty : hair : hair styling products : hair extension products' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None">
                         <uix:TargetAnchorable.Anchors>
                           <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                            <uix:Target CVScreenId="d4671fc4-af84-46de-8518-d1c39fde1594" DesignTimeRectangle="479, 640, 438, 51" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aaname='avg. monthly searches*' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' parentid='app' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' tag='BUTTON' type='' class='fragments__UnstyledButton-*' matching:class='fuzzy' fuzzylevel:class='0.0' innertext='avg. monthly searches*' visibleinnertext='Avg. Monthly Searches&amp;#xA;*&amp;#xA;*' check:innerText='Avg. Monthly Searches&amp;#xA;*&amp;#xA;*' /&gt;" Guid="de63d475-ec0e-427e-989b-b968fd26b664" SearchSteps="FuzzySelector" />
+                            <uix:Target CVScreenId="ecfac0e6-f726-4617-bf01-e084d91f805f" DesignTimeRectangle="871, 507, 150, 51" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Overview' tag='A' type='' innertext='Overview' intent='primary' /&gt;" Guid="b779273f-9d69-4f20-9de8-c9029ae7bcdf" SearchSteps="FuzzySelector" />
                           </scg:List>
                         </uix:TargetAnchorable.Anchors>
                       </uix:TargetAnchorable>
-                    </uix:NGetText.Target>
+                    </uix:NCheckState.Target>
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                  </uix:NGetText>
+                  </uix:NCheckState>
                 </Sequence>
-              </uix:NCheckState.IfNotExists>
-              <uix:NCheckState.Target>
-                <uix:TargetAnchorable BrowserURL="app.spate.nyc/categoryFive/ffae5b3a-09b9-43c6-8ba6-27b1afa6773e/80a0317c-00ec-420b-ae86-e2b2c337758b/tiktok" CVScreenId="545909ff-e759-4623-9435-31194221f7e5" ContentHash="-CS-kW48vU2Pg6u2_I_JhQ" CvTextArea="722, 1035, 156, 18" CvTextArgument="Insufficient Data" CvType="Text" DesignTimeRectangle="724, 1035, 154, 21" ElementType="Text" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl aaname='Insufficient Data' parentid='app' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' tag='DIV' type='' check:innerText='Insufficient Data' /&gt;" Guid="451b25a1-1b01-47a7-9178-bf1f2a9d1114" InformativeScreenshot="242bd793ef853a338e81e42afd485c79.png" Reference="U0X3tk9DuUWal-aSohXRCQ/K7hX-CDDtUmvk_TR_V26sA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SPATE: ruddy skin : us : beauty : skincare : face concerns : skin condition' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="None">
-                  <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                      <uix:Target CVScreenId="545909ff-e759-4623-9435-31194221f7e5" DesignTimeRectangle="479, 1020, 424, 51" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aaname='avg. monthly searchesInsufficient Data' parentid='app' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' tag='BUTTON' type='' class='fragments__UnstyledButton-sc-jp1ftw-0 jVbzSW sc-fXSgeo bAgivA' matching:class='fuzzy' fuzzylevel:class='0.0' innertext='avg. monthly searchesInsufficient Data' visibleinnertext='Avg. Monthly Searches&amp;#xA;Insufficient Data' check:innerText='Avg. Weekly Views&amp;#xA;Insufficient Data' /&gt;" Guid="0796d7bf-e825-422d-aee9-a3a1ba998ba1" SearchSteps="FuzzySelector" />
-                    </scg:List>
-                  </uix:TargetAnchorable.Anchors>
-                </uix:TargetAnchorable>
-              </uix:NCheckState.Target>
-            </uix:NCheckState>
-            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="ProcessExtractedNumberStrings - Invoke Workflow File (Workflows\ProcessExtractedNumberStrings.xaml)" sap:VirtualizedContainerService.HintSize="502,176.66666666666666" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" Level="{x:Null}" LogEntry="{x:Null}" LogExit="{x:Null}" Timeout="{x:Null}" UnSafe="False" WorkflowFileName="Workflows\ProcessExtractedNumberStrings.xaml">
-              <ui:InvokeWorkflowFile.Arguments>
-                <OutArgument x:TypeArguments="x:String" x:Key="out_string">[out_str_GoogleSearches]</OutArgument>
-                <InArgument x:TypeArguments="x:String" x:Key="in_string">[str_GoogleSearches]</InArgument>
-              </ui:InvokeWorkflowFile.Arguments>
-              <sap:WorkflowViewStateService.ViewState>
-                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                </scg:Dictionary>
-              </sap:WorkflowViewStateService.ViewState>
-            </ui:InvokeWorkflowFile>
-            <uix:NClick ActivateBefore="True" AlterIfDisabled="{x:Null}" ClickType="Single" ContinueOnError="{x:Null}" CursorMotionType="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Click 'TikTok'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="502,229.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_4" InScope="{x:Null}" InUiElement="{x:Null}" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" OutUiElement="{x:Null}" ScopeIdentifier="a73a1953-76c0-4c51-a34b-b060aa75c09f" Timeout="{x:Null}" UnblockInput="{x:Null}" Version="V5">
-              <uix:NClick.Target>
-                <uix:TargetAnchorable BrowserURL="app.spate.nyc/categoryFive/34831ca4-778f-4b97-841b-b2b404016ffb/43e1df22-4afe-4b92-8091-762f7f4e54e9/google" CVScreenId="c3ad449c-9c6e-475d-a0e8-8f6323233c35" ContentHash="OB8bbYTjfEqSFDWBGPw6TQ" CvTextArea="1178, 522, 72, 19" CvTextArgument="TikTok" CvType="Text" DesignTimeRectangle="1156, 507, 118, 51" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='TikTok' parentid='app' tag='A' innertext='TikTok' /&gt;" Guid="e74a721b-5465-47e0-9534-2485cec4f4c8" InformativeScreenshot="1ff3ac1ffb37c839395ba98e3046f51a.png" Reference="U0X3tk9DuUWal-aSohXRCQ/8kGx_7xX-0uf0HIw9HafTw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SPATE: half wig : us : beauty : hair : hair styling products : hair extension products' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None">
-                  <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                      <uix:Target CVScreenId="c3ad449c-9c6e-475d-a0e8-8f6323233c35" CvTextArea="1178, 522, 72, 19" CvTextArgument="TikTok" CvType="Text" DesignTimeRectangle="1181, 520, 68, 25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='TikTok' tag='SPAN' type='' innertext='TikTok' check:innerText='TikTok' /&gt;" Guid="faa71069-0a9b-478f-85e2-82e8ff21c41a" SearchSteps="FuzzySelector, CV" />
-                    </scg:List>
-                  </uix:TargetAnchorable.Anchors>
-                </uix:TargetAnchorable>
-              </uix:NClick.Target>
-              <uix:NClick.VerifyOptions>
-                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
-                  <uix:VerifyExecutionOptions.Retry>
-                    <InArgument x:TypeArguments="x:Boolean" />
-                  </uix:VerifyExecutionOptions.Retry>
-                  <uix:VerifyExecutionOptions.Timeout>
-                    <InArgument x:TypeArguments="x:Double" />
-                  </uix:VerifyExecutionOptions.Timeout>
-                </uix:VerifyExecutionOptions>
-              </uix:NClick.VerifyOptions>
-              <sap:WorkflowViewStateService.ViewState>
-                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                </scg:Dictionary>
-              </sap:WorkflowViewStateService.ViewState>
-            </uix:NClick>
-            <uix:NCheckState DisplayName="Check App State 'Insufficient Data'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="502,653.3333333333334" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="a73a1953-76c0-4c51-a34b-b060aa75c09f" Timeout="2" Version="V5">
+              </If.Then>
+              <If.Else>
+                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="536,25.333333333333332" sap2010:WorkflowViewState.IdRef="Sequence_23">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </Sequence>
+              </If.Else>
+            </If>
+            <uix:NCheckState DisplayName="Check App State 'Google'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="570,57.333333333333336" sap2010:WorkflowViewState.IdRef="NCheckState_4" ScopeIdentifier="a73a1953-76c0-4c51-a34b-b060aa75c09f" Timeout="1" Version="V5">
               <uix:NCheckState.IfExists>
-                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="468,168" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="536,1110.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_16">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <Assign sap:VirtualizedContainerService.HintSize="434,108" sap2010:WorkflowViewState.IdRef="Assign_1">
-                    <Assign.To>
-                      <OutArgument x:TypeArguments="x:String">[str_TikTokViews]</OutArgument>
-                    </Assign.To>
-                    <Assign.Value>
-                      <InArgument x:TypeArguments="x:String">N/A</InArgument>
-                    </Assign.Value>
-                  </Assign>
-                </Sequence>
-              </uix:NCheckState.IfExists>
-              <uix:NCheckState.IfNotExists>
-                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="468,190" sap2010:WorkflowViewState.IdRef="Sequence_11">
-                  <sap:WorkflowViewStateService.ViewState>
-                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                    </scg:Dictionary>
-                  </sap:WorkflowViewStateService.ViewState>
-                  <uix:NGetText ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Get Text 'Avg. Weekly Views'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,130" sap2010:WorkflowViewState.IdRef="NGetText_4" InUiElement="{x:Null}" OutUiElement="{x:Null}" ScopeIdentifier="a73a1953-76c0-4c51-a34b-b060aa75c09f" ScrapingOptions="{x:Null}" TextString="[str_TikTokViews]" Timeout="{x:Null}" Version="V5" WordsInfo="{x:Null}">
-                    <uix:NGetText.Target>
-                      <uix:TargetAnchorable BrowserURL="app.spate.nyc/categoryFive/34831ca4-778f-4b97-841b-b2b404016ffb/f80805cd-d309-415b-8b11-8fdea5806116/tiktok" CVScreenId="a9b9ee87-46e8-4e78-a1e6-e3f1a13ee15e" ContentHash="JnOXgbDF9keEBjzOK5eGfA" CvType="AnyWordGroup" DesignTimeRectangle="693, 1013, 43, 21" ElementType="Text" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl parentid='app' tag='SPAN' type='' class='sc-bbSZdi lddpvf' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' /&gt;" Guid="b4c9a192-c2e3-4e23-9701-ffeb54857475" InformativeScreenshot="1ad0dd5d47eade09388ecf9ef6f92c45.png" Reference="U0X3tk9DuUWal-aSohXRCQ/w9PnwkNsBUqUtjqpwgyg7w" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SPATE: *' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Google'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="502,229.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a73a1953-76c0-4c51-a34b-b060aa75c09f" Version="V5">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="app.spate.nyc/categoryFive/34831ca4-778f-4b97-841b-b2b404016ffb/43e1df22-4afe-4b92-8091-762f7f4e54e9" CVScreenId="50aa8fc3-4e65-4202-993d-3eb050b12229" ContentHash="NrcVherSikG5kQ_kdlGeQA" DesignTimeRectangle="1051, 520, 76, 25" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Google' parentid='app' tag='SPAN' innertext='Google' visibleinnertext='Google' /&gt;" Guid="04be1103-b776-49bc-baf8-892bbf6773a2" InformativeScreenshot="6b623e656816b7bbb0574e0afd97786d.png" Reference="U0X3tk9DuUWal-aSohXRCQ/cDyzXbOt0EyRviTNvu3B0A" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SPATE: half wig : us : beauty : hair : hair styling products : hair extension products' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None">
                         <uix:TargetAnchorable.Anchors>
                           <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                            <uix:Target CVScreenId="a9b9ee87-46e8-4e78-a1e6-e3f1a13ee15e" DesignTimeRectangle="479, 998, 358, 51" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aaname='avg. weekly views317.9kMedium' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' parentid='app' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' tag='BUTTON' type='' class='fragments__UnstyledButton-sc-jp1ftw-0 jVbzSW sc-fXSgeo bAgivA' matching:class='fuzzy' fuzzylevel:class='0.0' innertext='avg. weekly views*' check:innerText='Avg. Weekly Views&amp;#xA;*&amp;#xA;*' /&gt;" Guid="b7663d5d-5ae4-4396-9b6e-fa465828e384" SearchSteps="FuzzySelector" />
+                            <uix:Target CVScreenId="50aa8fc3-4e65-4202-993d-3eb050b12229" DesignTimeRectangle="1026, 507, 126, 51" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Google' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' parentid='app' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' tag='A' type='' innertext='Google' visibleinnertext='Google' check:innerText='Google' /&gt;" Guid="6107662a-22aa-4ec8-946c-bfa753341780" SearchSteps="FuzzySelector" />
                           </scg:List>
                         </uix:TargetAnchorable.Anchors>
                       </uix:TargetAnchorable>
-                    </uix:NGetText.Target>
+                    </uix:NClick.Target>
+                    <uix:NClick.VerifyOptions>
+                      <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                        <uix:VerifyExecutionOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionOptions.Retry>
+                        <uix:VerifyExecutionOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionOptions.Timeout>
+                      </uix:VerifyExecutionOptions>
+                    </uix:NClick.VerifyOptions>
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                  </uix:NGetText>
+                  </uix:NClick>
+                  <uix:NCheckState DisplayName="Check App State 'Insufficient Data'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="502,653.3333333333334" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="a73a1953-76c0-4c51-a34b-b060aa75c09f" Timeout="2" Version="V5">
+                    <uix:NCheckState.IfExists>
+                      <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="468,168" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <Assign sap:VirtualizedContainerService.HintSize="434,108" sap2010:WorkflowViewState.IdRef="Assign_2">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:String">[str_GoogleSearches]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:String">N/A</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                      </Sequence>
+                    </uix:NCheckState.IfExists>
+                    <uix:NCheckState.IfNotExists>
+                      <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="468,190" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <uix:NGetText DisplayName="Get Text 'Avg. Monthly Views'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,130" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="a73a1953-76c0-4c51-a34b-b060aa75c09f" TextString="[str_GoogleSearches]" Version="V5">
+                          <uix:NGetText.Target>
+                            <uix:TargetAnchorable BrowserURL="app.spate.nyc/categoryFive/aadbc60d-162f-421f-a5f2-aaf2ca8dc9db/fa29580a-b61b-4dcf-b782-4501306c176c/google" CVScreenId="d4671fc4-af84-46de-8518-d1c39fde1594" ContentHash="xFYlZwFzskS0ULJ7HSC0qQ" DesignTimeRectangle="729, 655, 54, 21" ElementType="Text" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl parentid='app' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' tag='SPAN' type='' aaname='\d.*' matching:aaname='regex' innertext='\d.*' matching:innertext='regex' visibleinnertext='\d.*' matching:visibleinnertext='regex' /&gt;" Guid="360f46da-2a05-48ab-b815-50bc027ceaa4" InformativeScreenshot="fdcb6964cfc872feb4d24eb25de8a56a.png" Reference="U0X3tk9DuUWal-aSohXRCQ/4fY5h779EU-ZXbykaaOktw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Spate' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="None">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                  <uix:Target CVScreenId="d4671fc4-af84-46de-8518-d1c39fde1594" DesignTimeRectangle="479, 640, 438, 51" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aaname='avg. monthly searches*' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' parentid='app' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' tag='BUTTON' type='' class='fragments__UnstyledButton-*' matching:class='fuzzy' fuzzylevel:class='0.0' innertext='avg. monthly searches*' visibleinnertext='Avg. Monthly Searches&amp;#xA;*&amp;#xA;*' check:innerText='Avg. Monthly Searches&amp;#xA;*&amp;#xA;*' /&gt;" Guid="de63d475-ec0e-427e-989b-b968fd26b664" SearchSteps="FuzzySelector" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NGetText.Target>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </uix:NGetText>
+                      </Sequence>
+                    </uix:NCheckState.IfNotExists>
+                    <uix:NCheckState.Target>
+                      <uix:TargetAnchorable BrowserURL="app.spate.nyc/categoryFive/ffae5b3a-09b9-43c6-8ba6-27b1afa6773e/80a0317c-00ec-420b-ae86-e2b2c337758b/tiktok" CVScreenId="545909ff-e759-4623-9435-31194221f7e5" ContentHash="-CS-kW48vU2Pg6u2_I_JhQ" CvTextArea="722, 1035, 156, 18" CvTextArgument="Insufficient Data" CvType="Text" DesignTimeRectangle="724, 1035, 154, 21" ElementType="Text" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl aaname='Insufficient Data' parentid='app' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' tag='DIV' type='' check:innerText='Insufficient Data' /&gt;" Guid="451b25a1-1b01-47a7-9178-bf1f2a9d1114" InformativeScreenshot="242bd793ef853a338e81e42afd485c79.png" Reference="U0X3tk9DuUWal-aSohXRCQ/K7hX-CDDtUmvk_TR_V26sA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SPATE: ruddy skin : us : beauty : skincare : face concerns : skin condition' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="None">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target CVScreenId="545909ff-e759-4623-9435-31194221f7e5" DesignTimeRectangle="479, 1020, 424, 51" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aaname='avg. monthly searchesInsufficient Data' parentid='app' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' tag='BUTTON' type='' class='fragments__UnstyledButton-sc-jp1ftw-0 jVbzSW sc-fXSgeo bAgivA' matching:class='fuzzy' fuzzylevel:class='0.0' innertext='avg. monthly searchesInsufficient Data' visibleinnertext='Avg. Monthly Searches&amp;#xA;Insufficient Data' check:innerText='Avg. Weekly Views&amp;#xA;Insufficient Data' /&gt;" Guid="0796d7bf-e825-422d-aee9-a3a1ba998ba1" SearchSteps="FuzzySelector" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NCheckState.Target>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </uix:NCheckState>
+                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="ProcessExtractedNumberStrings - Invoke Workflow File (Workflows\ProcessExtractedNumberStrings.xaml)" sap:VirtualizedContainerService.HintSize="502,168" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Workflows\ProcessExtractedNumberStrings.xaml">
+                    <ui:InvokeWorkflowFile.Arguments>
+                      <OutArgument x:TypeArguments="x:String" x:Key="out_string">[out_str_GoogleSearches]</OutArgument>
+                      <InArgument x:TypeArguments="x:String" x:Key="in_string">[str_GoogleSearches]</InArgument>
+                    </ui:InvokeWorkflowFile.Arguments>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:InvokeWorkflowFile>
+                </Sequence>
+              </uix:NCheckState.IfExists>
+              <uix:NCheckState.IfNotExists>
+                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="536,168" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Assign sap:VirtualizedContainerService.HintSize="434,108" sap2010:WorkflowViewState.IdRef="Assign_4">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:String">[out_str_GoogleSearches]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:String">N/A</InArgument>
+                    </Assign.Value>
+                  </Assign>
                 </Sequence>
               </uix:NCheckState.IfNotExists>
               <uix:NCheckState.Target>
-                <uix:TargetAnchorable BrowserURL="app.spate.nyc/categoryFive/ffae5b3a-09b9-43c6-8ba6-27b1afa6773e/80a0317c-00ec-420b-ae86-e2b2c337758b/tiktok" CVScreenId="545909ff-e759-4623-9435-31194221f7e5" ContentHash="-CS-kW48vU2Pg6u2_I_JhQ" CvTextArea="722, 1035, 156, 18" CvTextArgument="Insufficient Data" CvType="Text" DesignTimeRectangle="724, 1035, 154, 21" ElementType="Text" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl aaname='Insufficient Data' parentid='app' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' tag='DIV' type='' check:innerText='Insufficient Data' /&gt;" Guid="451b25a1-1b01-47a7-9178-bf1f2a9d1114" InformativeScreenshot="242bd793ef853a338e81e42afd485c79.png" Reference="U0X3tk9DuUWal-aSohXRCQ/K7hX-CDDtUmvk_TR_V26sA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SPATE: ruddy skin : us : beauty : skincare : face concerns : skin condition' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="None">
-                  <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                      <uix:Target CVScreenId="545909ff-e759-4623-9435-31194221f7e5" DesignTimeRectangle="479, 1020, 424, 51" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aaname='avg. monthly searchesInsufficient Data' parentid='app' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' tag='BUTTON' type='' class='fragments__UnstyledButton-sc-jp1ftw-0 jVbzSW sc-fXSgeo bAgivA' matching:class='fuzzy' fuzzylevel:class='0.0' innertext='avg. monthly searchesInsufficient Data' visibleinnertext='Avg. Monthly Searches&amp;#xA;Insufficient Data' check:innerText='Avg. Weekly Views&amp;#xA;Insufficient Data' /&gt;" Guid="0796d7bf-e825-422d-aee9-a3a1ba998ba1" SearchSteps="FuzzySelector" />
-                    </scg:List>
-                  </uix:TargetAnchorable.Anchors>
-                </uix:TargetAnchorable>
+                <uix:TargetAnchorable BrowserURL="app.spate.nyc/categoryFive/34831ca4-778f-4b97-841b-b2b404016ffb/43e1df22-4afe-4b92-8091-762f7f4e54e9" CVScreenId="50aa8fc3-4e65-4202-993d-3eb050b12229" ContentHash="hpaFwaCClUCu063jd3ac9Q" DesignTimeRectangle="1051, 520, 76, 25" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Google' parentid='app' tag='SPAN' innertext='Google' visibleinnertext='Google' /&gt;" Guid="09ff9253-d319-46d6-b0fe-dff8cffac19c" InformativeScreenshot="16a380a658646e0417df00ff5d3a10c6.png" Reference="U0X3tk9DuUWal-aSohXRCQ/zY36wv7AkEqUgTww7lgKvg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SPATE: half wig : us : beauty : hair : hair styling products : hair extension products' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None" />
               </uix:NCheckState.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
             </uix:NCheckState>
-            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="ProcessExtractedNumberStrings - Invoke Workflow File (Workflows\ProcessExtractedNumberStrings.xaml)" sap:VirtualizedContainerService.HintSize="502,176.66666666666666" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" Level="{x:Null}" LogEntry="{x:Null}" LogExit="{x:Null}" Timeout="{x:Null}" UnSafe="False" WorkflowFileName="Workflows\ProcessExtractedNumberStrings.xaml">
-              <ui:InvokeWorkflowFile.Arguments>
-                <InArgument x:TypeArguments="x:String" x:Key="in_string">[str_TikTokViews]</InArgument>
-                <OutArgument x:TypeArguments="x:String" x:Key="out_string">[out_str_TikTokViews]</OutArgument>
-              </ui:InvokeWorkflowFile.Arguments>
-              <sap:WorkflowViewStateService.ViewState>
-                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                </scg:Dictionary>
-              </sap:WorkflowViewStateService.ViewState>
-            </ui:InvokeWorkflowFile>
-            <uix:NClick ActivateBefore="True" AlterIfDisabled="{x:Null}" ClickType="Single" ContinueOnError="{x:Null}" CursorMotionType="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Click 'Instagram'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="502,229.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_5" InScope="{x:Null}" InUiElement="{x:Null}" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" OutUiElement="{x:Null}" ScopeIdentifier="a73a1953-76c0-4c51-a34b-b060aa75c09f" Timeout="{x:Null}" UnblockInput="{x:Null}" Version="V5">
-              <uix:NClick.Target>
-                <uix:TargetAnchorable BrowserURL="app.spate.nyc/categoryFive/34831ca4-778f-4b97-841b-b2b404016ffb/43e1df22-4afe-4b92-8091-762f7f4e54e9/tiktok" CVScreenId="acb782ab-9140-4281-983b-25d0d99417f4" ContentHash="KFQNNTpYF0yR-YrmuJg_yQ" DesignTimeRectangle="1279, 507, 159, 51" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Instagram' parentid='app' tag='A' innertext='Instagram' visibleinnertext='Instagram' /&gt;" Guid="1b558061-3ff7-408e-b959-967afb445865" InformativeScreenshot="70948453d717aeff333b8aca0054375a.png" Reference="U0X3tk9DuUWal-aSohXRCQ/NHJsFafIyUi1C_wNP3MDMg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SPATE: half wig : us : beauty : hair : hair styling products : hair extension products' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None">
-                  <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                      <uix:Target CVScreenId="acb782ab-9140-4281-983b-25d0d99417f4" DesignTimeRectangle="1304, 520, 109, 25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Instagram' tag='SPAN' type='' innertext='Instagram' check:innerText='Instagram' /&gt;" Guid="9aa9700f-61ab-4f21-95dc-fa052b363dc3" SearchSteps="FuzzySelector" />
-                    </scg:List>
-                  </uix:TargetAnchorable.Anchors>
-                </uix:TargetAnchorable>
-              </uix:NClick.Target>
-              <uix:NClick.VerifyOptions>
-                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
-                  <uix:VerifyExecutionOptions.Retry>
-                    <InArgument x:TypeArguments="x:Boolean" />
-                  </uix:VerifyExecutionOptions.Retry>
-                  <uix:VerifyExecutionOptions.Timeout>
-                    <InArgument x:TypeArguments="x:Double" />
-                  </uix:VerifyExecutionOptions.Timeout>
-                </uix:VerifyExecutionOptions>
-              </uix:NClick.VerifyOptions>
-              <sap:WorkflowViewStateService.ViewState>
-                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                </scg:Dictionary>
-              </sap:WorkflowViewStateService.ViewState>
-            </uix:NClick>
-            <uix:NGetText ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Get Text 'Instagram YoY'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="502,139.33333333333334" sap2010:WorkflowViewState.IdRef="NGetText_3" InUiElement="{x:Null}" OutUiElement="{x:Null}" ScopeIdentifier="a73a1953-76c0-4c51-a34b-b060aa75c09f" ScrapingOptions="{x:Null}" TextString="[str_InstaYoY]" Timeout="{x:Null}" Version="V5" WordsInfo="{x:Null}">
-              <uix:NGetText.Target>
-                <uix:TargetAnchorable BrowserURL="app.spate.nyc/categoryFive/34831ca4-778f-4b97-841b-b2b404016ffb/43e1df22-4afe-4b92-8091-762f7f4e54e9/instagram" CVScreenId="90636ff4-1d00-47fe-b239-a01b94f2a220" ContentHash="mm82NgTdfkWUbEwz36wYaw" DesignTimeRectangle="497, 894, 132, 48" ElementType="Text" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='DIV' type='' css-selector='body&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' /&gt;" Guid="097f5d6d-32e4-4f80-8a09-3100bedbc754" InformativeScreenshot="ed2739f7a80f54541dd71040eadb934a.png" Reference="U0X3tk9DuUWal-aSohXRCQ/Lnr_aJxjNE636QNhOhSaPw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SPATE: half wig : us : beauty : hair : hair styling products : hair extension products' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="None">
-                  <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="2">
-                      <uix:Target CVScreenId="90636ff4-1d00-47fe-b239-a01b94f2a220" DesignTimeRectangle="497, 937, 34, 25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='YoY' tag='SPAN' type='' innertext='YoY' check:innerText='YoY' /&gt;" Guid="0d1f1330-3067-4236-ae7c-71fcba4ad49f" SearchSteps="FuzzySelector" />
-                      <uix:Target CVScreenId="90636ff4-1d00-47fe-b239-a01b94f2a220" DesignTimeRectangle="479, 822, 68, 36" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Posts' tag='SPAN' type='' innertext='Posts' check:innerText='Posts' /&gt;" Guid="32b24531-1116-4555-9fe7-99ba66f3ef00" SearchSteps="FuzzySelector" />
-                    </scg:List>
-                  </uix:TargetAnchorable.Anchors>
-                </uix:TargetAnchorable>
-              </uix:NGetText.Target>
-              <sap:WorkflowViewStateService.ViewState>
-                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                </scg:Dictionary>
-              </sap:WorkflowViewStateService.ViewState>
-            </uix:NGetText>
-            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="ConvertNumberStringToDouble - Invoke Workflow File (Workflows\ConvertNumberStringToDouble.xaml)" sap:VirtualizedContainerService.HintSize="502,176.66666666666666" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" Level="{x:Null}" LogEntry="{x:Null}" LogExit="{x:Null}" Timeout="{x:Null}" UnSafe="False" WorkflowFileName="Workflows\ProcessExtractedNumberStrings.xaml">
+            <If Condition="[Not (in_str_Market = &quot;Japan&quot; Or in_str_Market = &quot;South Korea&quot;)]" sap:VirtualizedContainerService.HintSize="570,305.3333333333333" sap2010:WorkflowViewState.IdRef="If_3">
+              <If.Then>
+                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,108" sap2010:WorkflowViewState.IdRef="Sequence_24">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NCheckState DisplayName="Check App State 'TikTok'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="382,48" sap2010:WorkflowViewState.IdRef="NCheckState_5" ScopeIdentifier="a73a1953-76c0-4c51-a34b-b060aa75c09f" Timeout="1" Version="V5">
+                    <uix:NCheckState.IfExists>
+                      <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="536,1110.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'TikTok'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="502,229.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_4" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a73a1953-76c0-4c51-a34b-b060aa75c09f" Version="V5">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="app.spate.nyc/categoryFive/34831ca4-778f-4b97-841b-b2b404016ffb/43e1df22-4afe-4b92-8091-762f7f4e54e9/google" CVScreenId="c3ad449c-9c6e-475d-a0e8-8f6323233c35" ContentHash="OB8bbYTjfEqSFDWBGPw6TQ" CvTextArea="1178, 522, 72, 19" CvTextArgument="TikTok" CvType="Text" DesignTimeRectangle="1156, 507, 118, 51" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='TikTok' parentid='app' tag='A' innertext='TikTok' /&gt;" Guid="e74a721b-5465-47e0-9534-2485cec4f4c8" InformativeScreenshot="1ff3ac1ffb37c839395ba98e3046f51a.png" Reference="U0X3tk9DuUWal-aSohXRCQ/8kGx_7xX-0uf0HIw9HafTw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SPATE: half wig : us : beauty : hair : hair styling products : hair extension products' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                  <uix:Target CVScreenId="c3ad449c-9c6e-475d-a0e8-8f6323233c35" CvTextArea="1178, 522, 72, 19" CvTextArgument="TikTok" CvType="Text" DesignTimeRectangle="1181, 520, 68, 25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='TikTok' tag='SPAN' type='' innertext='TikTok' check:innerText='TikTok' /&gt;" Guid="faa71069-0a9b-478f-85e2-82e8ff21c41a" SearchSteps="FuzzySelector, CV" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NClick.Target>
+                          <uix:NClick.VerifyOptions>
+                            <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                              <uix:VerifyExecutionOptions.Retry>
+                                <InArgument x:TypeArguments="x:Boolean" />
+                              </uix:VerifyExecutionOptions.Retry>
+                              <uix:VerifyExecutionOptions.Timeout>
+                                <InArgument x:TypeArguments="x:Double" />
+                              </uix:VerifyExecutionOptions.Timeout>
+                            </uix:VerifyExecutionOptions>
+                          </uix:NClick.VerifyOptions>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </uix:NClick>
+                        <uix:NCheckState DisplayName="Check App State 'Insufficient Data'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="502,653.3333333333334" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="a73a1953-76c0-4c51-a34b-b060aa75c09f" Timeout="2" Version="V5">
+                          <uix:NCheckState.IfExists>
+                            <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="468,168" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <Assign sap:VirtualizedContainerService.HintSize="434,108" sap2010:WorkflowViewState.IdRef="Assign_1">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="x:String">[str_TikTokViews]</OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="x:String">N/A</InArgument>
+                                </Assign.Value>
+                              </Assign>
+                            </Sequence>
+                          </uix:NCheckState.IfExists>
+                          <uix:NCheckState.IfNotExists>
+                            <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="468,190" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <uix:NGetText DisplayName="Get Text 'Avg. Weekly Views'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,130" sap2010:WorkflowViewState.IdRef="NGetText_4" ScopeIdentifier="a73a1953-76c0-4c51-a34b-b060aa75c09f" TextString="[str_TikTokViews]" Version="V5">
+                                <uix:NGetText.Target>
+                                  <uix:TargetAnchorable BrowserURL="app.spate.nyc/categoryFive/34831ca4-778f-4b97-841b-b2b404016ffb/f80805cd-d309-415b-8b11-8fdea5806116/tiktok" CVScreenId="a9b9ee87-46e8-4e78-a1e6-e3f1a13ee15e" ContentHash="JnOXgbDF9keEBjzOK5eGfA" CvType="AnyWordGroup" DesignTimeRectangle="693, 1013, 43, 21" ElementType="Text" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl parentid='app' tag='SPAN' type='' class='sc-bbSZdi lddpvf' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' /&gt;" Guid="b4c9a192-c2e3-4e23-9701-ffeb54857475" InformativeScreenshot="1ad0dd5d47eade09388ecf9ef6f92c45.png" Reference="U0X3tk9DuUWal-aSohXRCQ/w9PnwkNsBUqUtjqpwgyg7w" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SPATE: *' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                                    <uix:TargetAnchorable.Anchors>
+                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                        <uix:Target CVScreenId="a9b9ee87-46e8-4e78-a1e6-e3f1a13ee15e" DesignTimeRectangle="479, 998, 358, 51" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aaname='avg. weekly views317.9kMedium' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' parentid='app' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' tag='BUTTON' type='' class='fragments__UnstyledButton-sc-jp1ftw-0 jVbzSW sc-fXSgeo bAgivA' matching:class='fuzzy' fuzzylevel:class='0.0' innertext='avg. weekly views*' check:innerText='Avg. Weekly Views&amp;#xA;*&amp;#xA;*' /&gt;" Guid="b7663d5d-5ae4-4396-9b6e-fa465828e384" SearchSteps="FuzzySelector" />
+                                      </scg:List>
+                                    </uix:TargetAnchorable.Anchors>
+                                  </uix:TargetAnchorable>
+                                </uix:NGetText.Target>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </uix:NGetText>
+                            </Sequence>
+                          </uix:NCheckState.IfNotExists>
+                          <uix:NCheckState.Target>
+                            <uix:TargetAnchorable BrowserURL="app.spate.nyc/categoryFive/ffae5b3a-09b9-43c6-8ba6-27b1afa6773e/80a0317c-00ec-420b-ae86-e2b2c337758b/tiktok" CVScreenId="8c3988ac-2c2a-437a-9a18-453c2713fce9" DesignTimeRectangle="724, 655, 154, 21" ElementType="Text" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl aaname='Insufficient Data' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' parentid='app' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' tag='DIV' type='' innertext='Insufficient Data' visibleinnertext='Insufficient Data' check:innerText='Insufficient Data' /&gt;" Guid="b9ee11ec-354c-4fb8-835c-0f839db85876" InformativeScreenshot="f151e3867a8a09a09de714fd04fece77.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SPATE: ruddy skin : us : beauty : skincare : face concerns : skin condition' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="None">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                  <uix:Target CVScreenId="8c3988ac-2c2a-437a-9a18-453c2713fce9" DesignTimeRectangle="479, 640, 424, 51" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aaname='avg. weekly viewsInsufficient Data' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' parentid='app' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' tag='BUTTON' type='' innertext='avg. weekly viewsInsufficient Data' visibleinnertext='Avg. Weekly Views&amp;#xA;Insufficient Data' /&gt;" Guid="ff161e24-b234-49d8-ade2-5c27f818c2ce" SearchSteps="FuzzySelector" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NCheckState.Target>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </uix:NCheckState>
+                        <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="ProcessExtractedNumberStrings - Invoke Workflow File (Workflows\ProcessExtractedNumberStrings.xaml)" sap:VirtualizedContainerService.HintSize="502,168" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="Workflows\ProcessExtractedNumberStrings.xaml">
+                          <ui:InvokeWorkflowFile.Arguments>
+                            <InArgument x:TypeArguments="x:String" x:Key="in_string">[str_TikTokViews]</InArgument>
+                            <OutArgument x:TypeArguments="x:String" x:Key="out_string">[out_str_TikTokViews]</OutArgument>
+                          </ui:InvokeWorkflowFile.Arguments>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </ui:InvokeWorkflowFile>
+                      </Sequence>
+                    </uix:NCheckState.IfExists>
+                    <uix:NCheckState.IfNotExists>
+                      <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="536,168" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <Assign sap:VirtualizedContainerService.HintSize="434,108" sap2010:WorkflowViewState.IdRef="Assign_5">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:String">[out_str_TikTokViews]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:String">N/A</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                      </Sequence>
+                    </uix:NCheckState.IfNotExists>
+                    <uix:NCheckState.Target>
+                      <uix:TargetAnchorable BrowserURL="app.spate.nyc/categoryFive/34831ca4-778f-4b97-841b-b2b404016ffb/43e1df22-4afe-4b92-8091-762f7f4e54e9" CVScreenId="50aa8fc3-4e65-4202-993d-3eb050b12229" ContentHash="XDce4qZ0HkyDDE051U7qdw" CvTextArea="1178, 522, 72, 19" CvTextArgument="TikTok" CvType="Text" DesignTimeRectangle="1181, 520, 68, 25" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='TikTok' parentid='app' tag='SPAN' innertext='TikTok' visibleinnertext='TikTok' /&gt;" Guid="246ad6a8-5f42-4432-b640-ee87016c1ce0" InformativeScreenshot="91648373965573079f9f4c136f405c02.png" Reference="U0X3tk9DuUWal-aSohXRCQ/w9ImTMAphkyENRZXIiXqnw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SPATE: half wig : us : beauty : hair : hair styling products : hair extension products' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target CVScreenId="50aa8fc3-4e65-4202-993d-3eb050b12229" DesignTimeRectangle="1156, 507, 118, 51" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='TikTok' parentid='app' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' tag='A' type='' innertext='TikTok' visibleinnertext='TikTok' check:innerText='TikTok' /&gt;" Guid="d542ce62-e3cc-4c5f-8123-137a0dc6a13f" SearchSteps="FuzzySelector" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NCheckState.Target>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </uix:NCheckState>
+                </Sequence>
+              </If.Then>
+              <If.Else>
+                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,25.333333333333332" sap2010:WorkflowViewState.IdRef="Sequence_25">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </Sequence>
+              </If.Else>
+            </If>
+            <If Condition="[Not (in_str_Market = &quot;Japan&quot; Or in_str_Market = &quot;South Korea&quot;)]" sap:VirtualizedContainerService.HintSize="570,305.3333333333333" sap2010:WorkflowViewState.IdRef="If_2">
+              <If.Then>
+                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,108" sap2010:WorkflowViewState.IdRef="Sequence_26">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NCheckState DisplayName="Check App State 'Instagram'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="382,48" sap2010:WorkflowViewState.IdRef="NCheckState_6" ScopeIdentifier="a73a1953-76c0-4c51-a34b-b060aa75c09f" Timeout="1" Version="V5">
+                    <uix:NCheckState.IfExists>
+                      <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="468,419.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Instagram'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,229.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_5" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a73a1953-76c0-4c51-a34b-b060aa75c09f" Version="V5">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="app.spate.nyc/categoryFive/34831ca4-778f-4b97-841b-b2b404016ffb/43e1df22-4afe-4b92-8091-762f7f4e54e9/tiktok" CVScreenId="acb782ab-9140-4281-983b-25d0d99417f4" ContentHash="KFQNNTpYF0yR-YrmuJg_yQ" DesignTimeRectangle="1279, 507, 159, 51" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Instagram' parentid='app' tag='A' innertext='Instagram' visibleinnertext='Instagram' /&gt;" Guid="1b558061-3ff7-408e-b959-967afb445865" InformativeScreenshot="70948453d717aeff333b8aca0054375a.png" Reference="U0X3tk9DuUWal-aSohXRCQ/NHJsFafIyUi1C_wNP3MDMg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SPATE: half wig : us : beauty : hair : hair styling products : hair extension products' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                  <uix:Target CVScreenId="acb782ab-9140-4281-983b-25d0d99417f4" DesignTimeRectangle="1304, 520, 109, 25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Instagram' tag='SPAN' type='' innertext='Instagram' check:innerText='Instagram' /&gt;" Guid="9aa9700f-61ab-4f21-95dc-fa052b363dc3" SearchSteps="FuzzySelector" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NClick.Target>
+                          <uix:NClick.VerifyOptions>
+                            <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                              <uix:VerifyExecutionOptions.Retry>
+                                <InArgument x:TypeArguments="x:Boolean" />
+                              </uix:VerifyExecutionOptions.Retry>
+                              <uix:VerifyExecutionOptions.Timeout>
+                                <InArgument x:TypeArguments="x:Double" />
+                              </uix:VerifyExecutionOptions.Timeout>
+                            </uix:VerifyExecutionOptions>
+                          </uix:NClick.VerifyOptions>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </uix:NClick>
+                        <uix:NGetText DisplayName="Get Text 'Instagram YoY'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,130" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="a73a1953-76c0-4c51-a34b-b060aa75c09f" TextString="[str_InstaYoY]" Version="V5">
+                          <uix:NGetText.Target>
+                            <uix:TargetAnchorable BrowserURL="app.spate.nyc/categoryFive/34831ca4-778f-4b97-841b-b2b404016ffb/43e1df22-4afe-4b92-8091-762f7f4e54e9/instagram" CVScreenId="90636ff4-1d00-47fe-b239-a01b94f2a220" ContentHash="mm82NgTdfkWUbEwz36wYaw" DesignTimeRectangle="497, 894, 132, 48" ElementType="Text" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='DIV' type='' css-selector='body&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' /&gt;" Guid="097f5d6d-32e4-4f80-8a09-3100bedbc754" InformativeScreenshot="ed2739f7a80f54541dd71040eadb934a.png" Reference="U0X3tk9DuUWal-aSohXRCQ/Lnr_aJxjNE636QNhOhSaPw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SPATE: half wig : us : beauty : hair : hair styling products : hair extension products' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="None">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="2">
+                                  <uix:Target CVScreenId="90636ff4-1d00-47fe-b239-a01b94f2a220" DesignTimeRectangle="497, 937, 34, 25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='YoY' tag='SPAN' type='' innertext='YoY' check:innerText='YoY' /&gt;" Guid="0d1f1330-3067-4236-ae7c-71fcba4ad49f" SearchSteps="FuzzySelector" />
+                                  <uix:Target CVScreenId="90636ff4-1d00-47fe-b239-a01b94f2a220" DesignTimeRectangle="479, 822, 68, 36" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Posts' tag='SPAN' type='' innertext='Posts' check:innerText='Posts' /&gt;" Guid="32b24531-1116-4555-9fe7-99ba66f3ef00" SearchSteps="FuzzySelector" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NGetText.Target>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </uix:NGetText>
+                      </Sequence>
+                    </uix:NCheckState.IfExists>
+                    <uix:NCheckState.IfNotExists>
+                      <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="468,168" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <Assign sap:VirtualizedContainerService.HintSize="434,108" sap2010:WorkflowViewState.IdRef="Assign_6">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:String">[out_str_InstaYoY]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:String">N/A</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                      </Sequence>
+                    </uix:NCheckState.IfNotExists>
+                    <uix:NCheckState.Target>
+                      <uix:TargetAnchorable BrowserURL="app.spate.nyc/categoryFive/34831ca4-778f-4b97-841b-b2b404016ffb/43e1df22-4afe-4b92-8091-762f7f4e54e9" CVScreenId="50aa8fc3-4e65-4202-993d-3eb050b12229" ContentHash="O-kSHwsr6EO3OXe4Pho4jQ" DesignTimeRectangle="1304, 520, 109, 25" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Instagram' parentid='app' tag='SPAN' innertext='Instagram' visibleinnertext='Instagram' /&gt;" Guid="a4515480-3428-4558-b2fa-e285c93bb7b7" InformativeScreenshot="74e1f5816a0a398b1af30a4ee55b62db.png" Reference="U0X3tk9DuUWal-aSohXRCQ/e-3zRSoTG02zqhlna8f4HQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SPATE: half wig : us : beauty : hair : hair styling products : hair extension products' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target CVScreenId="50aa8fc3-4e65-4202-993d-3eb050b12229" DesignTimeRectangle="1279, 507, 159, 51" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Instagram' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' parentid='app' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' tag='A' type='' innertext='Instagram' visibleinnertext='Instagram' /&gt;" Guid="fd9ffb47-59e2-4c58-9f30-ba2ea4c2a2ac" SearchSteps="FuzzySelector" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NCheckState.Target>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </uix:NCheckState>
+                </Sequence>
+              </If.Then>
+              <If.Else>
+                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,25.333333333333332" sap2010:WorkflowViewState.IdRef="Sequence_27">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </Sequence>
+              </If.Else>
+            </If>
+            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="ConvertNumberStringToDouble - Invoke Workflow File (Workflows\ConvertNumberStringToDouble.xaml)" sap:VirtualizedContainerService.HintSize="570,177.33333333333334" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="Workflows\ProcessExtractedNumberStrings.xaml">
               <ui:InvokeWorkflowFile.Arguments>
                 <OutArgument x:TypeArguments="x:String" x:Key="out_string">[out_str_InstaYoY]</OutArgument>
                 <InArgument x:TypeArguments="x:String" x:Key="in_string">[str_InstaYoY]</InArgument>
@@ -463,7 +726,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:InvokeWorkflowFile>
-            <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayBetweenShortcuts="{x:Null}" DisplayName="Keyboard Shortcuts 'Home'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="502,268.6666666666667" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" InScope="{x:Null}" InUiElement="{x:Null}" InteractionMode="HardwareEvents" OutUiElement="{x:Null}" ScopeIdentifier="a73a1953-76c0-4c51-a34b-b060aa75c09f" Shortcuts="[d(hk)][d(ctrl)]w[u(ctrl)][u(hk)]" ShortcutsArgument="{x:Null}" Timeout="{x:Null}" Version="V5">
+            <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts 'Home'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="570,268.6666666666667" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" InteractionMode="HardwareEvents" ScopeIdentifier="a73a1953-76c0-4c51-a34b-b060aa75c09f" Shortcuts="[d(hk)][d(ctrl)]w[u(ctrl)][u(hk)]" Version="V5">
               <uix:NKeyboardShortcuts.Target>
                 <uix:TargetAnchorable BrowserURL="app.spate.nyc/categoryFive/aadbc60d-162f-421f-a5f2-aaf2ca8dc9db/516b0050-658f-4057-bd04-24fc8a522a50" CVScreenId="c0af4f55-85d8-4c0a-bd8c-8e9eea2ad2c8" ContentHash="SeugPB198USDo9HjdY0p-Q" CvTextArea="38, 293, 165, 43" CvTextArgument="SPATE" CvType="Text" DesignTimeRectangle="41, 297, 159, 36" ElementType="Icon" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='IMG' aaname='SPATE' alt='SPATE' /&gt;" Guid="513c08c5-830d-4e23-9ecd-38896f8c8359" InformativeScreenshot="b37359bd01064047c4d9bc6387863d48.png" Reference="U0X3tk9DuUWal-aSohXRCQ/pOs_Vmet8kuH0g4_Mwfsow" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SPATE: *' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None">
                   <uix:TargetAnchorable.Anchors>

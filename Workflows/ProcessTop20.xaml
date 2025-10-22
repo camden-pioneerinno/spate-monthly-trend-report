@@ -2,6 +2,7 @@
   <x:Members>
     <x:Property Name="in_DownloadedReport" Type="InArgument(si:FileInfo)" />
     <x:Property Name="in_GoogleDriveFolderTop20" Type="InArgument(upr:ILocalResource)" />
+    <x:Property Name="in_str_Market" Type="InArgument(x:String)" />
   </x:Members>
   <VisualBasic.Settings>
     <x:Null />
@@ -253,9 +254,10 @@
       <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
       <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
       <AssemblyReference>UiPath.CodedWorkflows</AssemblyReference>
+      <AssemblyReference>Microsoft.Extensions.DependencyModel</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="" DisplayName="ProcessTop20" sap:VirtualizedContainerService.HintSize="1326.6666666666667,5408" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="" DisplayName="ProcessTop20" sap:VirtualizedContainerService.HintSize="1850.6666666666667,6937.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="dt_Top20" />
       <Variable x:TypeArguments="x:String" Default="half wig" Name="str_CardName" />
@@ -264,16 +266,8 @@
       <Variable x:TypeArguments="x:String" Name="str_TikTokViews" />
       <Variable x:TypeArguments="x:String" Name="str_InstaYoY" />
       <Variable x:TypeArguments="x:String" Name="str_NewTabURL" />
-      <Variable x:TypeArguments="scg:List(x:String)" Name="list_numberColumns">
-        <Variable.Default>
-          <VisualBasicValue x:TypeArguments="scg:List(x:String)" ExpressionText="New List(Of String) From {&quot;B&quot;, &quot;D&quot;, &quot;F&quot;, &quot;H&quot;, &quot;T&quot;, &quot;U&quot;}" />
-        </Variable.Default>
-      </Variable>
-      <Variable x:TypeArguments="scg:List(x:String)" Name="list_percentageColumns">
-        <Variable.Default>
-          <VisualBasicValue x:TypeArguments="scg:List(x:String)" ExpressionText="New List(Of String) From {&quot;C&quot;, &quot;E&quot;, &quot;G&quot;, &quot;I&quot;, &quot;J&quot;, &quot;K&quot;, &quot;L&quot;, &quot;M&quot;, &quot;S&quot;, &quot;V&quot;}" />
-        </Variable.Default>
-      </Variable>
+      <Variable x:TypeArguments="scg:List(x:String)" Default="[New List(Of String) From {&quot;B&quot;, &quot;D&quot;, &quot;F&quot;, &quot;H&quot;, &quot;T&quot;, &quot;U&quot;}]" Name="list_numberColumns" />
+      <Variable x:TypeArguments="scg:List(x:String)" Default="[New List(Of String) From {&quot;C&quot;, &quot;E&quot;, &quot;G&quot;, &quot;I&quot;, &quot;J&quot;, &quot;K&quot;, &quot;L&quot;, &quot;M&quot;, &quot;S&quot;, &quot;V&quot;}]" Name="list_percentageColumns" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -281,25 +275,25 @@
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="750.6666666666666,5354.666666666667" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
+    <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="818.6666666666666,6884" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
       <ueab:ExcelProcessScopeX.Body>
         <ActivityAction x:TypeArguments="ui:IExcelProcess">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="716.6666666666666,5244.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="784.6666666666666,6774" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" SensitivityLabel="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="682.6666666666666,4116.666666666667" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" SensitivityOperation="None" TemplatePath="Data\DownloadedReportTemplate.csv" UseTemplate="True" WorkbookPath="[in_DownloadedReport.FullName]">
+            <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" SensitivityLabel="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="750.6666666666666,5332.666666666667" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" SensitivityOperation="None" TemplatePath="Data\DownloadedReportTemplate.csv" UseTemplate="True" WorkbookPath="[in_DownloadedReport.FullName]">
               <ueab:ExcelApplicationCard.Body>
                 <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
                   </ActivityAction.Argument>
-                  <Sequence sap2010:Annotation.AnnotationText="" DisplayName="Do" sap:VirtualizedContainerService.HintSize="648.6666666666666,3781.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                  <Sequence sap2010:Annotation.AnnotationText="" DisplayName="Do" sap:VirtualizedContainerService.HintSize="716.6666666666666,4997.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_3">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -307,7 +301,7 @@
                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ueab:ForEachSheetX DisplayName="For Each Excel Sheet" sap:VirtualizedContainerService.HintSize="614.6666666666666,459.3333333333333" sap2010:WorkflowViewState.IdRef="ForEachSheetX_1" Workbook="[Excel]">
+                    <ueab:ForEachSheetX DisplayName="For Each Excel Sheet" sap:VirtualizedContainerService.HintSize="682.6666666666666,459.3333333333333" sap2010:WorkflowViewState.IdRef="ForEachSheetX_1" Workbook="[Excel]">
                       <ueab:ForEachSheetX.Body>
                         <ActivityAction x:TypeArguments="ue:WorksheetQuickHandle, x:Int32">
                           <ActivityAction.Argument1>
@@ -334,23 +328,43 @@
                         </ActivityAction>
                       </ueab:ForEachSheetX.Body>
                     </ueab:ForEachSheetX>
-                    <ui:AddDataColumn x:TypeArguments="x:Object" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" ColumnName="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" Column="[New DataColumn(&quot;Predicted YoY&quot;, GetType(String))]" DataTable="[dt_Top20]" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="614.6666666666666,223.33333333333334" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_1" />
-                    <ui:AddDataColumn x:TypeArguments="x:Object" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" ColumnName="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" Column="[New DataColumn(&quot;Google Avg. Monthly Searches&quot;, GetType(String))]" DataTable="[dt_Top20]" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="614.6666666666666,223.33333333333334" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_2" />
-                    <ui:AddDataColumn x:TypeArguments="x:Object" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" ColumnName="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" Column="[New DataColumn(&quot;TikTok Avg. Weekly Views&quot;, GetType(String))]" DataTable="[dt_Top20]" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="614.6666666666666,223.33333333333334" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_3" />
-                    <ui:AddDataColumn x:TypeArguments="x:Object" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" ColumnName="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" Column="[New DataColumn(&quot;Instagram YoY&quot;, GetType(String))]" DataTable="[dt_Top20]" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="614.6666666666666,223.33333333333334" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_4" />
-                    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dt_Top20]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="614.6666666666666,2338" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+                    <If Condition="[Not (in_str_Market = &quot;Japan&quot; Or in_str_Market = &quot;South Korea&quot;)]" sap:VirtualizedContainerService.HintSize="682.6666666666666,536.6666666666666" sap2010:WorkflowViewState.IdRef="If_1">
+                      <If.Then>
+                        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,274" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:AddDataColumn x:TypeArguments="x:Object" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" ColumnName="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" Column="[New DataColumn(&quot;Predicted YoY&quot;, GetType(String))]" DataTable="[dt_Top20]" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="382,214" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_1" />
+                        </Sequence>
+                      </If.Then>
+                      <If.Else>
+                        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,90.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </Sequence>
+                      </If.Else>
+                    </If>
+                    <ui:AddDataColumn x:TypeArguments="x:Object" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" ColumnName="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" Column="[New DataColumn(&quot;Google Avg. Monthly Searches&quot;, GetType(String))]" DataTable="[dt_Top20]" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="682.6666666666666,223.33333333333334" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_2" />
+                    <ui:AddDataColumn x:TypeArguments="x:Object" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" ColumnName="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" Column="[New DataColumn(&quot;TikTok Avg. Weekly Views&quot;, GetType(String))]" DataTable="[dt_Top20]" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="682.6666666666666,223.33333333333334" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_3" />
+                    <ui:AddDataColumn x:TypeArguments="x:Object" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" ColumnName="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" Column="[New DataColumn(&quot;Instagram YoY&quot;, GetType(String))]" DataTable="[dt_Top20]" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="682.6666666666666,223.33333333333334" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_4" />
+                    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dt_Top20]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="682.6666666666666,3240.6666666666665" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
                       <ui:ForEachRow.Body>
                         <ActivityAction x:TypeArguments="sd:DataRow">
                           <ActivityAction.Argument>
                             <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
                           </ActivityAction.Argument>
-                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="580.6666666666666,2147.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="648.6666666666666,3050" sap2010:WorkflowViewState.IdRef="Sequence_4">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <Assign sap:VirtualizedContainerService.HintSize="546.6666666666666,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_1">
+                            <Assign sap:VirtualizedContainerService.HintSize="614.6666666666666,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_1">
                               <Assign.To>
                                 <OutArgument x:TypeArguments="x:String">[str_CardName]</OutArgument>
                               </Assign.To>
@@ -358,13 +372,13 @@
                                 <InArgument x:TypeArguments="x:String">[System.Security.SecurityElement.Escape(CurrentRow(0).ToString).ToLower]</InArgument>
                               </Assign.Value>
                             </Assign>
-                            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome SPATE - DATA SCIENCE TO PREDICT THE NE" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="546.6666666666666,1970" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="32071038-67fd-4dd7-b37a-e3325ac4d6bf" Version="V2">
+                            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome SPATE - DATA SCIENCE TO PREDICT THE NE" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="614.6666666666666,2872.6666666666665" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="32071038-67fd-4dd7-b37a-e3325ac4d6bf" Version="V2">
                               <uix:NApplicationCard.Body>
                                 <ActivityAction x:TypeArguments="x:Object">
                                   <ActivityAction.Argument>
                                     <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                                   </ActivityAction.Argument>
-                                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="512.6666666666666,1728" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="580.6666666666666,2630.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_5">
                                     <Sequence.Variables>
                                       <Variable x:TypeArguments="x:Boolean" Name="bool_InstaNA" />
                                     </Sequence.Variables>
@@ -374,40 +388,99 @@
                                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
-                                    <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Down" DisplayName="Mouse Scroll 'half wig+461.7% YoYrisi…(1)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="478.6666666666667,373.3333333333333" sap2010:WorkflowViewState.IdRef="NMouseScroll_1" InteractionMode="HardwareEvents" MovementUnits="10" ScopeIdentifier="32071038-67fd-4dd7-b37a-e3325ac4d6bf" Version="V5">
-                                      <uix:NMouseScroll.SearchedElement>
-                                        <uix:SearchedElement>
-                                          <uix:SearchedElement.OutUiElement>
-                                            <OutArgument x:TypeArguments="ui:UiElement" />
-                                          </uix:SearchedElement.OutUiElement>
-                                          <uix:SearchedElement.Target>
-                                            <uix:TargetAnchorable BrowserURL="app.spate.nyc/explore/trends/a1d01543-3b04-426e-a194-29d9bd8f9b0c" ContentHash="np3eG68VvU2n5fqyScxWxQ" DesignTimeRectangle="889, 735, 481, 330" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="[string.Format(&quot;&lt;webctrl aaname='{0}*' parentid='app' tag='BUTTON' /&gt;&quot;, str_CardName)]" Guid="4a60c42d-4cd7-4d47-b6f0-87ce1cdf520c" InformativeScreenshot="6dc9ad71e1532ca734abe288e96e5100.png" Reference="U0X3tk9DuUWal-aSohXRCQ/gTtwN32GPkOcJXH5pDk52w" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SPATE - DATA SCIENCE TO PREDICT THE NEXT BIG TREND.' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None" />
-                                          </uix:SearchedElement.Target>
-                                          <uix:SearchedElement.Timeout>
-                                            <InArgument x:TypeArguments="x:Double" />
-                                          </uix:SearchedElement.Timeout>
-                                        </uix:SearchedElement>
-                                      </uix:NMouseScroll.SearchedElement>
-                                      <uix:NMouseScroll.Target>
-                                        <uix:TargetAnchorable BrowserURL="app.spate.nyc/explore/trends/a1d01543-3b04-426e-a194-29d9bd8f9b0c" ContentHash="RprhJLTtV0WQRYudQ5itQA" DesignTimeRectangle="874, -13177, 1023, 446460" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentid='app' tag='DIV' /&gt;" Guid="bbfb6bae-8257-4cc8-8e90-3cf3faa06f9f" InformativeScreenshot="f19f67e3b64a6f895efbc5f3506e97da.png" Reference="U0X3tk9DuUWal-aSohXRCQ/p1YEck5StU-CtsV0o7H42w" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SPATE - DATA SCIENCE TO PREDICT THE NEXT BIG TREND.' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
-                                      </uix:NMouseScroll.Target>
-                                    </uix:NMouseScroll>
-                                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click Card" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="478.6666666666667,229.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="32071038-67fd-4dd7-b37a-e3325ac4d6bf" Version="V5">
-                                      <uix:NClick.Target>
-                                        <uix:TargetAnchorable BrowserURL="app.spate.nyc/explore/trends/a1d01543-3b04-426e-a194-29d9bd8f9b0c" ContentHash="np3eG68VvU2n5fqyScxWxQ" DesignTimeRectangle="889, 735, 481, 330" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="[string.Format(&quot;&lt;webctrl aaname='{0}*' parentid='app' tag='BUTTON' /&gt;&quot;, str_CardName)]" Guid="4a60c42d-4cd7-4d47-b6f0-87ce1cdf520c" InformativeScreenshot="6dc9ad71e1532ca734abe288e96e5100.png" Reference="U0X3tk9DuUWal-aSohXRCQ/gTtwN32GPkOcJXH5pDk52w" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SPATE - DATA SCIENCE TO PREDICT THE NEXT BIG TREND.' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None" />
-                                      </uix:NClick.Target>
-                                      <uix:NClick.VerifyOptions>
-                                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
-                                          <uix:VerifyExecutionOptions.Retry>
-                                            <InArgument x:TypeArguments="x:Boolean" />
-                                          </uix:VerifyExecutionOptions.Retry>
-                                          <uix:VerifyExecutionOptions.Timeout>
-                                            <InArgument x:TypeArguments="x:Double" />
-                                          </uix:VerifyExecutionOptions.Timeout>
-                                        </uix:VerifyExecutionOptions>
-                                      </uix:NClick.VerifyOptions>
-                                    </uix:NClick>
-                                    <uix:NGetAttributeGeneric x:TypeArguments="x:String" Attribute="href" DisplayName="Get Attribute 'See more data(1)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="478.6666666666667,192" sap2010:WorkflowViewState.IdRef="NGetAttributeGeneric`1_1" Result="[str_NewTabURL]" ScopeIdentifier="32071038-67fd-4dd7-b37a-e3325ac4d6bf" Version="V5">
+                                    <If Condition="[Not (in_str_Market = &quot;Japan&quot; Or in_str_Market = &quot;South Korea&quot;)]" sap:VirtualizedContainerService.HintSize="546.6666666666666,1105.3333333333333" sap2010:WorkflowViewState.IdRef="If_2">
+                                      <If.Then>
+                                        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,653.3333333333334" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Down" DisplayName="Mouse Scroll 'half wig+461.7% YoYrisi…(1)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="382,373.3333333333333" sap2010:WorkflowViewState.IdRef="NMouseScroll_1" InteractionMode="HardwareEvents" MovementUnits="10" ScopeIdentifier="32071038-67fd-4dd7-b37a-e3325ac4d6bf" Version="V5">
+                                            <uix:NMouseScroll.SearchedElement>
+                                              <uix:SearchedElement>
+                                                <uix:SearchedElement.OutUiElement>
+                                                  <OutArgument x:TypeArguments="ui:UiElement" />
+                                                </uix:SearchedElement.OutUiElement>
+                                                <uix:SearchedElement.Target>
+                                                  <uix:TargetAnchorable BrowserURL="app.spate.nyc/explore/trends/a1d01543-3b04-426e-a194-29d9bd8f9b0c" ContentHash="np3eG68VvU2n5fqyScxWxQ" DesignTimeRectangle="889, 735, 481, 330" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="[string.Format(&quot;&lt;webctrl aaname='{0}*' parentid='app' tag='BUTTON' /&gt;&quot;, str_CardName)]" Guid="4a60c42d-4cd7-4d47-b6f0-87ce1cdf520c" InformativeScreenshot="6dc9ad71e1532ca734abe288e96e5100.png" Reference="U0X3tk9DuUWal-aSohXRCQ/gTtwN32GPkOcJXH5pDk52w" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SPATE - DATA SCIENCE TO PREDICT THE NEXT BIG TREND.' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None" />
+                                                </uix:SearchedElement.Target>
+                                                <uix:SearchedElement.Timeout>
+                                                  <InArgument x:TypeArguments="x:Double" />
+                                                </uix:SearchedElement.Timeout>
+                                              </uix:SearchedElement>
+                                            </uix:NMouseScroll.SearchedElement>
+                                            <uix:NMouseScroll.Target>
+                                              <uix:TargetAnchorable BrowserURL="app.spate.nyc/explore/trends/a1d01543-3b04-426e-a194-29d9bd8f9b0c" ContentHash="RprhJLTtV0WQRYudQ5itQA" DesignTimeRectangle="874, -13177, 1023, 446460" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentid='app' tag='DIV' /&gt;" Guid="bbfb6bae-8257-4cc8-8e90-3cf3faa06f9f" InformativeScreenshot="f19f67e3b64a6f895efbc5f3506e97da.png" Reference="U0X3tk9DuUWal-aSohXRCQ/p1YEck5StU-CtsV0o7H42w" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SPATE - DATA SCIENCE TO PREDICT THE NEXT BIG TREND.' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                                            </uix:NMouseScroll.Target>
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                          </uix:NMouseScroll>
+                                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click Card" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="382,220" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="32071038-67fd-4dd7-b37a-e3325ac4d6bf" Version="V5">
+                                            <uix:NClick.Target>
+                                              <uix:TargetAnchorable BrowserURL="app.spate.nyc/explore/trends/a1d01543-3b04-426e-a194-29d9bd8f9b0c" ContentHash="np3eG68VvU2n5fqyScxWxQ" DesignTimeRectangle="889, 735, 481, 330" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="[string.Format(&quot;&lt;webctrl aaname='{0}*' parentid='app' tag='BUTTON' /&gt;&quot;, str_CardName)]" Guid="4a60c42d-4cd7-4d47-b6f0-87ce1cdf520c" InformativeScreenshot="6dc9ad71e1532ca734abe288e96e5100.png" Reference="U0X3tk9DuUWal-aSohXRCQ/gTtwN32GPkOcJXH5pDk52w" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SPATE - DATA SCIENCE TO PREDICT THE NEXT BIG TREND.' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None" />
+                                            </uix:NClick.Target>
+                                            <uix:NClick.VerifyOptions>
+                                              <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                                <uix:VerifyExecutionOptions.Retry>
+                                                  <InArgument x:TypeArguments="x:Boolean" />
+                                                </uix:VerifyExecutionOptions.Retry>
+                                                <uix:VerifyExecutionOptions.Timeout>
+                                                  <InArgument x:TypeArguments="x:Double" />
+                                                </uix:VerifyExecutionOptions.Timeout>
+                                              </uix:VerifyExecutionOptions>
+                                            </uix:NClick.VerifyOptions>
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                          </uix:NClick>
+                                        </Sequence>
+                                      </If.Then>
+                                      <If.Else>
+                                        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,280" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click Card" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="382,220" sap2010:WorkflowViewState.IdRef="NClick_8" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="32071038-67fd-4dd7-b37a-e3325ac4d6bf" Version="V5">
+                                            <uix:NClick.Target>
+                                              <uix:TargetAnchorable BrowserURL="app.spate.nyc/explore/google/trends/16235dff-c4cc-401c-a774-f9304c5ad061" CVScreenId="23f10746-b3a7-42ac-a40e-fd0107bcda60" ContentHash="mbSfghGWF0-prgEgq-0Bvg" DesignTimeRectangle="474, 892, 180, 36" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="[string.Format(&quot;&lt;webctrl aaname='{0}' parentid='app' tag='SPAN' /&gt;&quot;, str_CardName)]" Guid="dfdfac53-2ea4-400d-90e4-3f656ca15a14" InformativeScreenshot="5e53eb89a920ada964f065f97ee3b1f6.png" Reference="U0X3tk9DuUWal-aSohXRCQ/gpurxBRTSEGeH27ZRhQhDA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SPATE - DATA SCIENCE TO PREDICT THE NEXT BIG TREND.' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+                                                <uix:TargetAnchorable.Anchors>
+                                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                    <uix:Target CVScreenId="23f10746-b3a7-42ac-a40e-fd0107bcda60" DesignTimeRectangle="456, 862, 451, 97" FullSelectorArgument="[string.Format(&quot;&lt;webctrl parentid='app' tag='DIV' innertext='{0}' /&gt;&quot;, str_CardName)]" Guid="d56f938a-5778-4098-8c20-ae989dbaf440" SearchSteps="Selector" />
+                                                  </scg:List>
+                                                </uix:TargetAnchorable.Anchors>
+                                              </uix:TargetAnchorable>
+                                            </uix:NClick.Target>
+                                            <uix:NClick.VerifyOptions>
+                                              <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                                <uix:VerifyExecutionOptions.Retry>
+                                                  <InArgument x:TypeArguments="x:Boolean" />
+                                                </uix:VerifyExecutionOptions.Retry>
+                                                <uix:VerifyExecutionOptions.Timeout>
+                                                  <InArgument x:TypeArguments="x:Double" />
+                                                </uix:VerifyExecutionOptions.Timeout>
+                                              </uix:VerifyExecutionOptions>
+                                            </uix:NClick.VerifyOptions>
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                          </uix:NClick>
+                                        </Sequence>
+                                      </If.Else>
+                                    </If>
+                                    <uix:NGetAttributeGeneric x:TypeArguments="x:String" Attribute="href" DisplayName="Get Attribute 'See more data(1)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="546.6666666666666,192" sap2010:WorkflowViewState.IdRef="NGetAttributeGeneric`1_1" Result="[str_NewTabURL]" ScopeIdentifier="32071038-67fd-4dd7-b37a-e3325ac4d6bf" Version="V5">
                                       <uix:NGetAttributeGeneric.Target>
                                         <uix:TargetAnchorable BrowserURL="app.spate.nyc/explore/trends/a1d01543-3b04-426e-a194-29d9bd8f9b0c" CVScreenId="b9d1dbd8-0fba-475e-ab0a-a92d959f81e7" ContentHash="AUoLlM2OAESf8KYoolKJzQ" DesignTimeRectangle="512, 583, 540, 51" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='See more data' tag='A' /&gt;" Guid="ed3b4043-1e7d-4448-a0ea-e2ee8ef2deb3" InformativeScreenshot="652a462bf02c8e1abdcefc89d0371170.png" Reference="U0X3tk9DuUWal-aSohXRCQ/mRtw7TEpSU2hgeVuMJnQ2w" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SPATE - DATA SCIENCE TO PREDICT THE NEXT BIG TREND.' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None">
                                           <uix:TargetAnchorable.Anchors>
@@ -418,7 +491,7 @@
                                         </uix:TargetAnchorable>
                                       </uix:NGetAttributeGeneric.Target>
                                     </uix:NGetAttributeGeneric>
-                                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'See more data(1)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="478.6666666666667,229.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Middle" ScopeIdentifier="32071038-67fd-4dd7-b37a-e3325ac4d6bf" Version="V5">
+                                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'See more data(1)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="546.6666666666666,229.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Middle" ScopeIdentifier="32071038-67fd-4dd7-b37a-e3325ac4d6bf" Version="V5">
                                       <uix:NClick.Target>
                                         <uix:TargetAnchorable BrowserURL="app.spate.nyc/explore/trends/a1d01543-3b04-426e-a194-29d9bd8f9b0c" CVScreenId="b9d1dbd8-0fba-475e-ab0a-a92d959f81e7" ContentHash="AUoLlM2OAESf8KYoolKJzQ" DesignTimeRectangle="512, 583, 540, 51" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='See more data' tag='A' /&gt;" Guid="ed3b4043-1e7d-4448-a0ea-e2ee8ef2deb3" InformativeScreenshot="652a462bf02c8e1abdcefc89d0371170.png" Reference="U0X3tk9DuUWal-aSohXRCQ/mRtw7TEpSU2hgeVuMJnQ2w" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SPATE - DATA SCIENCE TO PREDICT THE NEXT BIG TREND.' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None">
                                           <uix:TargetAnchorable.Anchors>
@@ -439,7 +512,7 @@
                                         </uix:VerifyExecutionOptions>
                                       </uix:NClick.VerifyOptions>
                                     </uix:NClick>
-                                    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="ProcessCard - Invoke Workflow File (Workflows\ProcessCard.xaml)" sap:VirtualizedContainerService.HintSize="478.6666666666667,177.33333333333334" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" UnSafe="False" WorkflowFileName="Workflows\ProcessCard.xaml">
+                                    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="ProcessCard - Invoke Workflow File (Workflows\ProcessCard.xaml)" sap:VirtualizedContainerService.HintSize="546.6666666666666,177.33333333333334" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" UnSafe="False" WorkflowFileName="Workflows\ProcessCard.xaml">
                                       <ui:InvokeWorkflowFile.Arguments>
                                         <InArgument x:TypeArguments="x:String" x:Key="in_URL">["app.spate.nyc"+str_NewTabURL]</InArgument>
                                         <InArgument x:TypeArguments="x:String" x:Key="in_str_CardName">[str_CardName]</InArgument>
@@ -447,9 +520,10 @@
                                         <OutArgument x:TypeArguments="x:String" x:Key="out_str_GoogleSearches">[str_GoogleSearches]</OutArgument>
                                         <OutArgument x:TypeArguments="x:String" x:Key="out_str_TikTokViews">[str_TikTokViews]</OutArgument>
                                         <OutArgument x:TypeArguments="x:String" x:Key="out_str_InstaYoY">[str_InstaYoY]</OutArgument>
+                                        <InArgument x:TypeArguments="x:String" x:Key="in_str_Market">[in_str_Market]</InArgument>
                                       </ui:InvokeWorkflowFile.Arguments>
                                     </ui:InvokeWorkflowFile>
-                                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'BUTTON'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="478.6666666666667,229.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_6" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="32071038-67fd-4dd7-b37a-e3325ac4d6bf" Version="V5">
+                                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'BUTTON'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="546.6666666666666,229.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_6" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="32071038-67fd-4dd7-b37a-e3325ac4d6bf" Version="V5">
                                       <uix:NClick.Target>
                                         <uix:TargetAnchorable BrowserURL="app.spate.nyc/explore/trends/6d408533-6979-43aa-80af-4d88bf0be860" CVScreenId="998e01f5-db11-4a0b-b487-4598eac2f280" ContentHash="zUvF_rr_Q0CP5FlsDdPYzA" DesignTimeRectangle="1047, 242, 40, 40" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl parentid='headlessui-dialog-*' tag='BUTTON' class='Drawer__CloseBtn*' /&gt;" Guid="0d7b63cf-b86c-4d20-9443-32b300b36432" InformativeScreenshot="ae7b67cc8ef620cd04718b79b4c3284e.png" Reference="U0X3tk9DuUWal-aSohXRCQ/V28ecrhxgUmqI3fIQEzpHw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SPATE - DATA SCIENCE TO PREDICT THE NEXT BIG TREND.' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None" />
                                       </uix:NClick.Target>
@@ -464,44 +538,64 @@
                                         </uix:VerifyExecutionOptions>
                                       </uix:NClick.VerifyOptions>
                                     </uix:NClick>
-                                    <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="478.6666666666667,234.66666666666666" sap2010:WorkflowViewState.IdRef="MultipleAssign_2">
-                                      <ui:MultipleAssign.AssignOperations>
-                                        <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
-                                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_5">
-                                            <ui:AssignOperation.To>
-                                              <OutArgument x:TypeArguments="x:Object">[CurrentRow("Predicted YoY")]</OutArgument>
-                                            </ui:AssignOperation.To>
-                                            <ui:AssignOperation.Value>
-                                              <InArgument x:TypeArguments="x:String">[str_PredictedYoY]</InArgument>
-                                            </ui:AssignOperation.Value>
-                                          </ui:AssignOperation>
-                                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_6">
-                                            <ui:AssignOperation.To>
-                                              <OutArgument x:TypeArguments="x:Object">[CurrentRow("Google Avg. Monthly Searches")]</OutArgument>
-                                            </ui:AssignOperation.To>
-                                            <ui:AssignOperation.Value>
-                                              <InArgument x:TypeArguments="x:String">[str_GoogleSearches]</InArgument>
-                                            </ui:AssignOperation.Value>
-                                          </ui:AssignOperation>
-                                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_7">
-                                            <ui:AssignOperation.To>
-                                              <OutArgument x:TypeArguments="x:Object">[CurrentRow("TikTok Avg. Weekly Views")]</OutArgument>
-                                            </ui:AssignOperation.To>
-                                            <ui:AssignOperation.Value>
-                                              <InArgument x:TypeArguments="x:String">[str_TikTokViews]</InArgument>
-                                            </ui:AssignOperation.Value>
-                                          </ui:AssignOperation>
-                                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_8">
-                                            <ui:AssignOperation.To>
-                                              <OutArgument x:TypeArguments="x:Object">[CurrentRow("Instagram YoY")]</OutArgument>
-                                            </ui:AssignOperation.To>
-                                            <ui:AssignOperation.Value>
-                                              <InArgument x:TypeArguments="x:Object">[str_InstaYoY]</InArgument>
-                                            </ui:AssignOperation.Value>
-                                          </ui:AssignOperation>
-                                        </scg:List>
-                                      </ui:MultipleAssign.AssignOperations>
-                                    </ui:MultipleAssign>
+                                    <Assign sap:VirtualizedContainerService.HintSize="546.6666666666666,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_2">
+                                      <Assign.To>
+                                        <OutArgument x:TypeArguments="x:Object">[CurrentRow("Google Avg. Monthly Searches")]</OutArgument>
+                                      </Assign.To>
+                                      <Assign.Value>
+                                        <InArgument x:TypeArguments="x:Object">[str_GoogleSearches]</InArgument>
+                                      </Assign.Value>
+                                    </Assign>
+                                    <If Condition="[Not (in_str_Market = &quot;Japan&quot; Or in_str_Market = &quot;South Korea&quot;)]" sap:VirtualizedContainerService.HintSize="546.6666666666666,517.3333333333334" sap2010:WorkflowViewState.IdRef="If_4">
+                                      <If.Then>
+                                        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="512.6666666666666,261.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="478.6666666666667,201.33333333333334" sap2010:WorkflowViewState.IdRef="MultipleAssign_2">
+                                            <ui:MultipleAssign.AssignOperations>
+                                              <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
+                                                <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_5">
+                                                  <ui:AssignOperation.To>
+                                                    <OutArgument x:TypeArguments="x:Object">[CurrentRow("Predicted YoY")]</OutArgument>
+                                                  </ui:AssignOperation.To>
+                                                  <ui:AssignOperation.Value>
+                                                    <InArgument x:TypeArguments="x:String">[str_PredictedYoY]</InArgument>
+                                                  </ui:AssignOperation.Value>
+                                                </ui:AssignOperation>
+                                                <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_7">
+                                                  <ui:AssignOperation.To>
+                                                    <OutArgument x:TypeArguments="x:Object">[CurrentRow("TikTok Avg. Weekly Views")]</OutArgument>
+                                                  </ui:AssignOperation.To>
+                                                  <ui:AssignOperation.Value>
+                                                    <InArgument x:TypeArguments="x:String">[str_TikTokViews]</InArgument>
+                                                  </ui:AssignOperation.Value>
+                                                </ui:AssignOperation>
+                                                <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_8">
+                                                  <ui:AssignOperation.To>
+                                                    <OutArgument x:TypeArguments="x:Object">[CurrentRow("Instagram YoY")]</OutArgument>
+                                                  </ui:AssignOperation.To>
+                                                  <ui:AssignOperation.Value>
+                                                    <InArgument x:TypeArguments="x:Object">[str_InstaYoY]</InArgument>
+                                                  </ui:AssignOperation.Value>
+                                                </ui:AssignOperation>
+                                              </scg:List>
+                                            </ui:MultipleAssign.AssignOperations>
+                                          </ui:MultipleAssign>
+                                        </Sequence>
+                                      </If.Then>
+                                      <If.Else>
+                                        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="512.6666666666666,90.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                        </Sequence>
+                                      </If.Else>
+                                    </If>
                                   </Sequence>
                                 </ActivityAction>
                               </uix:NApplicationCard.Body>
@@ -529,87 +623,107 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ueab:ExcelApplicationCard>
-            <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" SensitivityLabel="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="682.6666666666666,1068" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_2" ResizeWindow="None" SensitivityOperation="None" WorkbookPath="[in_GoogleDriveFolderTop20.ID + System.IO.Path.GetFileNameWithoutExtension(in_DownloadedReport.Name) + &quot;_Top 20_&quot; + Now.ToString(&quot;yyyy-MMM-dd&quot;) + &quot;.xlsx&quot;]">
+            <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" SensitivityLabel="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="750.6666666666666,1381.3333333333333" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_2" ResizeWindow="None" SensitivityOperation="None" WorkbookPath="[in_GoogleDriveFolderTop20.ID + System.IO.Path.GetFileNameWithoutExtension(in_DownloadedReport.Name) + &quot;_Top 20_&quot; + Now.ToString(&quot;yyyy-MMM-dd&quot;) + &quot;.xlsx&quot;]">
               <ueab:ExcelApplicationCard.Body>
                 <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="468,764.6666666666666" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="484,1078" sap2010:WorkflowViewState.IdRef="Sequence_10">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ueab:WriteRangeX Destination="[Excel.Sheet(&quot;Sheet1&quot;).Range(&quot;A1&quot;)]" DisplayName="Write DataTable to Excel" sap:VirtualizedContainerService.HintSize="434,196.66666666666666" sap2010:WorkflowViewState.IdRef="WriteRangeX_1" IgnoreEmptySource="False" Source="[dt_Top20]" />
-                    <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each item" sap:VirtualizedContainerService.HintSize="434,57.333333333333336" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[list_numberColumns]">
-                      <ui:ForEach.Body>
-                        <ActivityAction x:TypeArguments="x:String">
-                          <ActivityAction.Argument>
-                            <DelegateInArgument x:TypeArguments="x:String" Name="item" />
-                          </ActivityAction.Argument>
-                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="473.3333333333333,224" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                    <ueab:WriteRangeX Destination="[Excel.Sheet(&quot;Sheet1&quot;).Range(&quot;A1&quot;)]" DisplayName="Write DataTable to Excel" sap:VirtualizedContainerService.HintSize="450,196.66666666666666" sap2010:WorkflowViewState.IdRef="WriteRangeX_1" IgnoreEmptySource="False" Source="[dt_Top20]" />
+                    <If Condition="[Not (in_str_Market = &quot;Japan&quot; Or in_str_Market = &quot;South Korea&quot;)]" sap:VirtualizedContainerService.HintSize="450,428" sap2010:WorkflowViewState.IdRef="If_3">
+                      <If.Then>
+                        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,165.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each item" sap:VirtualizedContainerService.HintSize="382,57.333333333333336" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[list_numberColumns]">
+                            <ui:ForEach.Body>
+                              <ActivityAction x:TypeArguments="x:String">
+                                <ActivityAction.Argument>
+                                  <DelegateInArgument x:TypeArguments="x:String" Name="item" />
+                                </ActivityAction.Argument>
+                                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="473.3333333333333,224" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <ueab:FormatRangeX DisplayName="Format Cells" sap:VirtualizedContainerService.HintSize="439.3333333333333,164" sap2010:WorkflowViewState.IdRef="FormatRangeX_1" Range="[Excel.Sheet(&quot;Sheet1&quot;).Range(item + &quot;2:&quot; + item + &quot;21&quot;)]">
+                                    <ueab:FormatRangeX.Alignment>
+                                      <ui:AlignmentOptions HorizontalAlignment="xlHAlignGeneral" VerticalAlignment="xlVAlignBottom" WrapText="False" />
+                                    </ueab:FormatRangeX.Alignment>
+                                    <ueab:FormatRangeX.Font>
+                                      <ui:FontOptions Color="Black" FillColor="Transparent" FontFamilyName="Calibri" Size="11" Style="Regular" UnderlineStyle="None" />
+                                    </ueab:FormatRangeX.Font>
+                                    <ueab:FormatRangeX.Format>
+                                      <ueab:CustomFormat FormatAsString="#,##0;[Red](#,##0);0;@" />
+                                    </ueab:FormatRangeX.Format>
+                                  </ueab:FormatRangeX>
+                                </Sequence>
+                              </ActivityAction>
+                            </ui:ForEach.Body>
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <ueab:FormatRangeX DisplayName="Format Cells" sap:VirtualizedContainerService.HintSize="439.3333333333333,164" sap2010:WorkflowViewState.IdRef="FormatRangeX_1" Range="[Excel.Sheet(&quot;Sheet1&quot;).Range(item + &quot;2:&quot; + item + &quot;21&quot;)]">
-                              <ueab:FormatRangeX.Alignment>
-                                <ui:AlignmentOptions HorizontalAlignment="xlHAlignGeneral" VerticalAlignment="xlVAlignBottom" WrapText="False" />
-                              </ueab:FormatRangeX.Alignment>
-                              <ueab:FormatRangeX.Font>
-                                <ui:FontOptions Color="Black" FillColor="Transparent" FontFamilyName="Calibri" Size="11" Style="Regular" UnderlineStyle="None" />
-                              </ueab:FormatRangeX.Font>
-                              <ueab:FormatRangeX.Format>
-                                <ueab:CustomFormat FormatAsString="#,##0;[Red](#,##0);0;@" />
-                              </ueab:FormatRangeX.Format>
-                            </ueab:FormatRangeX>
-                          </Sequence>
-                        </ActivityAction>
-                      </ui:ForEach.Body>
-                      <sap:WorkflowViewStateService.ViewState>
-                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                        </scg:Dictionary>
-                      </sap:WorkflowViewStateService.ViewState>
-                    </ui:ForEach>
-                    <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each item" sap:VirtualizedContainerService.HintSize="434,57.333333333333336" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[list_percentageColumns]">
-                      <ui:ForEach.Body>
-                        <ActivityAction x:TypeArguments="x:String">
-                          <ActivityAction.Argument>
-                            <DelegateInArgument x:TypeArguments="x:String" Name="item" />
-                          </ActivityAction.Argument>
-                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="473.3333333333333,224" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                          </ui:ForEach>
+                          <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each item" sap:VirtualizedContainerService.HintSize="382,48" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[list_percentageColumns]">
+                            <ui:ForEach.Body>
+                              <ActivityAction x:TypeArguments="x:String">
+                                <ActivityAction.Argument>
+                                  <DelegateInArgument x:TypeArguments="x:String" Name="item" />
+                                </ActivityAction.Argument>
+                                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="473.3333333333333,224" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <ueab:FormatRangeX DisplayName="Format Cells" sap:VirtualizedContainerService.HintSize="439.3333333333333,164" sap2010:WorkflowViewState.IdRef="FormatRangeX_2" Range="[Excel.Sheet(&quot;Sheet1&quot;).Range(item + &quot;2:&quot; + item + &quot;21&quot;)]">
+                                    <ueab:FormatRangeX.Alignment>
+                                      <ui:AlignmentOptions HorizontalAlignment="xlHAlignGeneral" VerticalAlignment="xlVAlignBottom" WrapText="False" />
+                                    </ueab:FormatRangeX.Alignment>
+                                    <ueab:FormatRangeX.Font>
+                                      <ui:FontOptions Color="Black" FillColor="Transparent" FontFamilyName="Calibri" Size="11" Style="Regular" UnderlineStyle="None" />
+                                    </ueab:FormatRangeX.Font>
+                                    <ueab:FormatRangeX.Format>
+                                      <ueab:PercentageFormat DecimalPlaces="1" UseThousandSeparator="False" />
+                                    </ueab:FormatRangeX.Format>
+                                  </ueab:FormatRangeX>
+                                </Sequence>
+                              </ActivityAction>
+                            </ui:ForEach.Body>
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <ueab:FormatRangeX DisplayName="Format Cells" sap:VirtualizedContainerService.HintSize="439.3333333333333,164" sap2010:WorkflowViewState.IdRef="FormatRangeX_2" Range="[Excel.Sheet(&quot;Sheet1&quot;).Range(item + &quot;2:&quot; + item + &quot;21&quot;)]">
-                              <ueab:FormatRangeX.Alignment>
-                                <ui:AlignmentOptions HorizontalAlignment="xlHAlignGeneral" VerticalAlignment="xlVAlignBottom" WrapText="False" />
-                              </ueab:FormatRangeX.Alignment>
-                              <ueab:FormatRangeX.Font>
-                                <ui:FontOptions Color="Black" FillColor="Transparent" FontFamilyName="Calibri" Size="11" Style="Regular" UnderlineStyle="None" />
-                              </ueab:FormatRangeX.Font>
-                              <ueab:FormatRangeX.Format>
-                                <ueab:PercentageFormat DecimalPlaces="1" UseThousandSeparator="False" />
-                              </ueab:FormatRangeX.Format>
-                            </ueab:FormatRangeX>
-                          </Sequence>
-                        </ActivityAction>
-                      </ui:ForEach.Body>
-                      <sap:WorkflowViewStateService.ViewState>
-                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                        </scg:Dictionary>
-                      </sap:WorkflowViewStateService.ViewState>
-                    </ui:ForEach>
-                    <ueab:CreateTableX OutTableName="{x:Null}" TableName="{x:Null}" DisplayName="Format as Table" HasHeaders="True" sap:VirtualizedContainerService.HintSize="434,250.66666666666666" sap2010:WorkflowViewState.IdRef="CreateTableX_1" Range="[Excel.Sheet(&quot;Sheet1&quot;).Range(&quot;A1:V21&quot;)]" />
-                    <ueab:AutoFitX Columns="True" DisplayName="Autofit Range" sap:VirtualizedContainerService.HintSize="434,142.66666666666666" sap2010:WorkflowViewState.IdRef="AutoFitX_1" Range="[Excel.Sheet(&quot;Sheet1&quot;).Range(&quot;A1:V21&quot;)]" Rows="True" />
+                          </ui:ForEach>
+                        </Sequence>
+                      </If.Then>
+                      <If.Else>
+                        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,90.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </Sequence>
+                      </If.Else>
+                    </If>
+                    <ueab:CreateTableX OutTableName="{x:Null}" TableName="{x:Null}" DisplayName="Format as Table" HasHeaders="True" sap:VirtualizedContainerService.HintSize="450,250.66666666666666" sap2010:WorkflowViewState.IdRef="CreateTableX_1" Range="[Excel.Sheet(&quot;Sheet1&quot;).Range(&quot;A1:V21&quot;)]" />
+                    <ueab:AutoFitX Columns="True" DisplayName="Autofit Range" sap:VirtualizedContainerService.HintSize="450,142.66666666666666" sap2010:WorkflowViewState.IdRef="AutoFitX_1" Range="[Excel.Sheet(&quot;Sheet1&quot;).Range(&quot;A1:V21&quot;)]" Rows="True" />
                   </Sequence>
                 </ActivityAction>
               </ueab:ExcelApplicationCard.Body>

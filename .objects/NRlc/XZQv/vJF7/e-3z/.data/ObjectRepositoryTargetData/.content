@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="O-kSHwsr6EO3OXe4Pho4jQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="app.spate.nyc/categoryFive/34831ca4-778f-4b97-841b-b2b404016ffb/43e1df22-4afe-4b92-8091-762f7f4e54e9" CVScreenId="50aa8fc3-4e65-4202-993d-3eb050b12229" DesignTimeRectangle="1304, 520, 109, 25" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Instagram' parentid='app' tag='SPAN' innertext='Instagram' visibleinnertext='Instagram' /&gt;" Guid="a4515480-3428-4558-b2fa-e285c93bb7b7" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SPATE: half wig : us : beauty : hair : hair styling products : hair extension products' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="50aa8fc3-4e65-4202-993d-3eb050b12229" DesignTimeRectangle="1279, 507, 159, 51" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Instagram' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' parentid='app' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' tag='A' type='' innertext='Instagram' visibleinnertext='Instagram' /&gt;" Guid="fd9ffb47-59e2-4c58-9f30-ba2ea4c2a2ac" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="74e1f5816a0a398b1af30a4ee55b62db.png" xmlns="">0EMzZaS_B602M6n-emY64Vg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

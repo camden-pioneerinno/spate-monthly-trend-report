@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Google",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "zY36wv7AkEqUgTww7lgKvg",
+  "Reference": "U0X3tk9DuUWal-aSohXRCQ/zY36wv7AkEqUgTww7lgKvg",
+  "ParentRef": "U0X3tk9DuUWal-aSohXRCQ/vJF76FH8mECW9OScAZM_Tg",
+  "Created": "2025-10-17T19:39:34.2332226Z",
+  "Updated": "2025-10-17T19:39:34.2332226Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.16.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

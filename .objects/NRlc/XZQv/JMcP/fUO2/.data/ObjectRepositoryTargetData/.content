@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="qRy3twSQukGhu2OdrAiwqA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="app.spate.nyc/explore/trends/a1d01543-3b04-426e-a194-29d9bd8f9b0c" DesignTimeRectangle="889, 735, 481, 330" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="[string.Format(&quot;&lt;webctrl aaname='{0}*' parentid='app' tag='BUTTON' /&gt;&quot;, str_CardName)]" Guid="4a60c42d-4cd7-4d47-b6f0-87ce1cdf520c" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SPATE - DATA SCIENCE TO PREDICT THE NEXT BIG TREND.' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="6dc9ad71e1532ca734abe288e96e5100.png" xmlns="">00tYRRmysZkiXAVnK-2h7Fg</imageRef>
+    </TargetAnchorable>
+    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="1">
+      <ObjectRepositoryVariableData DefaultValue="half wig" Name="str_CardName" />
+    </scg:List>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
